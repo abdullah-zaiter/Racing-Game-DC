@@ -58,6 +58,7 @@ set_global_assignment -name BDF_FILE clock.bdf
 set_global_assignment -name VERILOG_FILE fdiv.v
 set_global_assignment -name BDF_FILE Pistabdf.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE life.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/lukas/Desktop/RacingGameDC-master/RacingGameDC-master/ProjetoFinalCD/life.vwf"
+set_global_assignment -name BDF_FILE CarRegisters.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
