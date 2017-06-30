@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RacingGame
-Thu Jun 15 23:59:36 2017
+Thu Jun 29 21:37:30 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,8 +14,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +42,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 15 23:59:36 2017           ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 29 21:37:30 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; RacingGame                                      ;
-; Top-level Entity Name              ; fdiv                                            ;
+; Top-level Entity Name              ; LivesCounter                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 57                                              ;
-;     Total combinational functions  ; 57                                              ;
-;     Dedicated logic registers      ; 33                                              ;
-; Total registers                    ; 33                                              ;
-; Total pins                         ; 2                                               ;
+; Total logic elements               ; 3                                               ;
+;     Total combinational functions  ; 3                                               ;
+;     Dedicated logic registers      ; 3                                               ;
+; Total registers                    ; 3                                               ;
+; Total pins                         ; 5                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; fdiv               ; RacingGame         ;
+; Top-level entity name                                                      ; LivesCounter       ; RacingGame         ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -154,13 +155,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                        ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
-; fdiv.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; LivesCounter.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/LivesCounter.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -168,28 +169,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 57    ;
+; Estimated Total logic elements              ; 3     ;
 ;                                             ;       ;
-; Total combinational functions               ; 57    ;
+; Total combinational functions               ; 3     ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 10    ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 47    ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 1     ;
+;     -- <=2 input functions                  ; 2     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 26    ;
-;     -- arithmetic mode                      ; 31    ;
+;     -- normal mode                          ; 3     ;
+;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 33    ;
-;     -- Dedicated logic registers            ; 33    ;
+; Total registers                             ; 3     ;
+;     -- Dedicated logic registers            ; 3     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 2     ;
+; I/O pins                                    ; 5     ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; clkin ;
-; Maximum fan-out                             ; 33    ;
-; Total fan-out                               ; 200   ;
-; Average fan-out                             ; 2.17  ;
+; Maximum fan-out node                        ; inst  ;
+; Maximum fan-out                             ; 4     ;
+; Total fan-out                               ; 18    ;
+; Average fan-out                             ; 1.64  ;
 +---------------------------------------------+-------+
 
 
@@ -198,7 +199,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |fdiv                      ; 57 (57)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |fdiv               ; work         ;
+; |LivesCounter              ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |LivesCounter       ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -208,14 +209,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
+; Total registers                              ; 3     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 3     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; inst                                   ; 4       ;
+; inst2                                  ; 2       ;
+; inst1                                  ; 3       ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
 
 
 +-------------------------------+
@@ -223,7 +236,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -233,7 +246,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Jun 15 23:59:29 2017
+    Info: Processing started: Thu Jun 29 21:37:28 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RacingGame -c RacingGame
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file lifes.bdf
@@ -246,17 +259,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file pistabd
     Info (12023): Found entity 1: Pistabdf
 Info (12021): Found 1 design units, including 1 entities, in source file carregisters.bdf
     Info (12023): Found entity 1: CarRegisters
-Info (12127): Elaborating entity "fdiv" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file livescounter.bdf
+    Info (12023): Found entity 1: LivesCounter
+Info (12127): Elaborating entity "LivesCounter" for the top level hierarchy
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 57 logic cells
+Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 3 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 488 megabytes
-    Info: Processing ended: Thu Jun 15 23:59:36 2017
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 483 megabytes
+    Info: Processing ended: Thu Jun 29 21:37:30 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

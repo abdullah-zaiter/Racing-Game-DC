@@ -24681,18 +24681,6 @@ applicable agreement for further details.
 	(pt 256 1416)
 )
 (connector
-	(pt 256 1416)
-	(pt 256 1504)
-)
-(connector
-	(pt 256 1504)
-	(pt 256 1592)
-)
-(connector
-	(pt 256 1592)
-	(pt 256 1680)
-)
-(connector
 	(pt 256 1680)
 	(pt 256 1768)
 )
@@ -25657,11 +25645,6 @@ applicable agreement for further details.
 	(pt 224 1648)
 )
 (connector
-	(pt 896 1544)
-	(pt 992 1544)
-	(bus)
-)
-(connector
 	(pt 896 1536)
 	(pt 896 1544)
 )
@@ -25670,22 +25653,12 @@ applicable agreement for further details.
 	(pt 896 1560)
 )
 (connector
-	(pt 800 1544)
-	(pt 896 1544)
-	(bus)
-)
-(connector
 	(pt 800 1536)
 	(pt 800 1544)
 )
 (connector
 	(pt 800 1544)
 	(pt 800 1560)
-)
-(connector
-	(pt 704 1544)
-	(pt 800 1544)
-	(bus)
 )
 (connector
 	(pt 704 1536)
@@ -25704,27 +25677,12 @@ applicable agreement for further details.
 	(pt 512 1560)
 )
 (connector
-	(pt 416 1544)
-	(pt 512 1544)
-	(bus)
-)
-(connector
 	(pt 416 1536)
 	(pt 416 1544)
 )
 (connector
 	(pt 416 1544)
 	(pt 416 1560)
-)
-(connector
-	(pt 224 1544)
-	(pt 320 1544)
-	(bus)
-)
-(connector
-	(pt 320 1544)
-	(pt 416 1544)
-	(bus)
 )
 (connector
 	(pt 320 1536)
@@ -25743,11 +25701,6 @@ applicable agreement for further details.
 	(pt 224 1560)
 )
 (connector
-	(pt 896 1456)
-	(pt 992 1456)
-	(bus)
-)
-(connector
 	(pt 896 1448)
 	(pt 896 1456)
 )
@@ -25756,22 +25709,12 @@ applicable agreement for further details.
 	(pt 896 1472)
 )
 (connector
-	(pt 800 1456)
-	(pt 896 1456)
-	(bus)
-)
-(connector
 	(pt 800 1448)
 	(pt 800 1456)
 )
 (connector
 	(pt 800 1456)
 	(pt 800 1472)
-)
-(connector
-	(pt 704 1456)
-	(pt 800 1456)
-	(bus)
 )
 (connector
 	(pt 704 1448)
@@ -25790,27 +25733,12 @@ applicable agreement for further details.
 	(pt 512 1472)
 )
 (connector
-	(pt 416 1456)
-	(pt 512 1456)
-	(bus)
-)
-(connector
 	(pt 416 1448)
 	(pt 416 1456)
 )
 (connector
 	(pt 416 1456)
 	(pt 416 1472)
-)
-(connector
-	(pt 224 1456)
-	(pt 320 1456)
-	(bus)
-)
-(connector
-	(pt 320 1456)
-	(pt 416 1456)
-	(bus)
 )
 (connector
 	(pt 320 1448)
@@ -25877,10 +25805,6 @@ applicable agreement for further details.
 	(pt 320 1384)
 )
 (connector
-	(pt 224 1360)
-	(pt 224 1368)
-)
-(connector
 	(pt 224 1368)
 	(pt 224 1384)
 )
@@ -25893,32 +25817,12 @@ applicable agreement for further details.
 	(pt 608 1384)
 )
 (connector
-	(pt 512 1456)
-	(pt 608 1456)
-	(bus)
-)
-(connector
-	(pt 608 1456)
-	(pt 704 1456)
-	(bus)
-)
-(connector
 	(pt 608 1448)
 	(pt 608 1456)
 )
 (connector
 	(pt 608 1456)
 	(pt 608 1472)
-)
-(connector
-	(pt 512 1544)
-	(pt 608 1544)
-	(bus)
-)
-(connector
-	(pt 608 1544)
-	(pt 704 1544)
-	(bus)
 )
 (connector
 	(pt 608 1536)
@@ -26003,12 +25907,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "linha1[0..7]" (rect 234 1352 288 1364)(font "Arial" ))
-	(pt 224 1368)
-	(pt 320 1368)
-	(bus)
-)
-(connector
 	(pt 320 1368)
 	(pt 416 1368)
 	(bus)
@@ -26022,6 +25920,111 @@ applicable agreement for further details.
 	(pt 608 1368)
 	(pt 704 1368)
 	(bus)
+)
+(connector
+	(text "Linha0[0]" (rect 200 1322 212 1366)(font "Arial" )(vertical))
+	(pt 224 1360)
+	(pt 224 1368)
+)
+(connector
+	(pt 896 1456)
+	(pt 992 1456)
+	(bus)
+)
+(connector
+	(pt 800 1456)
+	(pt 896 1456)
+	(bus)
+)
+(connector
+	(pt 704 1456)
+	(pt 800 1456)
+	(bus)
+)
+(connector
+	(pt 416 1456)
+	(pt 512 1456)
+	(bus)
+)
+(connector
+	(pt 224 1456)
+	(pt 320 1456)
+	(bus)
+)
+(connector
+	(text "Linha1[0..7]" (rect 938 1432 995 1444)(font "Arial" ))
+	(pt 320 1456)
+	(pt 416 1456)
+	(bus)
+)
+(connector
+	(pt 512 1456)
+	(pt 608 1456)
+	(bus)
+)
+(connector
+	(pt 608 1456)
+	(pt 704 1456)
+	(bus)
+)
+(connector
+	(text "Linha0[0..7]" (rect 946 1344 1003 1356)(font "Arial" ))
+	(pt 224 1368)
+	(pt 320 1368)
+	(bus)
+)
+(connector
+	(pt 896 1544)
+	(pt 992 1544)
+	(bus)
+)
+(connector
+	(pt 800 1544)
+	(pt 896 1544)
+	(bus)
+)
+(connector
+	(pt 704 1544)
+	(pt 800 1544)
+	(bus)
+)
+(connector
+	(pt 416 1544)
+	(pt 512 1544)
+	(bus)
+)
+(connector
+	(text "Linha2[0]" (rect 938 1520 982 1532)(font "Arial" ))
+	(pt 224 1544)
+	(pt 320 1544)
+	(bus)
+)
+(connector
+	(pt 320 1544)
+	(pt 416 1544)
+	(bus)
+)
+(connector
+	(pt 512 1544)
+	(pt 608 1544)
+	(bus)
+)
+(connector
+	(pt 608 1544)
+	(pt 704 1544)
+	(bus)
+)
+(connector
+	(pt 256 1416)
+	(pt 256 1504)
+)
+(connector
+	(pt 256 1504)
+	(pt 256 1592)
+)
+(connector
+	(pt 256 1592)
+	(pt 256 1680)
 )
 (junction (pt 880 -392))
 (junction (pt 784 -392))
