@@ -1,5 +1,5 @@
 Simulator report for RacingGame
-Thu Jun 29 21:37:59 2017
+Mon Jul 03 10:37:55 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,42 +44,42 @@ applicable agreement for further details.
 ; Type                        ; Value        ;
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
-; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 15 nodes     ;
-; Simulation Coverage         ;      93.33 % ;
-; Total Number of Transitions ; 117          ;
+; Simulation End Time         ; 10.0 us      ;
+; Simulation Netlist Size     ; 292 nodes    ;
+; Simulation Coverage         ;      42.12 % ;
+; Total Number of Transitions ; 6454         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                                                                     ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                                                                   ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                                                                ; Timing        ;
-; Start time                                                                                 ; 0 ns                                                                                      ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                                                                       ;               ;
-; Vector input source                                                                        ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/WaveformOfLivesCounter.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                                                                        ; On            ;
-; Check outputs                                                                              ; Off                                                                                       ; Off           ;
-; Report simulation coverage                                                                 ; On                                                                                        ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                                                                        ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                                                                        ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                                                                        ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                                                                       ; Off           ;
-; Detect glitches                                                                            ; Off                                                                                       ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                                                                       ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                                                                       ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                       ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                                                                       ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                        ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                       ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                       ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                      ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                             ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                           ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                        ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                              ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                               ;               ;
+; Vector input source                                                                        ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/WaveformPistaB.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                ; On            ;
+; Check outputs                                                                              ; Off                                                                               ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                               ; Off           ;
+; Detect glitches                                                                            ; Off                                                                               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                               ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                              ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------+
 
 
 +----------------------+
@@ -94,55 +94,500 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      93.33 % ;
-; Total nodes checked                                 ; 15           ;
-; Total output ports checked                          ; 15           ;
-; Total output ports with complete 1/0-value coverage ; 14           ;
-; Total output ports with no 1/0-value coverage       ; 0            ;
-; Total output ports with no 1-value coverage         ; 0            ;
-; Total output ports with no 0-value coverage         ; 1            ;
+; Total coverage as a percentage                      ;      42.12 % ;
+; Total nodes checked                                 ; 292          ;
+; Total output ports checked                          ; 292          ;
+; Total output ports with complete 1/0-value coverage ; 123          ;
+; Total output ports with no 1/0-value coverage       ; 167          ;
+; Total output ports with no 1-value coverage         ; 167          ;
+; Total output ports with no 0-value coverage         ; 169          ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                        ;
-+------------------------+------------------------+------------------+
-; Node Name              ; Output Port Name       ; Output Port Type ;
-+------------------------+------------------------+------------------+
-; |LivesCounter|MenosSig ; |LivesCounter|MenosSig ; pin_out          ;
-; |LivesCounter|inst     ; |LivesCounter|inst     ; regout           ;
-; |LivesCounter|CLK      ; |LivesCounter|CLK      ; out              ;
-; |LivesCounter|MaisSig  ; |LivesCounter|MaisSig  ; pin_out          ;
-; |LivesCounter|inst2    ; |LivesCounter|inst2    ; regout           ;
-; |LivesCounter|inst2~0  ; |LivesCounter|inst2~0  ; out0             ;
-; |LivesCounter|inst2~1  ; |LivesCounter|inst2~1  ; out0             ;
-; |LivesCounter|inst2~2  ; |LivesCounter|inst2~2  ; out0             ;
-; |LivesCounter|inst3    ; |LivesCounter|inst3    ; out0             ;
-; |LivesCounter|inst1    ; |LivesCounter|inst1    ; regout           ;
-; |LivesCounter|inst1~0  ; |LivesCounter|inst1~0  ; out0             ;
-; |LivesCounter|inst1~1  ; |LivesCounter|inst1~1  ; out0             ;
-; |LivesCounter|inst1~2  ; |LivesCounter|inst1~2  ; out0             ;
-; |LivesCounter|Meio     ; |LivesCounter|Meio     ; pin_out          ;
-+------------------------+------------------------+------------------+
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |PistaB|Linha1              ; |PistaB|Linha1              ; pin_out          ;
+; |PistaB|inst27              ; |PistaB|inst27              ; regout           ;
+; |PistaB|ClockAnel           ; |PistaB|ClockAnel           ; out              ;
+; |PistaB|inst38              ; |PistaB|inst38              ; out0             ;
+; |PistaB|inst34              ; |PistaB|inst34              ; regout           ;
+; |PistaB|inst33              ; |PistaB|inst33              ; regout           ;
+; |PistaB|inst32              ; |PistaB|inst32              ; regout           ;
+; |PistaB|inst31              ; |PistaB|inst31              ; regout           ;
+; |PistaB|inst30              ; |PistaB|inst30              ; regout           ;
+; |PistaB|inst29              ; |PistaB|inst29              ; regout           ;
+; |PistaB|inst28              ; |PistaB|inst28              ; regout           ;
+; |PistaB|Linha2              ; |PistaB|Linha2              ; pin_out          ;
+; |PistaB|Linha3              ; |PistaB|Linha3              ; pin_out          ;
+; |PistaB|Linha4              ; |PistaB|Linha4              ; pin_out          ;
+; |PistaB|Linha5              ; |PistaB|Linha5              ; pin_out          ;
+; |PistaB|Linha6              ; |PistaB|Linha6              ; pin_out          ;
+; |PistaB|Linha7              ; |PistaB|Linha7              ; pin_out          ;
+; |PistaB|Linha8              ; |PistaB|Linha8              ; pin_out          ;
+; |PistaB|Out[0]              ; |PistaB|Out[0]              ; pin_out          ;
+; |PistaB|Out[2]              ; |PistaB|Out[2]              ; pin_out          ;
+; |PistaB|Out[4]              ; |PistaB|Out[4]              ; pin_out          ;
+; |PistaB|Out[6]              ; |PistaB|Out[6]              ; pin_out          ;
+; |PistaB|inst18[7]           ; |PistaB|inst18[7]           ; out0             ;
+; |PistaB|inst18[5]           ; |PistaB|inst18[5]           ; out0             ;
+; |PistaB|inst18[3]           ; |PistaB|inst18[3]           ; out0             ;
+; |PistaB|inst18[1]           ; |PistaB|inst18[1]           ; out0             ;
+; |PistaB|inst9[7]            ; |PistaB|inst9[7]            ; out0             ;
+; |PistaB|inst9[5]            ; |PistaB|inst9[5]            ; out0             ;
+; |PistaB|inst9[3]            ; |PistaB|inst9[3]            ; out0             ;
+; |PistaB|inst9[1]            ; |PistaB|inst9[1]            ; out0             ;
+; |PistaB|inst4[7]            ; |PistaB|inst4[7]            ; regout           ;
+; |PistaB|inst4[5]            ; |PistaB|inst4[5]            ; regout           ;
+; |PistaB|inst4[3]            ; |PistaB|inst4[3]            ; regout           ;
+; |PistaB|inst4[1]            ; |PistaB|inst4[1]            ; regout           ;
+; |PistaB|inst39              ; |PistaB|inst39              ; out0             ;
+; |PistaB|ClockPista          ; |PistaB|ClockPista          ; out              ;
+; |PistaB|inst11[7]           ; |PistaB|inst11[7]           ; out0             ;
+; |PistaB|inst11[5]           ; |PistaB|inst11[5]           ; out0             ;
+; |PistaB|inst11[3]           ; |PistaB|inst11[3]           ; out0             ;
+; |PistaB|inst11[1]           ; |PistaB|inst11[1]           ; out0             ;
+; |PistaB|inst1[7]            ; |PistaB|inst1[7]            ; regout           ;
+; |PistaB|inst1[5]            ; |PistaB|inst1[5]            ; regout           ;
+; |PistaB|inst1[3]            ; |PistaB|inst1[3]            ; regout           ;
+; |PistaB|inst1[1]            ; |PistaB|inst1[1]            ; regout           ;
+; |PistaB|inst[7]             ; |PistaB|inst[7]             ; regout           ;
+; |PistaB|inst[5]             ; |PistaB|inst[5]             ; regout           ;
+; |PistaB|inst[3]             ; |PistaB|inst[3]             ; regout           ;
+; |PistaB|inst[1]             ; |PistaB|inst[1]             ; regout           ;
+; |PistaB|inst10[7]           ; |PistaB|inst10[7]           ; out0             ;
+; |PistaB|inst10[5]           ; |PistaB|inst10[5]           ; out0             ;
+; |PistaB|inst10[3]           ; |PistaB|inst10[3]           ; out0             ;
+; |PistaB|inst10[1]           ; |PistaB|inst10[1]           ; out0             ;
+; |PistaB|inst12[7]           ; |PistaB|inst12[7]           ; out0             ;
+; |PistaB|inst12[5]           ; |PistaB|inst12[5]           ; out0             ;
+; |PistaB|inst12[3]           ; |PistaB|inst12[3]           ; out0             ;
+; |PistaB|inst12[1]           ; |PistaB|inst12[1]           ; out0             ;
+; |PistaB|inst2[7]            ; |PistaB|inst2[7]            ; regout           ;
+; |PistaB|inst2[5]            ; |PistaB|inst2[5]            ; regout           ;
+; |PistaB|inst2[3]            ; |PistaB|inst2[3]            ; regout           ;
+; |PistaB|inst2[1]            ; |PistaB|inst2[1]            ; regout           ;
+; |PistaB|inst14[7]           ; |PistaB|inst14[7]           ; out0             ;
+; |PistaB|inst14[5]           ; |PistaB|inst14[5]           ; out0             ;
+; |PistaB|inst14[3]           ; |PistaB|inst14[3]           ; out0             ;
+; |PistaB|inst14[1]           ; |PistaB|inst14[1]           ; out0             ;
+; |PistaB|inst7[7]            ; |PistaB|inst7[7]            ; regout           ;
+; |PistaB|inst7[5]            ; |PistaB|inst7[5]            ; regout           ;
+; |PistaB|inst7[3]            ; |PistaB|inst7[3]            ; regout           ;
+; |PistaB|inst7[1]            ; |PistaB|inst7[1]            ; regout           ;
+; |PistaB|inst3[7]            ; |PistaB|inst3[7]            ; regout           ;
+; |PistaB|inst3[5]            ; |PistaB|inst3[5]            ; regout           ;
+; |PistaB|inst3[3]            ; |PistaB|inst3[3]            ; regout           ;
+; |PistaB|inst3[1]            ; |PistaB|inst3[1]            ; regout           ;
+; |PistaB|inst13[7]           ; |PistaB|inst13[7]           ; out0             ;
+; |PistaB|inst13[5]           ; |PistaB|inst13[5]           ; out0             ;
+; |PistaB|inst13[3]           ; |PistaB|inst13[3]           ; out0             ;
+; |PistaB|inst13[1]           ; |PistaB|inst13[1]           ; out0             ;
+; |PistaB|inst15[7]           ; |PistaB|inst15[7]           ; out0             ;
+; |PistaB|inst15[5]           ; |PistaB|inst15[5]           ; out0             ;
+; |PistaB|inst15[3]           ; |PistaB|inst15[3]           ; out0             ;
+; |PistaB|inst15[1]           ; |PistaB|inst15[1]           ; out0             ;
+; |PistaB|inst6[7]            ; |PistaB|inst6[7]            ; regout           ;
+; |PistaB|inst6[5]            ; |PistaB|inst6[5]            ; regout           ;
+; |PistaB|inst6[3]            ; |PistaB|inst6[3]            ; regout           ;
+; |PistaB|inst6[1]            ; |PistaB|inst6[1]            ; regout           ;
+; |PistaB|inst16[7]           ; |PistaB|inst16[7]           ; out0             ;
+; |PistaB|inst16[5]           ; |PistaB|inst16[5]           ; out0             ;
+; |PistaB|inst16[3]           ; |PistaB|inst16[3]           ; out0             ;
+; |PistaB|inst16[1]           ; |PistaB|inst16[1]           ; out0             ;
+; |PistaB|inst5[7]            ; |PistaB|inst5[7]            ; regout           ;
+; |PistaB|inst5[5]            ; |PistaB|inst5[5]            ; regout           ;
+; |PistaB|inst5[3]            ; |PistaB|inst5[3]            ; regout           ;
+; |PistaB|inst5[1]            ; |PistaB|inst5[1]            ; regout           ;
+; |PistaB|fdiv:inst35|cont[6] ; |PistaB|fdiv:inst35|cont[6] ; regout           ;
+; |PistaB|fdiv:inst35|cont[5] ; |PistaB|fdiv:inst35|cont[5] ; regout           ;
+; |PistaB|fdiv:inst35|cont[4] ; |PistaB|fdiv:inst35|cont[4] ; regout           ;
+; |PistaB|fdiv:inst35|cont[3] ; |PistaB|fdiv:inst35|cont[3] ; regout           ;
+; |PistaB|fdiv:inst35|cont[2] ; |PistaB|fdiv:inst35|cont[2] ; regout           ;
+; |PistaB|fdiv:inst35|cont[1] ; |PistaB|fdiv:inst35|cont[1] ; regout           ;
+; |PistaB|fdiv:inst35|cont[0] ; |PistaB|fdiv:inst35|cont[0] ; regout           ;
+; |PistaB|fdiv:inst35|cont~23 ; |PistaB|fdiv:inst35|cont~23 ; out              ;
+; |PistaB|fdiv:inst35|cont~24 ; |PistaB|fdiv:inst35|cont~24 ; out              ;
+; |PistaB|fdiv:inst35|cont~25 ; |PistaB|fdiv:inst35|cont~25 ; out              ;
+; |PistaB|fdiv:inst35|cont~26 ; |PistaB|fdiv:inst35|cont~26 ; out              ;
+; |PistaB|fdiv:inst35|cont~27 ; |PistaB|fdiv:inst35|cont~27 ; out              ;
+; |PistaB|fdiv:inst35|cont~28 ; |PistaB|fdiv:inst35|cont~28 ; out              ;
+; |PistaB|fdiv:inst35|cont~29 ; |PistaB|fdiv:inst35|cont~29 ; out              ;
+; |PistaB|fdiv:inst35|cont~30 ; |PistaB|fdiv:inst35|cont~30 ; out              ;
+; |PistaB|fdiv:inst35|cont~31 ; |PistaB|fdiv:inst35|cont~31 ; out              ;
+; |PistaB|fdiv:inst35|Add0~0  ; |PistaB|fdiv:inst35|Add0~0  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~1  ; |PistaB|fdiv:inst35|Add0~1  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~2  ; |PistaB|fdiv:inst35|Add0~2  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~3  ; |PistaB|fdiv:inst35|Add0~3  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~4  ; |PistaB|fdiv:inst35|Add0~4  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~5  ; |PistaB|fdiv:inst35|Add0~5  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~6  ; |PistaB|fdiv:inst35|Add0~6  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~7  ; |PistaB|fdiv:inst35|Add0~7  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~8  ; |PistaB|fdiv:inst35|Add0~8  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~9  ; |PistaB|fdiv:inst35|Add0~9  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~10 ; |PistaB|fdiv:inst35|Add0~10 ; out0             ;
+; |PistaB|fdiv:inst35|Add0~11 ; |PistaB|fdiv:inst35|Add0~11 ; out0             ;
+; |PistaB|fdiv:inst35|Add0~12 ; |PistaB|fdiv:inst35|Add0~12 ; out0             ;
+; |PistaB|fdiv:inst35|Add0~13 ; |PistaB|fdiv:inst35|Add0~13 ; out0             ;
+; |PistaB|fdiv:inst35|Add0~14 ; |PistaB|fdiv:inst35|Add0~14 ; out0             ;
++-----------------------------+-----------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-------------------------------------------------+
-; Missing 1-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++--------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                       ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |PistaB|Out[1]               ; |PistaB|Out[1]               ; pin_out          ;
+; |PistaB|Out[3]               ; |PistaB|Out[3]               ; pin_out          ;
+; |PistaB|Out[5]               ; |PistaB|Out[5]               ; pin_out          ;
+; |PistaB|Out[7]               ; |PistaB|Out[7]               ; pin_out          ;
+; |PistaB|inst18[6]            ; |PistaB|inst18[6]            ; out0             ;
+; |PistaB|inst18[4]            ; |PistaB|inst18[4]            ; out0             ;
+; |PistaB|inst18[2]            ; |PistaB|inst18[2]            ; out0             ;
+; |PistaB|inst18[0]            ; |PistaB|inst18[0]            ; out0             ;
+; |PistaB|inst9[6]             ; |PistaB|inst9[6]             ; out0             ;
+; |PistaB|inst9[4]             ; |PistaB|inst9[4]             ; out0             ;
+; |PistaB|inst9[2]             ; |PistaB|inst9[2]             ; out0             ;
+; |PistaB|inst9[0]             ; |PistaB|inst9[0]             ; out0             ;
+; |PistaB|inst4[6]             ; |PistaB|inst4[6]             ; regout           ;
+; |PistaB|inst4[4]             ; |PistaB|inst4[4]             ; regout           ;
+; |PistaB|inst4[2]             ; |PistaB|inst4[2]             ; regout           ;
+; |PistaB|inst4[0]             ; |PistaB|inst4[0]             ; regout           ;
+; |PistaB|inst11[6]            ; |PistaB|inst11[6]            ; out0             ;
+; |PistaB|inst11[4]            ; |PistaB|inst11[4]            ; out0             ;
+; |PistaB|inst11[2]            ; |PistaB|inst11[2]            ; out0             ;
+; |PistaB|inst11[0]            ; |PistaB|inst11[0]            ; out0             ;
+; |PistaB|inst1[6]             ; |PistaB|inst1[6]             ; regout           ;
+; |PistaB|inst1[4]             ; |PistaB|inst1[4]             ; regout           ;
+; |PistaB|inst1[2]             ; |PistaB|inst1[2]             ; regout           ;
+; |PistaB|inst1[0]             ; |PistaB|inst1[0]             ; regout           ;
+; |PistaB|inst[6]              ; |PistaB|inst[6]              ; regout           ;
+; |PistaB|inst[4]              ; |PistaB|inst[4]              ; regout           ;
+; |PistaB|inst[2]              ; |PistaB|inst[2]              ; regout           ;
+; |PistaB|inst[0]              ; |PistaB|inst[0]              ; regout           ;
+; |PistaB|inst10[6]            ; |PistaB|inst10[6]            ; out0             ;
+; |PistaB|inst10[4]            ; |PistaB|inst10[4]            ; out0             ;
+; |PistaB|inst10[2]            ; |PistaB|inst10[2]            ; out0             ;
+; |PistaB|inst10[0]            ; |PistaB|inst10[0]            ; out0             ;
+; |PistaB|inst12[6]            ; |PistaB|inst12[6]            ; out0             ;
+; |PistaB|inst12[4]            ; |PistaB|inst12[4]            ; out0             ;
+; |PistaB|inst12[2]            ; |PistaB|inst12[2]            ; out0             ;
+; |PistaB|inst12[0]            ; |PistaB|inst12[0]            ; out0             ;
+; |PistaB|inst2[6]             ; |PistaB|inst2[6]             ; regout           ;
+; |PistaB|inst2[4]             ; |PistaB|inst2[4]             ; regout           ;
+; |PistaB|inst2[2]             ; |PistaB|inst2[2]             ; regout           ;
+; |PistaB|inst2[0]             ; |PistaB|inst2[0]             ; regout           ;
+; |PistaB|inst14[6]            ; |PistaB|inst14[6]            ; out0             ;
+; |PistaB|inst14[4]            ; |PistaB|inst14[4]            ; out0             ;
+; |PistaB|inst14[2]            ; |PistaB|inst14[2]            ; out0             ;
+; |PistaB|inst14[0]            ; |PistaB|inst14[0]            ; out0             ;
+; |PistaB|inst7[6]             ; |PistaB|inst7[6]             ; regout           ;
+; |PistaB|inst7[4]             ; |PistaB|inst7[4]             ; regout           ;
+; |PistaB|inst7[2]             ; |PistaB|inst7[2]             ; regout           ;
+; |PistaB|inst7[0]             ; |PistaB|inst7[0]             ; regout           ;
+; |PistaB|inst3[6]             ; |PistaB|inst3[6]             ; regout           ;
+; |PistaB|inst3[4]             ; |PistaB|inst3[4]             ; regout           ;
+; |PistaB|inst3[2]             ; |PistaB|inst3[2]             ; regout           ;
+; |PistaB|inst3[0]             ; |PistaB|inst3[0]             ; regout           ;
+; |PistaB|inst13[6]            ; |PistaB|inst13[6]            ; out0             ;
+; |PistaB|inst13[4]            ; |PistaB|inst13[4]            ; out0             ;
+; |PistaB|inst13[2]            ; |PistaB|inst13[2]            ; out0             ;
+; |PistaB|inst13[0]            ; |PistaB|inst13[0]            ; out0             ;
+; |PistaB|inst15[6]            ; |PistaB|inst15[6]            ; out0             ;
+; |PistaB|inst15[4]            ; |PistaB|inst15[4]            ; out0             ;
+; |PistaB|inst15[2]            ; |PistaB|inst15[2]            ; out0             ;
+; |PistaB|inst15[0]            ; |PistaB|inst15[0]            ; out0             ;
+; |PistaB|inst6[6]             ; |PistaB|inst6[6]             ; regout           ;
+; |PistaB|inst6[4]             ; |PistaB|inst6[4]             ; regout           ;
+; |PistaB|inst6[2]             ; |PistaB|inst6[2]             ; regout           ;
+; |PistaB|inst6[0]             ; |PistaB|inst6[0]             ; regout           ;
+; |PistaB|inst16[6]            ; |PistaB|inst16[6]            ; out0             ;
+; |PistaB|inst16[4]            ; |PistaB|inst16[4]            ; out0             ;
+; |PistaB|inst16[2]            ; |PistaB|inst16[2]            ; out0             ;
+; |PistaB|inst16[0]            ; |PistaB|inst16[0]            ; out0             ;
+; |PistaB|inst5[6]             ; |PistaB|inst5[6]             ; regout           ;
+; |PistaB|inst5[4]             ; |PistaB|inst5[4]             ; regout           ;
+; |PistaB|inst5[2]             ; |PistaB|inst5[2]             ; regout           ;
+; |PistaB|inst5[0]             ; |PistaB|inst5[0]             ; regout           ;
+; |PistaB|fdiv:inst35|clkout   ; |PistaB|fdiv:inst35|clkout   ; regout           ;
+; |PistaB|fdiv:inst35|cont~0   ; |PistaB|fdiv:inst35|cont~0   ; out              ;
+; |PistaB|fdiv:inst35|cont~1   ; |PistaB|fdiv:inst35|cont~1   ; out              ;
+; |PistaB|fdiv:inst35|cont~2   ; |PistaB|fdiv:inst35|cont~2   ; out              ;
+; |PistaB|fdiv:inst35|cont~3   ; |PistaB|fdiv:inst35|cont~3   ; out              ;
+; |PistaB|fdiv:inst35|cont~4   ; |PistaB|fdiv:inst35|cont~4   ; out              ;
+; |PistaB|fdiv:inst35|cont~5   ; |PistaB|fdiv:inst35|cont~5   ; out              ;
+; |PistaB|fdiv:inst35|cont~6   ; |PistaB|fdiv:inst35|cont~6   ; out              ;
+; |PistaB|fdiv:inst35|cont~7   ; |PistaB|fdiv:inst35|cont~7   ; out              ;
+; |PistaB|fdiv:inst35|cont~8   ; |PistaB|fdiv:inst35|cont~8   ; out              ;
+; |PistaB|fdiv:inst35|cont~9   ; |PistaB|fdiv:inst35|cont~9   ; out              ;
+; |PistaB|fdiv:inst35|cont~10  ; |PistaB|fdiv:inst35|cont~10  ; out              ;
+; |PistaB|fdiv:inst35|cont~11  ; |PistaB|fdiv:inst35|cont~11  ; out              ;
+; |PistaB|fdiv:inst35|cont~12  ; |PistaB|fdiv:inst35|cont~12  ; out              ;
+; |PistaB|fdiv:inst35|cont~13  ; |PistaB|fdiv:inst35|cont~13  ; out              ;
+; |PistaB|fdiv:inst35|cont~14  ; |PistaB|fdiv:inst35|cont~14  ; out              ;
+; |PistaB|fdiv:inst35|cont~15  ; |PistaB|fdiv:inst35|cont~15  ; out              ;
+; |PistaB|fdiv:inst35|cont~16  ; |PistaB|fdiv:inst35|cont~16  ; out              ;
+; |PistaB|fdiv:inst35|cont~17  ; |PistaB|fdiv:inst35|cont~17  ; out              ;
+; |PistaB|fdiv:inst35|cont~18  ; |PistaB|fdiv:inst35|cont~18  ; out              ;
+; |PistaB|fdiv:inst35|cont~19  ; |PistaB|fdiv:inst35|cont~19  ; out              ;
+; |PistaB|fdiv:inst35|cont~20  ; |PistaB|fdiv:inst35|cont~20  ; out              ;
+; |PistaB|fdiv:inst35|cont~21  ; |PistaB|fdiv:inst35|cont~21  ; out              ;
+; |PistaB|fdiv:inst35|cont~22  ; |PistaB|fdiv:inst35|cont~22  ; out              ;
+; |PistaB|fdiv:inst35|cont[8]  ; |PistaB|fdiv:inst35|cont[8]  ; regout           ;
+; |PistaB|fdiv:inst35|cont[9]  ; |PistaB|fdiv:inst35|cont[9]  ; regout           ;
+; |PistaB|fdiv:inst35|cont[10] ; |PistaB|fdiv:inst35|cont[10] ; regout           ;
+; |PistaB|fdiv:inst35|cont[11] ; |PistaB|fdiv:inst35|cont[11] ; regout           ;
+; |PistaB|fdiv:inst35|cont[12] ; |PistaB|fdiv:inst35|cont[12] ; regout           ;
+; |PistaB|fdiv:inst35|cont[13] ; |PistaB|fdiv:inst35|cont[13] ; regout           ;
+; |PistaB|fdiv:inst35|cont[14] ; |PistaB|fdiv:inst35|cont[14] ; regout           ;
+; |PistaB|fdiv:inst35|cont[15] ; |PistaB|fdiv:inst35|cont[15] ; regout           ;
+; |PistaB|fdiv:inst35|cont[16] ; |PistaB|fdiv:inst35|cont[16] ; regout           ;
+; |PistaB|fdiv:inst35|cont[17] ; |PistaB|fdiv:inst35|cont[17] ; regout           ;
+; |PistaB|fdiv:inst35|cont[18] ; |PistaB|fdiv:inst35|cont[18] ; regout           ;
+; |PistaB|fdiv:inst35|cont[19] ; |PistaB|fdiv:inst35|cont[19] ; regout           ;
+; |PistaB|fdiv:inst35|cont[20] ; |PistaB|fdiv:inst35|cont[20] ; regout           ;
+; |PistaB|fdiv:inst35|cont[21] ; |PistaB|fdiv:inst35|cont[21] ; regout           ;
+; |PistaB|fdiv:inst35|cont[22] ; |PistaB|fdiv:inst35|cont[22] ; regout           ;
+; |PistaB|fdiv:inst35|cont[23] ; |PistaB|fdiv:inst35|cont[23] ; regout           ;
+; |PistaB|fdiv:inst35|cont[24] ; |PistaB|fdiv:inst35|cont[24] ; regout           ;
+; |PistaB|fdiv:inst35|cont[25] ; |PistaB|fdiv:inst35|cont[25] ; regout           ;
+; |PistaB|fdiv:inst35|cont[26] ; |PistaB|fdiv:inst35|cont[26] ; regout           ;
+; |PistaB|fdiv:inst35|cont[27] ; |PistaB|fdiv:inst35|cont[27] ; regout           ;
+; |PistaB|fdiv:inst35|cont[28] ; |PistaB|fdiv:inst35|cont[28] ; regout           ;
+; |PistaB|fdiv:inst35|cont[29] ; |PistaB|fdiv:inst35|cont[29] ; regout           ;
+; |PistaB|fdiv:inst35|cont[30] ; |PistaB|fdiv:inst35|cont[30] ; regout           ;
+; |PistaB|fdiv:inst35|cont[31] ; |PistaB|fdiv:inst35|cont[31] ; regout           ;
+; |PistaB|fdiv:inst35|Add0~15  ; |PistaB|fdiv:inst35|Add0~15  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~16  ; |PistaB|fdiv:inst35|Add0~16  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~17  ; |PistaB|fdiv:inst35|Add0~17  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~18  ; |PistaB|fdiv:inst35|Add0~18  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~19  ; |PistaB|fdiv:inst35|Add0~19  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~20  ; |PistaB|fdiv:inst35|Add0~20  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~21  ; |PistaB|fdiv:inst35|Add0~21  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~22  ; |PistaB|fdiv:inst35|Add0~22  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~23  ; |PistaB|fdiv:inst35|Add0~23  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~24  ; |PistaB|fdiv:inst35|Add0~24  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~25  ; |PistaB|fdiv:inst35|Add0~25  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~26  ; |PistaB|fdiv:inst35|Add0~26  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~27  ; |PistaB|fdiv:inst35|Add0~27  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~28  ; |PistaB|fdiv:inst35|Add0~28  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~29  ; |PistaB|fdiv:inst35|Add0~29  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~30  ; |PistaB|fdiv:inst35|Add0~30  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~31  ; |PistaB|fdiv:inst35|Add0~31  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~32  ; |PistaB|fdiv:inst35|Add0~32  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~33  ; |PistaB|fdiv:inst35|Add0~33  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~34  ; |PistaB|fdiv:inst35|Add0~34  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~35  ; |PistaB|fdiv:inst35|Add0~35  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~36  ; |PistaB|fdiv:inst35|Add0~36  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~37  ; |PistaB|fdiv:inst35|Add0~37  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~38  ; |PistaB|fdiv:inst35|Add0~38  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~39  ; |PistaB|fdiv:inst35|Add0~39  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~40  ; |PistaB|fdiv:inst35|Add0~40  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~41  ; |PistaB|fdiv:inst35|Add0~41  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~42  ; |PistaB|fdiv:inst35|Add0~42  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~43  ; |PistaB|fdiv:inst35|Add0~43  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~44  ; |PistaB|fdiv:inst35|Add0~44  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~45  ; |PistaB|fdiv:inst35|Add0~45  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~46  ; |PistaB|fdiv:inst35|Add0~46  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~47  ; |PistaB|fdiv:inst35|Add0~47  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~48  ; |PistaB|fdiv:inst35|Add0~48  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~49  ; |PistaB|fdiv:inst35|Add0~49  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~50  ; |PistaB|fdiv:inst35|Add0~50  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~51  ; |PistaB|fdiv:inst35|Add0~51  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~52  ; |PistaB|fdiv:inst35|Add0~52  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~53  ; |PistaB|fdiv:inst35|Add0~53  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~54  ; |PistaB|fdiv:inst35|Add0~54  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~55  ; |PistaB|fdiv:inst35|Add0~55  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~56  ; |PistaB|fdiv:inst35|Add0~56  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~57  ; |PistaB|fdiv:inst35|Add0~57  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~58  ; |PistaB|fdiv:inst35|Add0~58  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~59  ; |PistaB|fdiv:inst35|Add0~59  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~60  ; |PistaB|fdiv:inst35|Add0~60  ; out0             ;
+; |PistaB|fdiv:inst35|Equal0~0 ; |PistaB|fdiv:inst35|Equal0~0 ; out0             ;
++------------------------------+------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+----------------------------------------------------------------+
-; Missing 0-Value Coverage                                       ;
-+----------------------+----------------------+------------------+
-; Node Name            ; Output Port Name     ; Output Port Type ;
-+----------------------+----------------------+------------------+
-; |LivesCounter|Preset ; |LivesCounter|Preset ; out              ;
-+----------------------+----------------------+------------------+
++--------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                       ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |PistaB|inst37               ; |PistaB|inst37               ; out0             ;
+; |PistaB|Out[1]               ; |PistaB|Out[1]               ; pin_out          ;
+; |PistaB|Out[3]               ; |PistaB|Out[3]               ; pin_out          ;
+; |PistaB|Out[5]               ; |PistaB|Out[5]               ; pin_out          ;
+; |PistaB|Out[7]               ; |PistaB|Out[7]               ; pin_out          ;
+; |PistaB|inst18[6]            ; |PistaB|inst18[6]            ; out0             ;
+; |PistaB|inst18[4]            ; |PistaB|inst18[4]            ; out0             ;
+; |PistaB|inst18[2]            ; |PistaB|inst18[2]            ; out0             ;
+; |PistaB|inst18[0]            ; |PistaB|inst18[0]            ; out0             ;
+; |PistaB|inst9[6]             ; |PistaB|inst9[6]             ; out0             ;
+; |PistaB|inst9[4]             ; |PistaB|inst9[4]             ; out0             ;
+; |PistaB|inst9[2]             ; |PistaB|inst9[2]             ; out0             ;
+; |PistaB|inst9[0]             ; |PistaB|inst9[0]             ; out0             ;
+; |PistaB|inst4[6]             ; |PistaB|inst4[6]             ; regout           ;
+; |PistaB|inst4[4]             ; |PistaB|inst4[4]             ; regout           ;
+; |PistaB|inst4[2]             ; |PistaB|inst4[2]             ; regout           ;
+; |PistaB|inst4[0]             ; |PistaB|inst4[0]             ; regout           ;
+; |PistaB|inst11[6]            ; |PistaB|inst11[6]            ; out0             ;
+; |PistaB|inst11[4]            ; |PistaB|inst11[4]            ; out0             ;
+; |PistaB|inst11[2]            ; |PistaB|inst11[2]            ; out0             ;
+; |PistaB|inst11[0]            ; |PistaB|inst11[0]            ; out0             ;
+; |PistaB|inst1[6]             ; |PistaB|inst1[6]             ; regout           ;
+; |PistaB|inst1[4]             ; |PistaB|inst1[4]             ; regout           ;
+; |PistaB|inst1[2]             ; |PistaB|inst1[2]             ; regout           ;
+; |PistaB|inst1[0]             ; |PistaB|inst1[0]             ; regout           ;
+; |PistaB|inst[6]              ; |PistaB|inst[6]              ; regout           ;
+; |PistaB|inst[4]              ; |PistaB|inst[4]              ; regout           ;
+; |PistaB|inst[2]              ; |PistaB|inst[2]              ; regout           ;
+; |PistaB|inst[0]              ; |PistaB|inst[0]              ; regout           ;
+; |PistaB|inst10[6]            ; |PistaB|inst10[6]            ; out0             ;
+; |PistaB|inst10[4]            ; |PistaB|inst10[4]            ; out0             ;
+; |PistaB|inst10[2]            ; |PistaB|inst10[2]            ; out0             ;
+; |PistaB|inst10[0]            ; |PistaB|inst10[0]            ; out0             ;
+; |PistaB|inst12[6]            ; |PistaB|inst12[6]            ; out0             ;
+; |PistaB|inst12[4]            ; |PistaB|inst12[4]            ; out0             ;
+; |PistaB|inst12[2]            ; |PistaB|inst12[2]            ; out0             ;
+; |PistaB|inst12[0]            ; |PistaB|inst12[0]            ; out0             ;
+; |PistaB|inst2[6]             ; |PistaB|inst2[6]             ; regout           ;
+; |PistaB|inst2[4]             ; |PistaB|inst2[4]             ; regout           ;
+; |PistaB|inst2[2]             ; |PistaB|inst2[2]             ; regout           ;
+; |PistaB|inst2[0]             ; |PistaB|inst2[0]             ; regout           ;
+; |PistaB|inst14[6]            ; |PistaB|inst14[6]            ; out0             ;
+; |PistaB|inst14[4]            ; |PistaB|inst14[4]            ; out0             ;
+; |PistaB|inst14[2]            ; |PistaB|inst14[2]            ; out0             ;
+; |PistaB|inst14[0]            ; |PistaB|inst14[0]            ; out0             ;
+; |PistaB|inst7[6]             ; |PistaB|inst7[6]             ; regout           ;
+; |PistaB|inst7[4]             ; |PistaB|inst7[4]             ; regout           ;
+; |PistaB|inst7[2]             ; |PistaB|inst7[2]             ; regout           ;
+; |PistaB|inst7[0]             ; |PistaB|inst7[0]             ; regout           ;
+; |PistaB|inst3[6]             ; |PistaB|inst3[6]             ; regout           ;
+; |PistaB|inst3[4]             ; |PistaB|inst3[4]             ; regout           ;
+; |PistaB|inst3[2]             ; |PistaB|inst3[2]             ; regout           ;
+; |PistaB|inst3[0]             ; |PistaB|inst3[0]             ; regout           ;
+; |PistaB|inst13[6]            ; |PistaB|inst13[6]            ; out0             ;
+; |PistaB|inst13[4]            ; |PistaB|inst13[4]            ; out0             ;
+; |PistaB|inst13[2]            ; |PistaB|inst13[2]            ; out0             ;
+; |PistaB|inst13[0]            ; |PistaB|inst13[0]            ; out0             ;
+; |PistaB|inst15[6]            ; |PistaB|inst15[6]            ; out0             ;
+; |PistaB|inst15[4]            ; |PistaB|inst15[4]            ; out0             ;
+; |PistaB|inst15[2]            ; |PistaB|inst15[2]            ; out0             ;
+; |PistaB|inst15[0]            ; |PistaB|inst15[0]            ; out0             ;
+; |PistaB|inst6[6]             ; |PistaB|inst6[6]             ; regout           ;
+; |PistaB|inst6[4]             ; |PistaB|inst6[4]             ; regout           ;
+; |PistaB|inst6[2]             ; |PistaB|inst6[2]             ; regout           ;
+; |PistaB|inst6[0]             ; |PistaB|inst6[0]             ; regout           ;
+; |PistaB|inst16[6]            ; |PistaB|inst16[6]            ; out0             ;
+; |PistaB|inst16[4]            ; |PistaB|inst16[4]            ; out0             ;
+; |PistaB|inst16[2]            ; |PistaB|inst16[2]            ; out0             ;
+; |PistaB|inst16[0]            ; |PistaB|inst16[0]            ; out0             ;
+; |PistaB|inst5[6]             ; |PistaB|inst5[6]             ; regout           ;
+; |PistaB|inst5[4]             ; |PistaB|inst5[4]             ; regout           ;
+; |PistaB|inst5[2]             ; |PistaB|inst5[2]             ; regout           ;
+; |PistaB|inst5[0]             ; |PistaB|inst5[0]             ; regout           ;
+; |PistaB|fdiv:inst35|cont[7]  ; |PistaB|fdiv:inst35|cont[7]  ; regout           ;
+; |PistaB|fdiv:inst35|clkout   ; |PistaB|fdiv:inst35|clkout   ; regout           ;
+; |PistaB|fdiv:inst35|cont~0   ; |PistaB|fdiv:inst35|cont~0   ; out              ;
+; |PistaB|fdiv:inst35|cont~1   ; |PistaB|fdiv:inst35|cont~1   ; out              ;
+; |PistaB|fdiv:inst35|cont~2   ; |PistaB|fdiv:inst35|cont~2   ; out              ;
+; |PistaB|fdiv:inst35|cont~3   ; |PistaB|fdiv:inst35|cont~3   ; out              ;
+; |PistaB|fdiv:inst35|cont~4   ; |PistaB|fdiv:inst35|cont~4   ; out              ;
+; |PistaB|fdiv:inst35|cont~5   ; |PistaB|fdiv:inst35|cont~5   ; out              ;
+; |PistaB|fdiv:inst35|cont~6   ; |PistaB|fdiv:inst35|cont~6   ; out              ;
+; |PistaB|fdiv:inst35|cont~7   ; |PistaB|fdiv:inst35|cont~7   ; out              ;
+; |PistaB|fdiv:inst35|cont~8   ; |PistaB|fdiv:inst35|cont~8   ; out              ;
+; |PistaB|fdiv:inst35|cont~9   ; |PistaB|fdiv:inst35|cont~9   ; out              ;
+; |PistaB|fdiv:inst35|cont~10  ; |PistaB|fdiv:inst35|cont~10  ; out              ;
+; |PistaB|fdiv:inst35|cont~11  ; |PistaB|fdiv:inst35|cont~11  ; out              ;
+; |PistaB|fdiv:inst35|cont~12  ; |PistaB|fdiv:inst35|cont~12  ; out              ;
+; |PistaB|fdiv:inst35|cont~13  ; |PistaB|fdiv:inst35|cont~13  ; out              ;
+; |PistaB|fdiv:inst35|cont~14  ; |PistaB|fdiv:inst35|cont~14  ; out              ;
+; |PistaB|fdiv:inst35|cont~15  ; |PistaB|fdiv:inst35|cont~15  ; out              ;
+; |PistaB|fdiv:inst35|cont~16  ; |PistaB|fdiv:inst35|cont~16  ; out              ;
+; |PistaB|fdiv:inst35|cont~17  ; |PistaB|fdiv:inst35|cont~17  ; out              ;
+; |PistaB|fdiv:inst35|cont~18  ; |PistaB|fdiv:inst35|cont~18  ; out              ;
+; |PistaB|fdiv:inst35|cont~19  ; |PistaB|fdiv:inst35|cont~19  ; out              ;
+; |PistaB|fdiv:inst35|cont~20  ; |PistaB|fdiv:inst35|cont~20  ; out              ;
+; |PistaB|fdiv:inst35|cont~21  ; |PistaB|fdiv:inst35|cont~21  ; out              ;
+; |PistaB|fdiv:inst35|cont~22  ; |PistaB|fdiv:inst35|cont~22  ; out              ;
+; |PistaB|fdiv:inst35|cont[8]  ; |PistaB|fdiv:inst35|cont[8]  ; regout           ;
+; |PistaB|fdiv:inst35|cont[9]  ; |PistaB|fdiv:inst35|cont[9]  ; regout           ;
+; |PistaB|fdiv:inst35|cont[10] ; |PistaB|fdiv:inst35|cont[10] ; regout           ;
+; |PistaB|fdiv:inst35|cont[11] ; |PistaB|fdiv:inst35|cont[11] ; regout           ;
+; |PistaB|fdiv:inst35|cont[12] ; |PistaB|fdiv:inst35|cont[12] ; regout           ;
+; |PistaB|fdiv:inst35|cont[13] ; |PistaB|fdiv:inst35|cont[13] ; regout           ;
+; |PistaB|fdiv:inst35|cont[14] ; |PistaB|fdiv:inst35|cont[14] ; regout           ;
+; |PistaB|fdiv:inst35|cont[15] ; |PistaB|fdiv:inst35|cont[15] ; regout           ;
+; |PistaB|fdiv:inst35|cont[16] ; |PistaB|fdiv:inst35|cont[16] ; regout           ;
+; |PistaB|fdiv:inst35|cont[17] ; |PistaB|fdiv:inst35|cont[17] ; regout           ;
+; |PistaB|fdiv:inst35|cont[18] ; |PistaB|fdiv:inst35|cont[18] ; regout           ;
+; |PistaB|fdiv:inst35|cont[19] ; |PistaB|fdiv:inst35|cont[19] ; regout           ;
+; |PistaB|fdiv:inst35|cont[20] ; |PistaB|fdiv:inst35|cont[20] ; regout           ;
+; |PistaB|fdiv:inst35|cont[21] ; |PistaB|fdiv:inst35|cont[21] ; regout           ;
+; |PistaB|fdiv:inst35|cont[22] ; |PistaB|fdiv:inst35|cont[22] ; regout           ;
+; |PistaB|fdiv:inst35|cont[23] ; |PistaB|fdiv:inst35|cont[23] ; regout           ;
+; |PistaB|fdiv:inst35|cont[24] ; |PistaB|fdiv:inst35|cont[24] ; regout           ;
+; |PistaB|fdiv:inst35|cont[25] ; |PistaB|fdiv:inst35|cont[25] ; regout           ;
+; |PistaB|fdiv:inst35|cont[26] ; |PistaB|fdiv:inst35|cont[26] ; regout           ;
+; |PistaB|fdiv:inst35|cont[27] ; |PistaB|fdiv:inst35|cont[27] ; regout           ;
+; |PistaB|fdiv:inst35|cont[28] ; |PistaB|fdiv:inst35|cont[28] ; regout           ;
+; |PistaB|fdiv:inst35|cont[29] ; |PistaB|fdiv:inst35|cont[29] ; regout           ;
+; |PistaB|fdiv:inst35|cont[30] ; |PistaB|fdiv:inst35|cont[30] ; regout           ;
+; |PistaB|fdiv:inst35|cont[31] ; |PistaB|fdiv:inst35|cont[31] ; regout           ;
+; |PistaB|fdiv:inst35|Add0~15  ; |PistaB|fdiv:inst35|Add0~15  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~16  ; |PistaB|fdiv:inst35|Add0~16  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~17  ; |PistaB|fdiv:inst35|Add0~17  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~18  ; |PistaB|fdiv:inst35|Add0~18  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~19  ; |PistaB|fdiv:inst35|Add0~19  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~20  ; |PistaB|fdiv:inst35|Add0~20  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~21  ; |PistaB|fdiv:inst35|Add0~21  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~22  ; |PistaB|fdiv:inst35|Add0~22  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~23  ; |PistaB|fdiv:inst35|Add0~23  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~24  ; |PistaB|fdiv:inst35|Add0~24  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~25  ; |PistaB|fdiv:inst35|Add0~25  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~26  ; |PistaB|fdiv:inst35|Add0~26  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~27  ; |PistaB|fdiv:inst35|Add0~27  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~28  ; |PistaB|fdiv:inst35|Add0~28  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~29  ; |PistaB|fdiv:inst35|Add0~29  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~30  ; |PistaB|fdiv:inst35|Add0~30  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~31  ; |PistaB|fdiv:inst35|Add0~31  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~32  ; |PistaB|fdiv:inst35|Add0~32  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~33  ; |PistaB|fdiv:inst35|Add0~33  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~34  ; |PistaB|fdiv:inst35|Add0~34  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~35  ; |PistaB|fdiv:inst35|Add0~35  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~36  ; |PistaB|fdiv:inst35|Add0~36  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~37  ; |PistaB|fdiv:inst35|Add0~37  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~38  ; |PistaB|fdiv:inst35|Add0~38  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~39  ; |PistaB|fdiv:inst35|Add0~39  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~40  ; |PistaB|fdiv:inst35|Add0~40  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~41  ; |PistaB|fdiv:inst35|Add0~41  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~42  ; |PistaB|fdiv:inst35|Add0~42  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~43  ; |PistaB|fdiv:inst35|Add0~43  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~44  ; |PistaB|fdiv:inst35|Add0~44  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~45  ; |PistaB|fdiv:inst35|Add0~45  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~46  ; |PistaB|fdiv:inst35|Add0~46  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~47  ; |PistaB|fdiv:inst35|Add0~47  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~48  ; |PistaB|fdiv:inst35|Add0~48  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~49  ; |PistaB|fdiv:inst35|Add0~49  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~50  ; |PistaB|fdiv:inst35|Add0~50  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~51  ; |PistaB|fdiv:inst35|Add0~51  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~52  ; |PistaB|fdiv:inst35|Add0~52  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~53  ; |PistaB|fdiv:inst35|Add0~53  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~54  ; |PistaB|fdiv:inst35|Add0~54  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~55  ; |PistaB|fdiv:inst35|Add0~55  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~56  ; |PistaB|fdiv:inst35|Add0~56  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~57  ; |PistaB|fdiv:inst35|Add0~57  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~58  ; |PistaB|fdiv:inst35|Add0~58  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~59  ; |PistaB|fdiv:inst35|Add0~59  ; out0             ;
+; |PistaB|fdiv:inst35|Add0~60  ; |PistaB|fdiv:inst35|Add0~60  ; out0             ;
+; |PistaB|fdiv:inst35|Equal0~0 ; |PistaB|fdiv:inst35|Equal0~0 ; out0             ;
++------------------------------+------------------------------+------------------+
 
 
 +---------------------+
@@ -158,19 +603,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Jun 29 21:37:58 2017
+    Info: Processing started: Mon Jul 03 10:37:54 2017
 Info: Command: quartus_sim --simulation_results_format=VWF RacingGame -c RacingGame
-Info (324025): Using vector source file "C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/WaveformOfLivesCounter.vwf"
+Info (324025): Using vector source file "C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/WaveformPistaB.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      93.33 %
-Info (328052): Number of transitions in simulation is 117
+Info (328053): Simulation coverage is      42.12 %
+Info (328052): Number of transitions in simulation is 6454
 Info (324045): Vector file RacingGame.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 331 megabytes
-    Info: Processing ended: Thu Jun 29 21:37:59 2017
+    Info: Processing ended: Mon Jul 03 10:37:55 2017
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

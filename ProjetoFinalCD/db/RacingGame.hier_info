@@ -1,12 +1,66 @@
-|LivesCounter
-MenosSig <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Preset => inst.PRESET
-Preset => inst2.PRESET
-Preset => inst1.PRESET
-CLK => inst.CLK
-CLK => inst1.CLK
-CLK => inst2.CLK
-MaisSig <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-Meio <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+|PistaB
+Linha1 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+ClockAnel => inst27.CLK
+ClockAnel => inst34.CLK
+ClockAnel => inst33.CLK
+ClockAnel => inst32.CLK
+ClockAnel => inst31.CLK
+ClockAnel => inst30.CLK
+ClockAnel => inst29.CLK
+ClockAnel => inst28.CLK
+ClockAnel => fdiv:inst35.clkin
+Linha2 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Linha3 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Linha4 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+Linha5 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Linha6 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+Linha7 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+Linha8 <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Out[7] <= inst18[0].DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= inst18[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= inst18[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= inst18[3].DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= inst18[4].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= inst18[5].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= inst18[6].DB_MAX_OUTPUT_PORT_TYPE
+Out[0] <= inst18[7].DB_MAX_OUTPUT_PORT_TYPE
+ClockPista => inst39.IN0
+
+
+|PistaB|fdiv:inst35
+clkin => clkout~reg0.CLK
+clkin => cont[0].CLK
+clkin => cont[1].CLK
+clkin => cont[2].CLK
+clkin => cont[3].CLK
+clkin => cont[4].CLK
+clkin => cont[5].CLK
+clkin => cont[6].CLK
+clkin => cont[7].CLK
+clkin => cont[8].CLK
+clkin => cont[9].CLK
+clkin => cont[10].CLK
+clkin => cont[11].CLK
+clkin => cont[12].CLK
+clkin => cont[13].CLK
+clkin => cont[14].CLK
+clkin => cont[15].CLK
+clkin => cont[16].CLK
+clkin => cont[17].CLK
+clkin => cont[18].CLK
+clkin => cont[19].CLK
+clkin => cont[20].CLK
+clkin => cont[21].CLK
+clkin => cont[22].CLK
+clkin => cont[23].CLK
+clkin => cont[24].CLK
+clkin => cont[25].CLK
+clkin => cont[26].CLK
+clkin => cont[27].CLK
+clkin => cont[28].CLK
+clkin => cont[29].CLK
+clkin => cont[30].CLK
+clkin => cont[31].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
