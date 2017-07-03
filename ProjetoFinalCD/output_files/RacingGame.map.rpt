@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RacingGame
-Mon Jul 03 10:37:17 2017
+Mon Jul 03 18:13:59 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,9 +13,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +43,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 03 10:37:17 2017           ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 03 18:13:59 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; RacingGame                                      ;
 ; Top-level Entity Name              ; PistaB                                          ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 172                                             ;
-;     Total combinational functions  ; 101                                             ;
-;     Dedicated logic registers      ; 105                                             ;
-; Total registers                    ; 105                                             ;
-; Total pins                         ; 18                                              ;
+; Total logic elements               ; 166                                             ;
+;     Total combinational functions  ; 145                                             ;
+;     Dedicated logic registers      ; 98                                              ;
+; Total registers                    ; 98                                              ;
+; Total pins                         ; 20                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -154,55 +156,122 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; fdiv.v                           ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv.v     ;         ;
-; PistaB.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/PistaB.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
+; PistaB.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/PistaB.bdf      ;         ;
+; fdiv100khz.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv100khz.v    ;         ;
+; fdiv100kto1hz.v                  ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv100kto1hz.v ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 172    ;
-;                                             ;        ;
-; Total combinational functions               ; 101    ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 51     ;
-;     -- 3 input functions                    ; 2      ;
-;     -- <=2 input functions                  ; 48     ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 70     ;
-;     -- arithmetic mode                      ; 31     ;
-;                                             ;        ;
-; Total registers                             ; 105    ;
-;     -- Dedicated logic registers            ; 105    ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 18     ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-; Maximum fan-out node                        ; inst39 ;
-; Maximum fan-out                             ; 64     ;
-; Total fan-out                               ; 531    ;
-; Average fan-out                             ; 2.37   ;
-+---------------------------------------------+--------+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimated Total logic elements              ; 166                      ;
+;                                             ;                          ;
+; Total combinational functions               ; 145                      ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 61                       ;
+;     -- 3 input functions                    ; 18                       ;
+;     -- <=2 input functions                  ; 66                       ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 83                       ;
+;     -- arithmetic mode                      ; 62                       ;
+;                                             ;                          ;
+; Total registers                             ; 98                       ;
+;     -- Dedicated logic registers            ; 98                       ;
+;     -- I/O registers                        ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 20                       ;
+; Embedded Multiplier 9-bit elements          ; 0                        ;
+; Maximum fan-out node                        ; fdiv100khz:inst17|clkout ;
+; Maximum fan-out                             ; 50                       ;
+; Total fan-out                               ; 670                      ;
+; Average fan-out                             ; 2.55                     ;
++---------------------------------------------+--------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |PistaB                    ; 101 (44)          ; 105 (72)     ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |PistaB             ; work         ;
-;    |fdiv:inst35|           ; 57 (57)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PistaB|fdiv:inst35 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
+; |PistaB                    ; 145 (45)          ; 98 (32)      ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |PistaB                    ; work         ;
+;    |fdiv100khz:inst17|     ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PistaB|fdiv100khz:inst17  ; work         ;
+;    |fdiv100kto1:inst35|    ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PistaB|fdiv100kto1:inst35 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------+
+; Registers Removed During Synthesis                            ;
++----------------------------------------+----------------------+
+; Register name                          ; Reason for Removal   ;
++----------------------------------------+----------------------+
+; inst51                                 ; Merged with inst4[7] ;
+; inst[7]                                ; Merged with inst4[6] ;
+; inst49                                 ; Merged with inst4[6] ;
+; inst[6]                                ; Merged with inst4[5] ;
+; inst1[7]                               ; Merged with inst4[5] ;
+; inst48                                 ; Merged with inst4[5] ;
+; inst[5]                                ; Merged with inst4[4] ;
+; inst1[6]                               ; Merged with inst4[4] ;
+; inst2[7]                               ; Merged with inst4[4] ;
+; inst47                                 ; Merged with inst4[4] ;
+; inst[4]                                ; Merged with inst4[3] ;
+; inst1[5]                               ; Merged with inst4[3] ;
+; inst2[6]                               ; Merged with inst4[3] ;
+; inst3[7]                               ; Merged with inst4[3] ;
+; inst50                                 ; Merged with inst4[3] ;
+; inst[3]                                ; Merged with inst4[2] ;
+; inst1[4]                               ; Merged with inst4[2] ;
+; inst2[5]                               ; Merged with inst4[2] ;
+; inst3[6]                               ; Merged with inst4[2] ;
+; inst7[7]                               ; Merged with inst4[2] ;
+; inst53                                 ; Merged with inst4[2] ;
+; inst[2]                                ; Merged with inst4[1] ;
+; inst1[3]                               ; Merged with inst4[1] ;
+; inst2[4]                               ; Merged with inst4[1] ;
+; inst3[5]                               ; Merged with inst4[1] ;
+; inst7[6]                               ; Merged with inst4[1] ;
+; inst6[7]                               ; Merged with inst4[1] ;
+; inst54                                 ; Merged with inst4[1] ;
+; inst[1]                                ; Merged with inst4[0] ;
+; inst1[2]                               ; Merged with inst4[0] ;
+; inst2[3]                               ; Merged with inst4[0] ;
+; inst3[4]                               ; Merged with inst4[0] ;
+; inst7[5]                               ; Merged with inst4[0] ;
+; inst6[6]                               ; Merged with inst4[0] ;
+; inst5[7]                               ; Merged with inst4[0] ;
+; inst[0]                                ; Merged with inst1[1] ;
+; inst2[2]                               ; Merged with inst1[1] ;
+; inst3[3]                               ; Merged with inst1[1] ;
+; inst7[4]                               ; Merged with inst1[1] ;
+; inst6[5]                               ; Merged with inst1[1] ;
+; inst5[6]                               ; Merged with inst1[1] ;
+; inst2[1]                               ; Merged with inst1[0] ;
+; inst3[2]                               ; Merged with inst1[0] ;
+; inst7[3]                               ; Merged with inst1[0] ;
+; inst6[4]                               ; Merged with inst1[0] ;
+; inst5[5]                               ; Merged with inst1[0] ;
+; inst3[1]                               ; Merged with inst2[0] ;
+; inst7[2]                               ; Merged with inst2[0] ;
+; inst6[3]                               ; Merged with inst2[0] ;
+; inst5[4]                               ; Merged with inst2[0] ;
+; inst3[0]                               ; Merged with inst7[1] ;
+; inst6[2]                               ; Merged with inst7[1] ;
+; inst5[3]                               ; Merged with inst7[1] ;
+; inst6[1]                               ; Merged with inst7[0] ;
+; inst5[2]                               ; Merged with inst7[0] ;
+; inst5[1]                               ; Merged with inst6[0] ;
+; Total Number of Removed Registers = 56 ;                      ;
++----------------------------------------+----------------------+
 
 
 +------------------------------------------------------+
@@ -210,14 +279,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 105   ;
+; Total registers                              ; 98    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; inst27                                 ; 11      ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +-------------------------------+
@@ -235,7 +314,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jul 03 10:37:15 2017
+    Info: Processing started: Mon Jul 03 18:13:57 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RacingGame -c RacingGame
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file lifes.bdf
@@ -250,22 +329,69 @@ Info (12021): Found 1 design units, including 1 entities, in source file carregi
     Info (12023): Found entity 1: CarRegisters
 Info (12021): Found 1 design units, including 1 entities, in source file livescounter.bdf
     Info (12023): Found entity 1: LivesCounter
-Info (12021): Found 1 design units, including 1 entities, in source file somerandomstuff.bdf
-    Info (12023): Found entity 1: SomeRandomStuff
 Info (12021): Found 1 design units, including 1 entities, in source file pistab.bdf
     Info (12023): Found entity 1: PistaB
+Info (12021): Found 1 design units, including 1 entities, in source file testematriz.bdf
+    Info (12023): Found entity 1: TesteMatriz
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv100khz.v
+    Info (12023): Found entity 1: fdiv100khz
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv100kto1hz.v
+    Info (12023): Found entity 1: fdiv100kto1
 Info (12127): Elaborating entity "PistaB" for the top level hierarchy
-Info (12128): Elaborating entity "fdiv" for hierarchy "fdiv:inst35"
+Info (12128): Elaborating entity "fdiv100khz" for hierarchy "fdiv100khz:inst17"
+Info (12128): Elaborating entity "fdiv100kto1" for hierarchy "fdiv100kto1:inst35"
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[0]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[1]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[2]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[3]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[4]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[5]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[6]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[7]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[10]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[11]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[12]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[13]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[14]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[15]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[16]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[17]" and its non-tri-state driver.
+Warning (13032): The following tri-state nodes are fed by constants
+    Warning (13033): The pin "GPIO_1[8]" is fed by VCC
+    Warning (13033): The pin "GPIO_1[9]" is fed by VCC
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 190 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 186 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 172 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info (21059): Implemented 0 output pins
+    Info (21060): Implemented 18 bidirectional pins
+    Info (21061): Implemented 166 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 40 warnings
     Info: Peak virtual memory: 487 megabytes
-    Info: Processing ended: Mon Jul 03 10:37:17 2017
+    Info: Processing ended: Mon Jul 03 18:13:59 2017
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
