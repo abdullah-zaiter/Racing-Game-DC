@@ -1,14 +1,14 @@
-Fitter Status : Successful - Mon Jul 03 18:14:09 2017
+Fitter Status : Successful - Mon Jul 03 23:47:14 2017
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : RacingGame
-Top-level Entity Name : PistaB
+Top-level Entity Name : TESTE_MAROTO
 Family : Cyclone II
 Device : EP2C35F672C6
 Timing Models : Final
-Total logic elements : 147 / 33,216 ( < 1 % )
-    Total combinational functions : 145 / 33,216 ( < 1 % )
-    Dedicated logic registers : 98 / 33,216 ( < 1 % )
-Total registers : 98
+Total logic elements : 134 / 33,216 ( < 1 % )
+    Total combinational functions : 116 / 33,216 ( < 1 % )
+    Dedicated logic registers : 94 / 33,216 ( < 1 % )
+Total registers : 94
 Total pins : 20 / 475 ( 4 % )
 Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )

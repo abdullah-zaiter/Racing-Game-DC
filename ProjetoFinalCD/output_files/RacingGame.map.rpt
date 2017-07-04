@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RacingGame
-Mon Jul 03 18:13:59 2017
+Mon Jul 03 23:47:05 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,10 +14,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,15 +44,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 03 18:13:59 2017           ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 03 23:47:05 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; RacingGame                                      ;
-; Top-level Entity Name              ; PistaB                                          ;
+; Top-level Entity Name              ; TESTE_MAROTO                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 166                                             ;
-;     Total combinational functions  ; 145                                             ;
-;     Dedicated logic registers      ; 98                                              ;
-; Total registers                    ; 98                                              ;
+; Total logic elements               ; 140                                             ;
+;     Total combinational functions  ; 115                                             ;
+;     Dedicated logic registers      ; 94                                              ;
+; Total registers                    ; 94                                              ;
 ; Total pins                         ; 20                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -66,7 +67,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; PistaB             ; RacingGame         ;
+; Top-level entity name                                                      ; TESTE_MAROTO       ; RacingGame         ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,15 +157,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; PistaB.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/PistaB.bdf      ;         ;
-; fdiv100khz.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv100khz.v    ;         ;
-; fdiv100kto1hz.v                  ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv100kto1hz.v ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; TESTE_MAROTO.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/TESTE_MAROTO.bdf ;         ;
+; fdiv100khz.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv100khz.v     ;         ;
+; fdiv100kto1hz.v                  ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv100kto1hz.v  ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------+
@@ -172,106 +173,156 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 166                      ;
+; Estimated Total logic elements              ; 140                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 145                      ;
+; Total combinational functions               ; 115                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 61                       ;
+;     -- 4 input functions                    ; 31                       ;
 ;     -- 3 input functions                    ; 18                       ;
 ;     -- <=2 input functions                  ; 66                       ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 83                       ;
+;     -- normal mode                          ; 53                       ;
 ;     -- arithmetic mode                      ; 62                       ;
 ;                                             ;                          ;
-; Total registers                             ; 98                       ;
-;     -- Dedicated logic registers            ; 98                       ;
+; Total registers                             ; 94                       ;
+;     -- Dedicated logic registers            ; 94                       ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 20                       ;
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
-; Maximum fan-out node                        ; fdiv100khz:inst17|clkout ;
-; Maximum fan-out                             ; 50                       ;
-; Total fan-out                               ; 670                      ;
-; Average fan-out                             ; 2.55                     ;
+; Maximum fan-out node                        ; fdiv100khz:inst36|clkout ;
+; Maximum fan-out                             ; 42                       ;
+; Total fan-out                               ; 532                      ;
+; Average fan-out                             ; 2.32                     ;
 +---------------------------------------------+--------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
-; |PistaB                    ; 145 (45)          ; 98 (32)      ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |PistaB                    ; work         ;
-;    |fdiv100khz:inst17|     ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PistaB|fdiv100khz:inst17  ; work         ;
-;    |fdiv100kto1:inst35|    ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PistaB|fdiv100kto1:inst35 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; |TESTE_MAROTO              ; 115 (15)          ; 94 (28)      ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |TESTE_MAROTO                    ; work         ;
+;    |fdiv100khz:inst36|     ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TESTE_MAROTO|fdiv100khz:inst36  ; work         ;
+;    |fdiv100kto1:inst43|    ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TESTE_MAROTO|fdiv100kto1:inst43 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------+
-; Registers Removed During Synthesis                            ;
-+----------------------------------------+----------------------+
-; Register name                          ; Reason for Removal   ;
-+----------------------------------------+----------------------+
-; inst51                                 ; Merged with inst4[7] ;
-; inst[7]                                ; Merged with inst4[6] ;
-; inst49                                 ; Merged with inst4[6] ;
-; inst[6]                                ; Merged with inst4[5] ;
-; inst1[7]                               ; Merged with inst4[5] ;
-; inst48                                 ; Merged with inst4[5] ;
-; inst[5]                                ; Merged with inst4[4] ;
-; inst1[6]                               ; Merged with inst4[4] ;
-; inst2[7]                               ; Merged with inst4[4] ;
-; inst47                                 ; Merged with inst4[4] ;
-; inst[4]                                ; Merged with inst4[3] ;
-; inst1[5]                               ; Merged with inst4[3] ;
-; inst2[6]                               ; Merged with inst4[3] ;
-; inst3[7]                               ; Merged with inst4[3] ;
-; inst50                                 ; Merged with inst4[3] ;
-; inst[3]                                ; Merged with inst4[2] ;
-; inst1[4]                               ; Merged with inst4[2] ;
-; inst2[5]                               ; Merged with inst4[2] ;
-; inst3[6]                               ; Merged with inst4[2] ;
-; inst7[7]                               ; Merged with inst4[2] ;
-; inst53                                 ; Merged with inst4[2] ;
-; inst[2]                                ; Merged with inst4[1] ;
-; inst1[3]                               ; Merged with inst4[1] ;
-; inst2[4]                               ; Merged with inst4[1] ;
-; inst3[5]                               ; Merged with inst4[1] ;
-; inst7[6]                               ; Merged with inst4[1] ;
-; inst6[7]                               ; Merged with inst4[1] ;
-; inst54                                 ; Merged with inst4[1] ;
-; inst[1]                                ; Merged with inst4[0] ;
-; inst1[2]                               ; Merged with inst4[0] ;
-; inst2[3]                               ; Merged with inst4[0] ;
-; inst3[4]                               ; Merged with inst4[0] ;
-; inst7[5]                               ; Merged with inst4[0] ;
-; inst6[6]                               ; Merged with inst4[0] ;
-; inst5[7]                               ; Merged with inst4[0] ;
-; inst[0]                                ; Merged with inst1[1] ;
-; inst2[2]                               ; Merged with inst1[1] ;
-; inst3[3]                               ; Merged with inst1[1] ;
-; inst7[4]                               ; Merged with inst1[1] ;
-; inst6[5]                               ; Merged with inst1[1] ;
-; inst5[6]                               ; Merged with inst1[1] ;
-; inst2[1]                               ; Merged with inst1[0] ;
-; inst3[2]                               ; Merged with inst1[0] ;
-; inst7[3]                               ; Merged with inst1[0] ;
-; inst6[4]                               ; Merged with inst1[0] ;
-; inst5[5]                               ; Merged with inst1[0] ;
-; inst3[1]                               ; Merged with inst2[0] ;
-; inst7[2]                               ; Merged with inst2[0] ;
-; inst6[3]                               ; Merged with inst2[0] ;
-; inst5[4]                               ; Merged with inst2[0] ;
-; inst3[0]                               ; Merged with inst7[1] ;
-; inst6[2]                               ; Merged with inst7[1] ;
-; inst5[3]                               ; Merged with inst7[1] ;
-; inst6[1]                               ; Merged with inst7[0] ;
-; inst5[2]                               ; Merged with inst7[0] ;
-; inst5[1]                               ; Merged with inst6[0] ;
-; Total Number of Removed Registers = 56 ;                      ;
-+----------------------------------------+----------------------+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; inst4[7]                                ; Merged with inst4[0]                   ;
+; inst4[6]                                ; Merged with inst4[1]                   ;
+; inst4[3..5]                             ; Merged with inst4[2]                   ;
+; inst264                                 ; Merged with inst257                    ;
+; inst265                                 ; Merged with inst257                    ;
+; inst272                                 ; Merged with inst257                    ;
+; inst273                                 ; Merged with inst257                    ;
+; inst280                                 ; Merged with inst257                    ;
+; inst281                                 ; Merged with inst257                    ;
+; inst288                                 ; Merged with inst257                    ;
+; inst289                                 ; Merged with inst257                    ;
+; inst296                                 ; Merged with inst257                    ;
+; inst297                                 ; Merged with inst257                    ;
+; inst304                                 ; Merged with inst257                    ;
+; inst305                                 ; Merged with inst257                    ;
+; inst312                                 ; Merged with inst257                    ;
+; inst313                                 ; Merged with inst257                    ;
+; inst320                                 ; Merged with inst257                    ;
+; inst263                                 ; Merged with inst258                    ;
+; inst266                                 ; Merged with inst258                    ;
+; inst271                                 ; Merged with inst258                    ;
+; inst274                                 ; Merged with inst258                    ;
+; inst279                                 ; Merged with inst258                    ;
+; inst282                                 ; Merged with inst258                    ;
+; inst287                                 ; Merged with inst258                    ;
+; inst290                                 ; Merged with inst258                    ;
+; inst295                                 ; Merged with inst258                    ;
+; inst298                                 ; Merged with inst258                    ;
+; inst303                                 ; Merged with inst258                    ;
+; inst306                                 ; Merged with inst258                    ;
+; inst311                                 ; Merged with inst258                    ;
+; inst314                                 ; Merged with inst258                    ;
+; inst319                                 ; Merged with inst258                    ;
+; inst260                                 ; Merged with inst259                    ;
+; inst261                                 ; Merged with inst259                    ;
+; inst262                                 ; Merged with inst259                    ;
+; inst291                                 ; Merged with inst259                    ;
+; inst292                                 ; Merged with inst259                    ;
+; inst293                                 ; Merged with inst259                    ;
+; inst294                                 ; Merged with inst259                    ;
+; inst268                                 ; Merged with inst267                    ;
+; inst269                                 ; Merged with inst267                    ;
+; inst270                                 ; Merged with inst267                    ;
+; inst299                                 ; Merged with inst267                    ;
+; inst300                                 ; Merged with inst267                    ;
+; inst301                                 ; Merged with inst267                    ;
+; inst302                                 ; Merged with inst267                    ;
+; inst276                                 ; Merged with inst275                    ;
+; inst277                                 ; Merged with inst275                    ;
+; inst278                                 ; Merged with inst275                    ;
+; inst307                                 ; Merged with inst275                    ;
+; inst308                                 ; Merged with inst275                    ;
+; inst309                                 ; Merged with inst275                    ;
+; inst310                                 ; Merged with inst275                    ;
+; inst284                                 ; Merged with inst283                    ;
+; inst285                                 ; Merged with inst283                    ;
+; inst286                                 ; Merged with inst283                    ;
+; inst315                                 ; Merged with inst283                    ;
+; inst316                                 ; Merged with inst283                    ;
+; inst317                                 ; Merged with inst283                    ;
+; inst318                                 ; Merged with inst283                    ;
+; inst1[7]                                ; Merged with inst1[0]                   ;
+; inst1[6]                                ; Merged with inst1[1]                   ;
+; inst1[3..5]                             ; Merged with inst1[2]                   ;
+; inst[7]                                 ; Merged with inst[0]                    ;
+; inst[6]                                 ; Merged with inst[1]                    ;
+; inst[3..5]                              ; Merged with inst[2]                    ;
+; inst2[7]                                ; Merged with inst2[0]                   ;
+; inst2[6]                                ; Merged with inst2[1]                   ;
+; inst2[3..5]                             ; Merged with inst2[2]                   ;
+; inst7[7]                                ; Merged with inst7[0]                   ;
+; inst7[6]                                ; Merged with inst7[1]                   ;
+; inst7[3..5]                             ; Merged with inst7[2]                   ;
+; inst3[7]                                ; Merged with inst3[0]                   ;
+; inst3[6]                                ; Merged with inst3[1]                   ;
+; inst3[3..5]                             ; Merged with inst3[2]                   ;
+; inst6[7]                                ; Merged with inst6[0]                   ;
+; inst6[6]                                ; Merged with inst6[1]                   ;
+; inst6[3..5]                             ; Merged with inst6[2]                   ;
+; inst5[7]                                ; Merged with inst5[0]                   ;
+; inst5[6]                                ; Merged with inst5[1]                   ;
+; inst5[3..5]                             ; Merged with inst5[2]                   ;
+; inst257                                 ; Stuck at VCC due to stuck port data_in ;
+; inst258                                 ; Stuck at GND due to stuck port data_in ;
+; inst4[1]                                ; Stuck at GND due to stuck port data_in ;
+; inst[1]                                 ; Stuck at GND due to stuck port data_in ;
+; inst1[1]                                ; Stuck at GND due to stuck port data_in ;
+; inst2[1]                                ; Stuck at GND due to stuck port data_in ;
+; inst3[1]                                ; Stuck at GND due to stuck port data_in ;
+; inst7[1]                                ; Stuck at GND due to stuck port data_in ;
+; inst6[1]                                ; Stuck at GND due to stuck port data_in ;
+; inst5[1]                                ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 108 ;                                        ;
++-----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                        ;
++---------------+---------------------------+----------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------+---------------------------+----------------------------------------+
+; inst258       ; Stuck at GND              ; inst4[1]                               ;
+;               ; due to stuck port data_in ;                                        ;
+; inst[1]       ; Stuck at GND              ; inst1[1]                               ;
+;               ; due to stuck port data_in ;                                        ;
+; inst3[1]      ; Stuck at GND              ; inst7[1]                               ;
+;               ; due to stuck port data_in ;                                        ;
++---------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -279,10 +330,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 98    ;
+; Total registers                              ; 94    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Clear ; 25    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -294,7 +345,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; inst27                                 ; 11      ;
+; inst275                                ; 1       ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -314,9 +365,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jul 03 18:13:57 2017
+    Info: Processing started: Mon Jul 03 23:47:02 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RacingGame -c RacingGame
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file teste_maroto.bdf
+    Info (12023): Found entity 1: TESTE_MAROTO
+Info (12021): Found 1 design units, including 1 entities, in source file somerandomstuff.bdf
+    Info (12023): Found entity 1: SomeRandomStuff
 Info (12021): Found 1 design units, including 1 entities, in source file lifes.bdf
     Info (12023): Found entity 1: lifes
 Info (12021): Found 1 design units, including 1 entities, in source file clock.bdf
@@ -337,17 +392,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file fdiv100
     Info (12023): Found entity 1: fdiv100khz
 Info (12021): Found 1 design units, including 1 entities, in source file fdiv100kto1hz.v
     Info (12023): Found entity 1: fdiv100kto1
-Info (12127): Elaborating entity "PistaB" for the top level hierarchy
-Info (12128): Elaborating entity "fdiv100khz" for hierarchy "fdiv100khz:inst17"
-Info (12128): Elaborating entity "fdiv100kto1" for hierarchy "fdiv100kto1:inst35"
+Info (12021): Found 1 design units, including 1 entities, in source file pistac_test.bdf
+    Info (12023): Found entity 1: PistaC_Test
+Warning (12019): Can't analyze file -- file output_files/ControleMatriz.bdf is missing
+Info (12127): Elaborating entity "TESTE_MAROTO" for the top level hierarchy
+Info (12128): Elaborating entity "fdiv100khz" for hierarchy "fdiv100khz:inst36"
+Info (12128): Elaborating entity "fdiv100kto1" for hierarchy "fdiv100kto1:inst43"
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[0]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[1]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[2]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[3]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[4]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[5]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[6]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[7]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[10]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[11]" and its non-tri-state driver.
@@ -358,6 +414,8 @@ Warning (13034): The following nodes have both tri-state and non-tri-state drive
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[16]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[17]" and its non-tri-state driver.
 Warning (13032): The following tri-state nodes are fed by constants
+    Warning (13033): The pin "GPIO_1[1]" is fed by GND
+    Warning (13033): The pin "GPIO_1[6]" is fed by GND
     Warning (13033): The pin "GPIO_1[8]" is fed by VCC
     Warning (13033): The pin "GPIO_1[9]" is fed by VCC
 Info (13000): Registers with preset signals will power-up high
@@ -379,19 +437,17 @@ Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "GPIO_1~synth"
     Warning (13010): Node "GPIO_1~synth"
     Warning (13010): Node "GPIO_1~synth"
-    Warning (13010): Node "GPIO_1~synth"
-    Warning (13010): Node "GPIO_1~synth"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 186 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 160 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
     Info (21060): Implemented 18 bidirectional pins
-    Info (21061): Implemented 166 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info (21061): Implemented 140 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 39 warnings
     Info: Peak virtual memory: 487 megabytes
-    Info: Processing ended: Mon Jul 03 18:13:59 2017
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Mon Jul 03 23:47:05 2017
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

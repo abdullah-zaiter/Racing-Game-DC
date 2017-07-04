@@ -1,5 +1,5 @@
 Flow report for RacingGame
-Mon Jul 03 18:14:16 2017
+Mon Jul 03 23:47:21 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Jul 03 18:14:13 2017           ;
+; Flow Status                        ; Successful - Mon Jul 03 23:47:18 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; RacingGame                                      ;
-; Top-level Entity Name              ; PistaB                                          ;
+; Top-level Entity Name              ; TESTE_MAROTO                                    ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 147 / 33,216 ( < 1 % )                          ;
-;     Total combinational functions  ; 145 / 33,216 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 98 / 33,216 ( < 1 % )                           ;
-; Total registers                    ; 98                                              ;
+; Total logic elements               ; 134 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 116 / 33,216 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 94 / 33,216 ( < 1 % )                           ;
+; Total registers                    ; 94                                              ;
 ; Total pins                         ; 20 / 475 ( 4 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
@@ -64,26 +64,26 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/03/2017 18:13:57 ;
+; Start date & time ; 07/03/2017 23:47:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; RacingGame          ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                 ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 260535861817705.149911643709880 ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; PistaB      ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; PistaB      ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; PistaB      ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; PistaB                          ; RacingGame    ; --          ; --         ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                  ;
++-------------------------------------+---------------------------------+---------------+--------------+------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name  ; Section Id ;
++-------------------------------------+---------------------------------+---------------+--------------+------------+
+; COMPILER_SIGNATURE_ID               ; 260535861817705.149913642309812 ; --            ; --           ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --           ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --           ; --         ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; TESTE_MAROTO ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; TESTE_MAROTO ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; TESTE_MAROTO ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --           ; --         ;
+; TOP_LEVEL_ENTITY                    ; TESTE_MAROTO                    ; RacingGame    ; --           ; --         ;
++-------------------------------------+---------------------------------+---------------+--------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -91,11 +91,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 477 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:10     ; 1.0                     ; 766 MB              ; 00:00:09                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 450 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 430 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 477 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 764 MB              ; 00:00:08                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 450 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 441 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:14                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

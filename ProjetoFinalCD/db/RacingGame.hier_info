@@ -1,4 +1,4 @@
-|PistaB
+|TESTE_MAROTO
 GPIO_1[17] <> inst20
 GPIO_1[16] <> inst21
 GPIO_1[15] <> inst22
@@ -6,18 +6,18 @@ GPIO_1[14] <> inst23
 GPIO_1[13] <> inst24
 GPIO_1[12] <> inst25
 GPIO_1[11] <> inst26
-GPIO_1[10] <> inst36
+GPIO_1[10] <> inst35
 GPIO_1[9] <> <VCC>
 GPIO_1[8] <> <VCC>
-GPIO_1[7] <> inst46[0]
-GPIO_1[6] <> inst46[1]
-GPIO_1[5] <> inst46[2]
-GPIO_1[4] <> inst46[3]
-GPIO_1[3] <> inst46[4]
-GPIO_1[2] <> inst46[5]
-GPIO_1[1] <> inst46[6]
-GPIO_1[0] <> inst46[7]
-CLOCK_50 => fdiv100khz:inst17.clkin
+GPIO_1[7] <> inst18[0]
+GPIO_1[6] <> inst18[1]
+GPIO_1[5] <> inst18[2]
+GPIO_1[4] <> inst18[3]
+GPIO_1[3] <> inst18[4]
+GPIO_1[2] <> inst18[5]
+GPIO_1[1] <> inst18[6]
+GPIO_1[0] <> inst18[7]
+SW[0] => inst27.ACLR
 SW[0] => inst34.ACLR
 SW[0] => inst33.ACLR
 SW[0] => inst32.ACLR
@@ -25,15 +25,6 @@ SW[0] => inst31.ACLR
 SW[0] => inst30.ACLR
 SW[0] => inst29.ACLR
 SW[0] => inst28.ACLR
-SW[0] => inst27.PRESET
-SW[0] => inst46[7].ACLR
-SW[0] => inst46[6].ACLR
-SW[0] => inst46[5].ACLR
-SW[0] => inst46[4].ACLR
-SW[0] => inst46[3].ACLR
-SW[0] => inst46[2].ACLR
-SW[0] => inst46[1].ACLR
-SW[0] => inst46[0].ACLR
 SW[0] => inst4[7].ACLR
 SW[0] => inst4[6].ACLR
 SW[0] => inst4[5].ACLR
@@ -42,14 +33,30 @@ SW[0] => inst4[3].ACLR
 SW[0] => inst4[2].ACLR
 SW[0] => inst4[1].ACLR
 SW[0] => inst4[0].ACLR
-SW[0] => inst51.ACLR
-SW[0] => inst52.ACLR
-SW[0] => inst54.ACLR
-SW[0] => inst53.ACLR
-SW[0] => inst50.ACLR
-SW[0] => inst47.ACLR
-SW[0] => inst48.ACLR
-SW[0] => inst49.ACLR
+SW[0] => inst281.PRESET
+SW[0] => inst273.PRESET
+SW[0] => inst265.PRESET
+SW[0] => inst257.PRESET
+SW[0] => inst313.PRESET
+SW[0] => inst305.PRESET
+SW[0] => inst297.PRESET
+SW[0] => inst289.PRESET
+SW[0] => inst275.PRESET
+SW[0] => inst307.PRESET
+SW[0] => inst276.PRESET
+SW[0] => inst308.PRESET
+SW[0] => inst277.PRESET
+SW[0] => inst309.PRESET
+SW[0] => inst278.PRESET
+SW[0] => inst310.PRESET
+SW[0] => inst288.PRESET
+SW[0] => inst280.PRESET
+SW[0] => inst272.PRESET
+SW[0] => inst264.PRESET
+SW[0] => inst320.PRESET
+SW[0] => inst312.PRESET
+SW[0] => inst304.PRESET
+SW[0] => inst296.PRESET
 SW[0] => inst1[7].ACLR
 SW[0] => inst1[6].ACLR
 SW[0] => inst1[5].ACLR
@@ -106,9 +113,10 @@ SW[0] => inst5[3].ACLR
 SW[0] => inst5[2].ACLR
 SW[0] => inst5[1].ACLR
 SW[0] => inst5[0].ACLR
+CLOCK_50 => fdiv100khz:inst36.clkin
 
 
-|PistaB|fdiv100khz:inst17
+|TESTE_MAROTO|fdiv100khz:inst36
 clkin => clkout~reg0.CLK
 clkin => cont[0].CLK
 clkin => cont[1].CLK
@@ -145,7 +153,7 @@ clkin => cont[31].CLK
 clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PistaB|fdiv100kto1:inst35
+|TESTE_MAROTO|fdiv100kto1:inst43
 clkin => clkout~reg0.CLK
 clkin => cont[0].CLK
 clkin => cont[1].CLK

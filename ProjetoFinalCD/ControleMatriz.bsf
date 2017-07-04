@@ -1,0 +1,120 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 208 240)
+	(text "ControleMatriz" (rect 5 0 86 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "InPista[0..7]" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "InPista[0..7]" (rect 21 27 85 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK_50" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "CLK_50" (rect 21 43 65 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CLK_PISTA" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "CLK_PISTA" (rect 21 59 85 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 192 32)
+		(bidir)
+		(text "GPIO_1[10]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[10]" (rect 108 27 171 41)(font "Arial" (font_size 8)))
+		(line (pt 192 32)(pt 176 32))
+	)
+	(port
+		(pt 192 48)
+		(bidir)
+		(text "GPIO_1[11]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[11]" (rect 108 43 171 57)(font "Arial" (font_size 8)))
+		(line (pt 192 48)(pt 176 48))
+	)
+	(port
+		(pt 192 64)
+		(bidir)
+		(text "GPIO_1[12]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[12]" (rect 108 59 171 73)(font "Arial" (font_size 8)))
+		(line (pt 192 64)(pt 176 64))
+	)
+	(port
+		(pt 192 80)
+		(bidir)
+		(text "GPIO_1[13]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[13]" (rect 108 75 171 89)(font "Arial" (font_size 8)))
+		(line (pt 192 80)(pt 176 80))
+	)
+	(port
+		(pt 192 96)
+		(bidir)
+		(text "GPIO_1[0..7]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[0..7]" (rect 101 91 171 105)(font "Arial" (font_size 8)))
+		(line (pt 192 96)(pt 176 96)(line_width 3))
+	)
+	(port
+		(pt 192 112)
+		(bidir)
+		(text "GPIO_1[8..9]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[8..9]" (rect 101 107 171 121)(font "Arial" (font_size 8)))
+		(line (pt 192 112)(pt 176 112)(line_width 3))
+	)
+	(port
+		(pt 192 128)
+		(bidir)
+		(text "GPIO_1[14]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[14]" (rect 108 123 171 137)(font "Arial" (font_size 8)))
+		(line (pt 192 128)(pt 176 128))
+	)
+	(port
+		(pt 192 144)
+		(bidir)
+		(text "GPIO_1[15]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[15]" (rect 108 139 171 153)(font "Arial" (font_size 8)))
+		(line (pt 192 144)(pt 176 144))
+	)
+	(port
+		(pt 192 160)
+		(bidir)
+		(text "GPIO_1[16]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[16]" (rect 108 155 171 169)(font "Arial" (font_size 8)))
+		(line (pt 192 160)(pt 176 160))
+	)
+	(port
+		(pt 192 176)
+		(bidir)
+		(text "GPIO_1[17]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "GPIO_1[17]" (rect 108 171 171 185)(font "Arial" (font_size 8)))
+		(line (pt 192 176)(pt 176 176))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 208))
+	)
+)

@@ -3,75 +3,75 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -2.834
-TNS   : -63.323
+Slack : -2.829
+TNS   : -63.527
 
-Type  : Slow Model Setup 'fdiv100khz:inst17|clkout'
-Slack : -2.820
-TNS   : -77.243
+Type  : Slow Model Setup 'fdiv100khz:inst36|clkout'
+Slack : -2.793
+TNS   : -60.414
 
-Type  : Slow Model Setup 'fdiv100kto1:inst35|clkout'
-Slack : -0.114
-TNS   : -0.856
-
-Type  : Slow Model Hold 'fdiv100khz:inst17|clkout'
-Slack : -3.401
-TNS   : -3.401
+Type  : Slow Model Setup 'fdiv100kto1:inst43|clkout'
+Slack : -0.077
+TNS   : -0.129
 
 Type  : Slow Model Hold 'CLOCK_50'
-Slack : -2.522
-TNS   : -2.522
+Slack : -2.562
+TNS   : -2.562
 
-Type  : Slow Model Hold 'fdiv100kto1:inst35|clkout'
-Slack : 0.671
+Type  : Slow Model Hold 'fdiv100khz:inst36|clkout'
+Slack : -2.444
+TNS   : -2.444
+
+Type  : Slow Model Hold 'fdiv100kto1:inst43|clkout'
+Slack : 0.521
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
 TNS   : -34.380
 
-Type  : Slow Model Minimum Pulse Width 'fdiv100khz:inst17|clkout'
+Type  : Slow Model Minimum Pulse Width 'fdiv100khz:inst36|clkout'
 Slack : -0.500
-TNS   : -49.000
+TNS   : -41.000
 
-Type  : Slow Model Minimum Pulse Width 'fdiv100kto1:inst35|clkout'
+Type  : Slow Model Minimum Pulse Width 'fdiv100kto1:inst43|clkout'
 Slack : -0.500
-TNS   : -16.000
+TNS   : -20.000
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -0.856
-TNS   : -12.862
+Slack : -0.846
+TNS   : -12.744
 
-Type  : Fast Model Setup 'fdiv100khz:inst17|clkout'
-Slack : -0.838
-TNS   : -16.354
+Type  : Fast Model Setup 'fdiv100khz:inst36|clkout'
+Slack : -0.831
+TNS   : -11.981
 
-Type  : Fast Model Setup 'fdiv100kto1:inst35|clkout'
-Slack : 0.450
+Type  : Fast Model Setup 'fdiv100kto1:inst43|clkout'
+Slack : 0.468
 TNS   : 0.000
 
-Type  : Fast Model Hold 'fdiv100khz:inst17|clkout'
-Slack : -1.949
-TNS   : -1.949
-
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.565
-TNS   : -1.565
+Slack : -1.602
+TNS   : -1.602
 
-Type  : Fast Model Hold 'fdiv100kto1:inst35|clkout'
-Slack : 0.329
+Type  : Fast Model Hold 'fdiv100khz:inst36|clkout'
+Slack : -1.500
+TNS   : -1.500
+
+Type  : Fast Model Hold 'fdiv100kto1:inst43|clkout'
+Slack : 0.240
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
 TNS   : -34.380
 
-Type  : Fast Model Minimum Pulse Width 'fdiv100khz:inst17|clkout'
+Type  : Fast Model Minimum Pulse Width 'fdiv100khz:inst36|clkout'
 Slack : -0.500
-TNS   : -49.000
+TNS   : -41.000
 
-Type  : Fast Model Minimum Pulse Width 'fdiv100kto1:inst35|clkout'
+Type  : Fast Model Minimum Pulse Width 'fdiv100kto1:inst43|clkout'
 Slack : -0.500
-TNS   : -16.000
+TNS   : -20.000
 
 ------------------------------------------------------------

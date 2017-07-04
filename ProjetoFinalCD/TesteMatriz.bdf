@@ -170,13 +170,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 1816 1336 1872 1352))
+	(annotation_block (location)(rect 480 920 536 936))
 )
 (pin
 	(input)
 	(rect 792 696 960 712)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[8]" (rect 5 0 36 12)(font "Arial" ))
+	(text "SW[8]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -193,7 +193,7 @@ applicable agreement for further details.
 	(input)
 	(rect 800 736 968 752)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[9]" (rect 5 0 36 12)(font "Arial" ))
+	(text "SW[9]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -210,7 +210,7 @@ applicable agreement for further details.
 	(input)
 	(rect 800 768 968 784)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[10]" (rect 5 0 42 12)(font "Arial" ))
+	(text "SW[10]" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -227,7 +227,7 @@ applicable agreement for further details.
 	(input)
 	(rect 800 792 968 808)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[11]" (rect 5 0 42 12)(font "Arial" ))
+	(text "SW[11]" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -244,7 +244,7 @@ applicable agreement for further details.
 	(input)
 	(rect 800 816 968 832)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[12]" (rect 5 0 42 12)(font "Arial" ))
+	(text "SW[12]" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -261,7 +261,7 @@ applicable agreement for further details.
 	(input)
 	(rect 800 848 968 864)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[13]" (rect 5 0 42 12)(font "Arial" ))
+	(text "SW[13]" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -278,7 +278,7 @@ applicable agreement for further details.
 	(input)
 	(rect 792 888 960 904)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[14]" (rect 5 0 42 12)(font "Arial" ))
+	(text "SW[14]" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -295,7 +295,7 @@ applicable agreement for further details.
 	(input)
 	(rect 792 960 960 976)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[15]" (rect 5 0 42 12)(font "Arial" ))
+	(text "SW[15]" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))

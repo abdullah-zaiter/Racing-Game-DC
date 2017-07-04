@@ -25283,738 +25283,6 @@ applicable agreement for further details.
 	(pt 224 1992)
 )
 (connector
-	(pt 224 1888)
-	(pt 224 1896)
-)
-(connector
-	(pt 224 1896)
-	(pt 224 1912)
-)
-(connector
-	(pt 224 1896)
-	(pt 320 1896)
-	(bus)
-)
-(connector
-	(pt 320 1888)
-	(pt 320 1896)
-)
-(connector
-	(pt 320 1896)
-	(pt 320 1912)
-)
-(connector
-	(pt 320 1896)
-	(pt 416 1896)
-	(bus)
-)
-(connector
-	(pt 416 1888)
-	(pt 416 1896)
-)
-(connector
-	(pt 416 1896)
-	(pt 416 1912)
-)
-(connector
-	(pt 416 1896)
-	(pt 512 1896)
-	(bus)
-)
-(connector
-	(pt 512 1888)
-	(pt 512 1896)
-)
-(connector
-	(pt 512 1896)
-	(pt 512 1912)
-)
-(connector
-	(pt 512 1896)
-	(pt 608 1896)
-	(bus)
-)
-(connector
-	(pt 608 1888)
-	(pt 608 1896)
-)
-(connector
-	(pt 608 1896)
-	(pt 608 1912)
-)
-(connector
-	(pt 608 1896)
-	(pt 704 1896)
-	(bus)
-)
-(connector
-	(pt 704 1888)
-	(pt 704 1896)
-)
-(connector
-	(pt 704 1896)
-	(pt 704 1912)
-)
-(connector
-	(pt 704 1896)
-	(pt 800 1896)
-	(bus)
-)
-(connector
-	(pt 800 1888)
-	(pt 800 1896)
-)
-(connector
-	(pt 800 1896)
-	(pt 800 1912)
-)
-(connector
-	(pt 800 1896)
-	(pt 896 1896)
-	(bus)
-)
-(connector
-	(pt 896 1896)
-	(pt 992 1896)
-	(bus)
-)
-(connector
-	(pt 896 1888)
-	(pt 896 1896)
-)
-(connector
-	(pt 896 1896)
-	(pt 896 1912)
-)
-(connector
-	(pt 896 1808)
-	(pt 992 1808)
-	(bus)
-)
-(connector
-	(pt 896 1800)
-	(pt 896 1808)
-)
-(connector
-	(pt 896 1808)
-	(pt 896 1824)
-)
-(connector
-	(pt 800 1808)
-	(pt 896 1808)
-	(bus)
-)
-(connector
-	(pt 800 1800)
-	(pt 800 1808)
-)
-(connector
-	(pt 800 1808)
-	(pt 800 1824)
-)
-(connector
-	(pt 704 1808)
-	(pt 800 1808)
-	(bus)
-)
-(connector
-	(pt 704 1800)
-	(pt 704 1808)
-)
-(connector
-	(pt 704 1808)
-	(pt 704 1824)
-)
-(connector
-	(pt 512 1800)
-	(pt 512 1808)
-)
-(connector
-	(pt 512 1808)
-	(pt 512 1824)
-)
-(connector
-	(pt 416 1808)
-	(pt 512 1808)
-	(bus)
-)
-(connector
-	(pt 416 1800)
-	(pt 416 1808)
-)
-(connector
-	(pt 416 1808)
-	(pt 416 1824)
-)
-(connector
-	(pt 224 1808)
-	(pt 320 1808)
-	(bus)
-)
-(connector
-	(pt 320 1808)
-	(pt 416 1808)
-	(bus)
-)
-(connector
-	(pt 320 1800)
-	(pt 320 1808)
-)
-(connector
-	(pt 320 1808)
-	(pt 320 1824)
-)
-(connector
-	(pt 224 1800)
-	(pt 224 1808)
-)
-(connector
-	(pt 224 1808)
-	(pt 224 1824)
-)
-(connector
-	(pt 896 1720)
-	(pt 992 1720)
-	(bus)
-)
-(connector
-	(pt 896 1712)
-	(pt 896 1720)
-)
-(connector
-	(pt 896 1720)
-	(pt 896 1736)
-)
-(connector
-	(pt 800 1720)
-	(pt 896 1720)
-	(bus)
-)
-(connector
-	(pt 800 1712)
-	(pt 800 1720)
-)
-(connector
-	(pt 800 1720)
-	(pt 800 1736)
-)
-(connector
-	(pt 704 1720)
-	(pt 800 1720)
-	(bus)
-)
-(connector
-	(pt 704 1712)
-	(pt 704 1720)
-)
-(connector
-	(pt 704 1720)
-	(pt 704 1736)
-)
-(connector
-	(pt 512 1712)
-	(pt 512 1720)
-)
-(connector
-	(pt 512 1720)
-	(pt 512 1736)
-)
-(connector
-	(pt 416 1720)
-	(pt 512 1720)
-	(bus)
-)
-(connector
-	(pt 416 1712)
-	(pt 416 1720)
-)
-(connector
-	(pt 416 1720)
-	(pt 416 1736)
-)
-(connector
-	(pt 224 1720)
-	(pt 320 1720)
-	(bus)
-)
-(connector
-	(pt 320 1720)
-	(pt 416 1720)
-	(bus)
-)
-(connector
-	(pt 320 1712)
-	(pt 320 1720)
-)
-(connector
-	(pt 320 1720)
-	(pt 320 1736)
-)
-(connector
-	(pt 224 1712)
-	(pt 224 1720)
-)
-(connector
-	(pt 224 1720)
-	(pt 224 1736)
-)
-(connector
-	(pt 896 1632)
-	(pt 992 1632)
-	(bus)
-)
-(connector
-	(pt 896 1624)
-	(pt 896 1632)
-)
-(connector
-	(pt 896 1632)
-	(pt 896 1648)
-)
-(connector
-	(pt 800 1632)
-	(pt 896 1632)
-	(bus)
-)
-(connector
-	(pt 800 1624)
-	(pt 800 1632)
-)
-(connector
-	(pt 800 1632)
-	(pt 800 1648)
-)
-(connector
-	(pt 704 1632)
-	(pt 800 1632)
-	(bus)
-)
-(connector
-	(pt 704 1624)
-	(pt 704 1632)
-)
-(connector
-	(pt 704 1632)
-	(pt 704 1648)
-)
-(connector
-	(pt 512 1624)
-	(pt 512 1632)
-)
-(connector
-	(pt 512 1632)
-	(pt 512 1648)
-)
-(connector
-	(pt 416 1632)
-	(pt 512 1632)
-	(bus)
-)
-(connector
-	(pt 416 1624)
-	(pt 416 1632)
-)
-(connector
-	(pt 416 1632)
-	(pt 416 1648)
-)
-(connector
-	(pt 224 1632)
-	(pt 320 1632)
-	(bus)
-)
-(connector
-	(pt 320 1632)
-	(pt 416 1632)
-	(bus)
-)
-(connector
-	(pt 320 1624)
-	(pt 320 1632)
-)
-(connector
-	(pt 320 1632)
-	(pt 320 1648)
-)
-(connector
-	(pt 224 1624)
-	(pt 224 1632)
-)
-(connector
-	(pt 224 1632)
-	(pt 224 1648)
-)
-(connector
-	(pt 896 1536)
-	(pt 896 1544)
-)
-(connector
-	(pt 896 1544)
-	(pt 896 1560)
-)
-(connector
-	(pt 800 1536)
-	(pt 800 1544)
-)
-(connector
-	(pt 800 1544)
-	(pt 800 1560)
-)
-(connector
-	(pt 704 1536)
-	(pt 704 1544)
-)
-(connector
-	(pt 704 1544)
-	(pt 704 1560)
-)
-(connector
-	(pt 512 1536)
-	(pt 512 1544)
-)
-(connector
-	(pt 512 1544)
-	(pt 512 1560)
-)
-(connector
-	(pt 416 1536)
-	(pt 416 1544)
-)
-(connector
-	(pt 416 1544)
-	(pt 416 1560)
-)
-(connector
-	(pt 320 1536)
-	(pt 320 1544)
-)
-(connector
-	(pt 320 1544)
-	(pt 320 1560)
-)
-(connector
-	(pt 224 1536)
-	(pt 224 1544)
-)
-(connector
-	(pt 224 1544)
-	(pt 224 1560)
-)
-(connector
-	(pt 896 1448)
-	(pt 896 1456)
-)
-(connector
-	(pt 896 1456)
-	(pt 896 1472)
-)
-(connector
-	(pt 800 1448)
-	(pt 800 1456)
-)
-(connector
-	(pt 800 1456)
-	(pt 800 1472)
-)
-(connector
-	(pt 704 1448)
-	(pt 704 1456)
-)
-(connector
-	(pt 704 1456)
-	(pt 704 1472)
-)
-(connector
-	(pt 512 1448)
-	(pt 512 1456)
-)
-(connector
-	(pt 512 1456)
-	(pt 512 1472)
-)
-(connector
-	(pt 416 1448)
-	(pt 416 1456)
-)
-(connector
-	(pt 416 1456)
-	(pt 416 1472)
-)
-(connector
-	(pt 320 1448)
-	(pt 320 1456)
-)
-(connector
-	(pt 320 1456)
-	(pt 320 1472)
-)
-(connector
-	(pt 224 1448)
-	(pt 224 1456)
-)
-(connector
-	(pt 224 1456)
-	(pt 224 1472)
-)
-(connector
-	(pt 896 1360)
-	(pt 896 1368)
-)
-(connector
-	(pt 896 1368)
-	(pt 896 1384)
-)
-(connector
-	(pt 800 1360)
-	(pt 800 1368)
-)
-(connector
-	(pt 800 1368)
-	(pt 800 1384)
-)
-(connector
-	(pt 704 1360)
-	(pt 704 1368)
-)
-(connector
-	(pt 704 1368)
-	(pt 704 1384)
-)
-(connector
-	(pt 512 1360)
-	(pt 512 1368)
-)
-(connector
-	(pt 512 1368)
-	(pt 512 1384)
-)
-(connector
-	(pt 416 1360)
-	(pt 416 1368)
-)
-(connector
-	(pt 416 1368)
-	(pt 416 1384)
-)
-(connector
-	(pt 320 1360)
-	(pt 320 1368)
-)
-(connector
-	(pt 320 1368)
-	(pt 320 1384)
-)
-(connector
-	(pt 224 1368)
-	(pt 224 1384)
-)
-(connector
-	(pt 608 1360)
-	(pt 608 1368)
-)
-(connector
-	(pt 608 1368)
-	(pt 608 1384)
-)
-(connector
-	(pt 608 1448)
-	(pt 608 1456)
-)
-(connector
-	(pt 608 1456)
-	(pt 608 1472)
-)
-(connector
-	(pt 608 1536)
-	(pt 608 1544)
-)
-(connector
-	(pt 608 1544)
-	(pt 608 1560)
-)
-(connector
-	(pt 512 1632)
-	(pt 608 1632)
-	(bus)
-)
-(connector
-	(pt 608 1632)
-	(pt 704 1632)
-	(bus)
-)
-(connector
-	(pt 608 1624)
-	(pt 608 1632)
-)
-(connector
-	(pt 608 1632)
-	(pt 608 1648)
-)
-(connector
-	(pt 512 1720)
-	(pt 608 1720)
-	(bus)
-)
-(connector
-	(pt 608 1720)
-	(pt 704 1720)
-	(bus)
-)
-(connector
-	(pt 608 1712)
-	(pt 608 1720)
-)
-(connector
-	(pt 608 1720)
-	(pt 608 1736)
-)
-(connector
-	(pt 512 1808)
-	(pt 608 1808)
-	(bus)
-)
-(connector
-	(pt 608 1808)
-	(pt 704 1808)
-	(bus)
-)
-(connector
-	(pt 608 1800)
-	(pt 608 1808)
-)
-(connector
-	(pt 608 1808)
-	(pt 608 1824)
-)
-(connector
-	(pt 896 1368)
-	(pt 992 1368)
-	(bus)
-)
-(connector
-	(pt 800 1368)
-	(pt 896 1368)
-	(bus)
-)
-(connector
-	(pt 704 1368)
-	(pt 800 1368)
-	(bus)
-)
-(connector
-	(pt 416 1368)
-	(pt 512 1368)
-	(bus)
-)
-(connector
-	(pt 320 1368)
-	(pt 416 1368)
-	(bus)
-)
-(connector
-	(pt 512 1368)
-	(pt 608 1368)
-	(bus)
-)
-(connector
-	(pt 608 1368)
-	(pt 704 1368)
-	(bus)
-)
-(connector
-	(text "Linha0[0]" (rect 200 1322 212 1366)(font "Arial" )(vertical))
-	(pt 224 1360)
-	(pt 224 1368)
-)
-(connector
-	(pt 896 1456)
-	(pt 992 1456)
-	(bus)
-)
-(connector
-	(pt 800 1456)
-	(pt 896 1456)
-	(bus)
-)
-(connector
-	(pt 704 1456)
-	(pt 800 1456)
-	(bus)
-)
-(connector
-	(pt 416 1456)
-	(pt 512 1456)
-	(bus)
-)
-(connector
-	(pt 224 1456)
-	(pt 320 1456)
-	(bus)
-)
-(connector
-	(text "Linha1[0..7]" (rect 938 1432 995 1444)(font "Arial" ))
-	(pt 320 1456)
-	(pt 416 1456)
-	(bus)
-)
-(connector
-	(pt 512 1456)
-	(pt 608 1456)
-	(bus)
-)
-(connector
-	(pt 608 1456)
-	(pt 704 1456)
-	(bus)
-)
-(connector
-	(text "Linha0[0..7]" (rect 946 1344 1003 1356)(font "Arial" ))
-	(pt 224 1368)
-	(pt 320 1368)
-	(bus)
-)
-(connector
-	(pt 896 1544)
-	(pt 992 1544)
-	(bus)
-)
-(connector
-	(pt 800 1544)
-	(pt 896 1544)
-	(bus)
-)
-(connector
-	(pt 704 1544)
-	(pt 800 1544)
-	(bus)
-)
-(connector
-	(pt 416 1544)
-	(pt 512 1544)
-	(bus)
-)
-(connector
-	(text "Linha2[0]" (rect 938 1520 982 1532)(font "Arial" ))
-	(pt 224 1544)
-	(pt 320 1544)
-	(bus)
-)
-(connector
-	(pt 320 1544)
-	(pt 416 1544)
-	(bus)
-)
-(connector
-	(pt 512 1544)
-	(pt 608 1544)
-	(bus)
-)
-(connector
-	(pt 608 1544)
-	(pt 704 1544)
-	(bus)
-)
-(connector
 	(pt 256 1416)
 	(pt 256 1504)
 )
@@ -26025,6 +25293,231 @@ applicable agreement for further details.
 (connector
 	(pt 256 1592)
 	(pt 256 1680)
+)
+(connector
+	(pt 224 1888)
+	(pt 224 1912)
+)
+(connector
+	(pt 320 1888)
+	(pt 320 1912)
+)
+(connector
+	(pt 416 1888)
+	(pt 416 1912)
+)
+(connector
+	(pt 512 1888)
+	(pt 512 1912)
+)
+(connector
+	(pt 608 1888)
+	(pt 608 1912)
+)
+(connector
+	(pt 704 1888)
+	(pt 704 1912)
+)
+(connector
+	(pt 800 1888)
+	(pt 800 1912)
+)
+(connector
+	(pt 896 1888)
+	(pt 896 1912)
+)
+(connector
+	(pt 224 1800)
+	(pt 224 1824)
+)
+(connector
+	(pt 320 1800)
+	(pt 320 1824)
+)
+(connector
+	(pt 416 1800)
+	(pt 416 1824)
+)
+(connector
+	(pt 512 1800)
+	(pt 512 1824)
+)
+(connector
+	(pt 608 1800)
+	(pt 608 1824)
+)
+(connector
+	(pt 704 1800)
+	(pt 704 1824)
+)
+(connector
+	(pt 800 1800)
+	(pt 800 1824)
+)
+(connector
+	(pt 896 1800)
+	(pt 896 1824)
+)
+(connector
+	(pt 224 1712)
+	(pt 224 1736)
+)
+(connector
+	(pt 320 1712)
+	(pt 320 1736)
+)
+(connector
+	(pt 416 1712)
+	(pt 416 1736)
+)
+(connector
+	(pt 512 1712)
+	(pt 512 1736)
+)
+(connector
+	(pt 608 1712)
+	(pt 608 1736)
+)
+(connector
+	(pt 704 1712)
+	(pt 704 1736)
+)
+(connector
+	(pt 800 1712)
+	(pt 800 1736)
+)
+(connector
+	(pt 896 1712)
+	(pt 896 1736)
+)
+(connector
+	(pt 224 1624)
+	(pt 224 1648)
+)
+(connector
+	(pt 320 1624)
+	(pt 320 1648)
+)
+(connector
+	(pt 416 1624)
+	(pt 416 1648)
+)
+(connector
+	(pt 512 1624)
+	(pt 512 1648)
+)
+(connector
+	(pt 608 1624)
+	(pt 608 1648)
+)
+(connector
+	(pt 704 1624)
+	(pt 704 1648)
+)
+(connector
+	(pt 800 1624)
+	(pt 800 1648)
+)
+(connector
+	(pt 896 1624)
+	(pt 896 1648)
+)
+(connector
+	(pt 224 1536)
+	(pt 224 1560)
+)
+(connector
+	(pt 320 1536)
+	(pt 320 1560)
+)
+(connector
+	(pt 416 1536)
+	(pt 416 1560)
+)
+(connector
+	(pt 512 1536)
+	(pt 512 1560)
+)
+(connector
+	(pt 608 1536)
+	(pt 608 1560)
+)
+(connector
+	(pt 704 1536)
+	(pt 704 1560)
+)
+(connector
+	(pt 800 1536)
+	(pt 800 1560)
+)
+(connector
+	(pt 896 1536)
+	(pt 896 1560)
+)
+(connector
+	(pt 224 1448)
+	(pt 224 1472)
+)
+(connector
+	(pt 320 1448)
+	(pt 320 1472)
+)
+(connector
+	(pt 416 1448)
+	(pt 416 1472)
+)
+(connector
+	(pt 512 1448)
+	(pt 512 1472)
+)
+(connector
+	(pt 608 1448)
+	(pt 608 1472)
+)
+(connector
+	(pt 704 1448)
+	(pt 704 1472)
+)
+(connector
+	(pt 800 1448)
+	(pt 800 1472)
+)
+(connector
+	(pt 896 1448)
+	(pt 896 1472)
+)
+(connector
+	(text "Linha0[0]" (rect 200 1322 212 1366)(font "Arial" )(vertical))
+	(pt 224 1360)
+	(pt 224 1384)
+)
+(connector
+	(pt 320 1360)
+	(pt 320 1384)
+)
+(connector
+	(pt 416 1360)
+	(pt 416 1384)
+)
+(connector
+	(pt 512 1360)
+	(pt 512 1384)
+)
+(connector
+	(pt 608 1360)
+	(pt 608 1384)
+)
+(connector
+	(pt 704 1360)
+	(pt 704 1384)
+)
+(connector
+	(pt 800 1360)
+	(pt 800 1384)
+)
+(connector
+	(pt 896 1360)
+	(pt 896 1384)
 )
 (junction (pt 880 -392))
 (junction (pt 784 -392))
@@ -26561,59 +26054,3 @@ applicable agreement for further details.
 (junction (pt 784 1376))
 (junction (pt 880 1376))
 (junction (pt 224 1984))
-(junction (pt 224 1896))
-(junction (pt 320 1896))
-(junction (pt 416 1896))
-(junction (pt 512 1896))
-(junction (pt 608 1896))
-(junction (pt 704 1896))
-(junction (pt 800 1896))
-(junction (pt 896 1896))
-(junction (pt 896 1808))
-(junction (pt 800 1808))
-(junction (pt 704 1808))
-(junction (pt 512 1808))
-(junction (pt 416 1808))
-(junction (pt 320 1808))
-(junction (pt 224 1808))
-(junction (pt 896 1720))
-(junction (pt 800 1720))
-(junction (pt 704 1720))
-(junction (pt 512 1720))
-(junction (pt 416 1720))
-(junction (pt 320 1720))
-(junction (pt 224 1720))
-(junction (pt 896 1632))
-(junction (pt 800 1632))
-(junction (pt 704 1632))
-(junction (pt 512 1632))
-(junction (pt 416 1632))
-(junction (pt 320 1632))
-(junction (pt 224 1632))
-(junction (pt 896 1544))
-(junction (pt 800 1544))
-(junction (pt 704 1544))
-(junction (pt 512 1544))
-(junction (pt 416 1544))
-(junction (pt 320 1544))
-(junction (pt 224 1544))
-(junction (pt 896 1456))
-(junction (pt 800 1456))
-(junction (pt 704 1456))
-(junction (pt 512 1456))
-(junction (pt 416 1456))
-(junction (pt 320 1456))
-(junction (pt 224 1456))
-(junction (pt 896 1368))
-(junction (pt 800 1368))
-(junction (pt 704 1368))
-(junction (pt 512 1368))
-(junction (pt 416 1368))
-(junction (pt 320 1368))
-(junction (pt 224 1368))
-(junction (pt 608 1368))
-(junction (pt 608 1456))
-(junction (pt 608 1544))
-(junction (pt 608 1632))
-(junction (pt 608 1720))
-(junction (pt 608 1808))
