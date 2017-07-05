@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RacingGame
-Wed Jul 05 06:12:41 2017
+Wed Jul 05 12:04:18 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,16 +44,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jul 05 06:12:41 2017           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 05 12:04:18 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; RacingGame                                      ;
 ; Top-level Entity Name              ; test                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 702                                             ;
-;     Total combinational functions  ; 647                                             ;
+; Total logic elements               ; 703                                             ;
+;     Total combinational functions  ; 648                                             ;
 ;     Dedicated logic registers      ; 384                                             ;
 ; Total registers                    ; 384                                             ;
-; Total pins                         ; 49                                              ;
+; Total pins                         ; 51                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -192,27 +192,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 702   ;
+; Estimated Total logic elements              ; 703   ;
 ;                                             ;       ;
-; Total combinational functions               ; 647   ;
+; Total combinational functions               ; 648   ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 193   ;
-;     -- 3 input functions                    ; 71    ;
+;     -- 3 input functions                    ; 72    ;
 ;     -- <=2 input functions                  ; 383   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 362   ;
+;     -- normal mode                          ; 363   ;
 ;     -- arithmetic mode                      ; 285   ;
 ;                                             ;       ;
 ; Total registers                             ; 384   ;
 ;     -- Dedicated logic registers            ; 384   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 49    ;
+; I/O pins                                    ; 51    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; inst5 ;
-; Maximum fan-out                             ; 76    ;
-; Total fan-out                               ; 2624  ;
+; Maximum fan-out                             ; 69    ;
+; Total fan-out                               ; 2629  ;
 ; Average fan-out                             ; 2.43  ;
 +---------------------------------------------+-------+
 
@@ -222,7 +222,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Library Name ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
-; |test                              ; 647 (2)           ; 384 (0)      ; 0           ; 0            ; 0       ; 0         ; 49   ; 0            ; |test                                                ; work         ;
+; |test                              ; 648 (2)           ; 384 (0)      ; 0           ; 0            ; 0       ; 0         ; 51   ; 0            ; |test                                                ; work         ;
 ;    |Contador:inst433|              ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|Contador:inst433                               ; work         ;
 ;    |ControleMatriz:inst|           ; 95 (40)           ; 89 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst                            ; work         ;
 ;       |Reg8:inst42|                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|Reg8:inst42                ; work         ;
@@ -251,7 +251,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |decoder7:inst7|                ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|decoder7:inst7                                 ; work         ;
 ;    |decoder7:inst823|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|decoder7:inst823                               ; work         ;
 ;    |decoder7:inst9213|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|decoder7:inst9213                              ; work         ;
-;    |mov_carrinho:inst8|            ; 8 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8                             ; work         ;
+;    |mov_carrinho:inst8|            ; 9 (1)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8                             ; work         ;
 ;       |mux4-1:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst1                ; work         ;
 ;       |mux4-1:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst2                ; work         ;
 ;       |mux4-1:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst3                ; work         ;
@@ -325,7 +325,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LivesCounter:inst11|inst1              ; 9       ;
 ; LivesCounter:inst11|inst2              ; 8       ;
 ; LivesCounter:inst11|inst               ; 10      ;
-; mov_carrinho:inst8|inst13              ; 4       ;
+; mov_carrinho:inst8|inst12              ; 4       ;
 ; Total number of inverted registers = 4 ;         ;
 +----------------------------------------+---------+
 
@@ -345,7 +345,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jul 05 06:12:37 2017
+    Info: Processing started: Wed Jul 05 12:04:15 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RacingGame -c RacingGame
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mux81.v
@@ -439,7 +439,7 @@ Info (12128): Elaborating entity "fdiv_4" for hierarchy "VelsDivider:inst26|fdiv
 Info (12128): Elaborating entity "fdiv_8" for hierarchy "VelsDivider:inst26|fdiv_8:inst12"
 Info (12128): Elaborating entity "fdiv_32" for hierarchy "VelsDivider:inst26|fdiv_32:inst14"
 Info (12128): Elaborating entity "mov_carrinho" for hierarchy "mov_carrinho:inst8"
-Info (12128): Elaborating entity "mux4-1" for hierarchy "mov_carrinho:inst8|mux4-1:inst"
+Info (12128): Elaborating entity "mux4-1" for hierarchy "mov_carrinho:inst8|mux4-1:inst6"
 Info (12128): Elaborating entity "PistaVerilog" for hierarchy "PistaVerilog:inst1"
 Info (10041): Inferred latch for "pista[0][0]" at PistaVerilog.v(149)
 Info (10041): Inferred latch for "pista[0][1]" at PistaVerilog.v(149)
@@ -955,7 +955,7 @@ Info (10041): Inferred latch for "pista[63][6]" at PistaVerilog.v(149)
 Info (10041): Inferred latch for "pista[63][7]" at PistaVerilog.v(149)
 Info (12128): Elaborating entity "decoder7" for hierarchy "decoder7:inst9213"
 Info (12128): Elaborating entity "Contador" for hierarchy "Contador:inst433"
-Warning (10230): Verilog HDL assignment warning at Contador.v(13): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at Contador.v(12): truncated value with size 32 to match size of target (8)
 Info (12128): Elaborating entity "LivesCounter" for hierarchy "LivesCounter:inst11"
 Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer VelsDivider:inst26|Mux81:inst3|Mux0
@@ -1002,14 +1002,14 @@ Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "GPIO_1~synth"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 751 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 754 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 22 output pins
+    Info (21059): Implemented 24 output pins
     Info (21060): Implemented 18 bidirectional pins
-    Info (21061): Implemented 702 logic cells
+    Info (21061): Implemented 703 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 53 warnings
     Info: Peak virtual memory: 488 megabytes
-    Info: Processing ended: Wed Jul 05 06:12:41 2017
+    Info: Processing ended: Wed Jul 05 12:04:19 2017
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 

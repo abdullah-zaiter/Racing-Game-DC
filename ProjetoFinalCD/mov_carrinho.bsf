@@ -33,22 +33,22 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "POT1" (rect 0 0 30 14)(font "Arial" (font_size 8)))
-		(text "POT1" (rect 21 43 51 57)(font "Arial" (font_size 8)))
+		(text "POTA" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "POTA" (rect 21 43 54 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "POT2" (rect 0 0 30 14)(font "Arial" (font_size 8)))
-		(text "POT2" (rect 21 59 51 73)(font "Arial" (font_size 8)))
+		(text "POTB" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "POTB" (rect 21 59 52 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "Inicio" (rect 0 0 28 14)(font "Arial" (font_size 8)))
-		(text "Inicio" (rect 21 75 49 89)(font "Arial" (font_size 8)))
+		(text "inicio" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "inicio" (rect 21 75 49 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port

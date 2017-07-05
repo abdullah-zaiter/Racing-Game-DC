@@ -21,13 +21,15 @@ KEY[0] => inst12.IN0
 CLOCK_50 => ControleMatriz:inst.CLK_50
 CLOCK_50 => VelsDivider:inst26.50MHz
 SW[0] => inst6.IN0
-SW[1] => mov_carrinho:inst8.POT1
-SW[2] => mov_carrinho:inst8.POT2
-SW[3] => mov_carrinho:inst8.Inicio
-SW[3] => LivesCounter:inst11.Inicio
-SW[4] => VelsDivider:inst26.S[0]
-SW[5] => VelsDivider:inst26.S[1]
-SW[6] => VelsDivider:inst26.S[2]
+SW[1] => mov_carrinho:inst8.inicio
+SW[1] => LivesCounter:inst11.Inicio
+SW[2] => VelsDivider:inst26.S[0]
+SW[3] => VelsDivider:inst26.S[1]
+SW[4] => VelsDivider:inst26.S[2]
+GPIO_0[0] => mov_carrinho:inst8.POTA
+GPIO_0[0] => LEDG[0].DATAIN
+GPIO_0[1] => mov_carrinho:inst8.POTB
+GPIO_0[1] => LEDG[1].DATAIN
 HEX0[0] <= decoder7:inst9213.Out[0]
 HEX0[1] <= decoder7:inst9213.Out[1]
 HEX0[2] <= decoder7:inst9213.Out[2]
@@ -49,6 +51,8 @@ HEX2[3] <= decoder7:inst7.Out[3]
 HEX2[4] <= decoder7:inst7.Out[4]
 HEX2[5] <= decoder7:inst7.Out[5]
 HEX2[6] <= decoder7:inst7.Out[6]
+LEDG[0] <= GPIO_0[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= GPIO_0[1].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[0] <= Shock.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -826,82 +830,28 @@ Car[4] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 Car[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 Car[6] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 Car[7] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
-Inicio => inst8.ACLR
-Inicio => inst10.ACLR
-Inicio => inst9.ACLR
-Inicio => inst11.ACLR
-Inicio => inst12.ACLR
-Inicio => inst13.PRESET
-Inicio => inst14.ACLR
-Inicio => inst15.ACLR
-CLK => inst8.CLK
-CLK => inst10.CLK
-CLK => inst9.CLK
-CLK => inst11.CLK
-CLK => inst12.CLK
-CLK => inst13.CLK
-CLK => inst14.CLK
-CLK => inst15.CLK
-POT1 => inst21.IN0
-POT2 => mux4-1:inst.ESQ
-POT2 => mux4-1:inst4.ESQ
-POT2 => mux4-1:inst1.ESQ
-POT2 => mux4-1:inst5.ESQ
-POT2 => mux4-1:inst2.ESQ
-POT2 => mux4-1:inst3.ESQ
-POT2 => mux4-1:inst6.ESQ
-POT2 => mux4-1:inst7.ESQ
+inicio => inst14.ACLR
+inicio => inst13.ACLR
+inicio => inst12.PRESET
+inicio => inst11.ACLR
+inicio => inst9.ACLR
+inicio => inst10.ACLR
+inicio => inst8.ACLR
+inicio => inst15.ACLR
+CLK => assad.IN0
+POTA => inst4123.IN0
+POTB => zkaokzao.IN1
+POTB => mux4-1:inst6.ESQ
+POTB => mux4-1:inst3.ESQ
+POTB => mux4-1:inst2.ESQ
+POTB => mux4-1:inst5.ESQ
+POTB => mux4-1:inst1.ESQ
+POTB => mux4-1:inst4.ESQ
+POTB => mux4-1:inst.ESQ
+POTB => mux4-1:inst7.ESQ
 
 
-|test|mov_carrinho:inst8|mux4-1:inst
-OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-DIR => inst.IN0
-DIR => mdm.IN0
-DIR => inst5.IN0
-ESQ => inst.IN1
-ESQ => inst6.IN0
-ESQ => asmams.IN0
-ENT_ESQ => inst6.IN2
-ENT_DIR => inst5.IN2
-
-
-|test|mov_carrinho:inst8|mux4-1:inst4
-OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-DIR => inst.IN0
-DIR => mdm.IN0
-DIR => inst5.IN0
-ESQ => inst.IN1
-ESQ => inst6.IN0
-ESQ => asmams.IN0
-ENT_ESQ => inst6.IN2
-ENT_DIR => inst5.IN2
-
-
-|test|mov_carrinho:inst8|mux4-1:inst1
-OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-DIR => inst.IN0
-DIR => mdm.IN0
-DIR => inst5.IN0
-ESQ => inst.IN1
-ESQ => inst6.IN0
-ESQ => asmams.IN0
-ENT_ESQ => inst6.IN2
-ENT_DIR => inst5.IN2
-
-
-|test|mov_carrinho:inst8|mux4-1:inst5
-OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-DIR => inst.IN0
-DIR => mdm.IN0
-DIR => inst5.IN0
-ESQ => inst.IN1
-ESQ => inst6.IN0
-ESQ => asmams.IN0
-ENT_ESQ => inst6.IN2
-ENT_DIR => inst5.IN2
-
-
-|test|mov_carrinho:inst8|mux4-1:inst2
+|test|mov_carrinho:inst8|mux4-1:inst6
 OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 DIR => inst.IN0
 DIR => mdm.IN0
@@ -925,7 +875,55 @@ ENT_ESQ => inst6.IN2
 ENT_DIR => inst5.IN2
 
 
-|test|mov_carrinho:inst8|mux4-1:inst6
+|test|mov_carrinho:inst8|mux4-1:inst2
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst5
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst1
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst4
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst
 OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 DIR => inst.IN0
 DIR => mdm.IN0

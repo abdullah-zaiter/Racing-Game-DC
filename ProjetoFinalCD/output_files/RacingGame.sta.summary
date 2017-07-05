@@ -3,24 +3,24 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -4.286
-TNS   : -655.582
+Slack : -4.605
+TNS   : -705.391
 
 Type  : Slow Model Setup 'SW[0]'
-Slack : -1.566
-TNS   : -32.346
+Slack : -1.770
+TNS   : -34.802
 
 Type  : Slow Model Setup 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
-Slack : -0.673
-TNS   : -0.996
+Slack : -0.806
+TNS   : -1.438
 
 Type  : Slow Model Setup 'ControleMatriz:inst|Reg8:inst51|Q[1]'
-Slack : -0.030
-TNS   : -0.030
+Slack : -0.034
+TNS   : -0.034
 
 Type  : Slow Model Hold 'CLOCK_50'
-Slack : -2.534
-TNS   : -2.534
+Slack : -2.546
+TNS   : -2.546
 
 Type  : Slow Model Hold 'ControleMatriz:inst|Reg8:inst51|Q[1]'
 Slack : 0.391
@@ -31,16 +31,16 @@ Slack : 0.391
 TNS   : 0.000
 
 Type  : Slow Model Hold 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
-Slack : 0.534
+Slack : 0.537
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'SW[0]'
-Slack : -2.454
-TNS   : -88.622
+Slack : -2.546
+TNS   : -124.547
 
 Type  : Slow Model Removal 'SW[0]'
-Slack : -1.925
-TNS   : -97.902
+Slack : -2.650
+TNS   : -125.285
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
@@ -59,24 +59,24 @@ Slack : -0.500
 TNS   : -3.000
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -1.736
-TNS   : -159.140
+Slack : -1.850
+TNS   : -179.030
 
 Type  : Fast Model Setup 'SW[0]'
-Slack : -0.476
-TNS   : -2.768
+Slack : -0.429
+TNS   : -3.938
 
 Type  : Fast Model Setup 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
-Slack : 0.248
+Slack : 0.193
 TNS   : 0.000
 
 Type  : Fast Model Setup 'ControleMatriz:inst|Reg8:inst51|Q[1]'
-Slack : 0.521
+Slack : 0.520
 TNS   : 0.000
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.575
-TNS   : -1.575
+Slack : -1.587
+TNS   : -1.587
 
 Type  : Fast Model Hold 'ControleMatriz:inst|Reg8:inst51|Q[1]'
 Slack : 0.215
@@ -87,16 +87,16 @@ Slack : 0.215
 TNS   : 0.000
 
 Type  : Fast Model Hold 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
-Slack : 0.246
+Slack : 0.248
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'SW[0]'
-Slack : -0.668
-TNS   : -3.880
+Slack : -0.679
+TNS   : -9.557
 
 Type  : Fast Model Removal 'SW[0]'
-Slack : -1.265
-TNS   : -69.558
+Slack : -1.611
+TNS   : -83.145
 
 Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
