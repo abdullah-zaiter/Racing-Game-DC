@@ -1,5 +1,5 @@
 Simulator report for RacingGame
-Mon Jul 03 12:55:03 2017
+Wed Jul 05 02:29:03 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,43 +44,42 @@ applicable agreement for further details.
 ; Type                        ; Value        ;
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
-; Simulation End Time         ; 10.0 us      ;
-; Simulation Netlist Size     ; 66 nodes     ;
-; Simulation Coverage         ;       0.00 % ;
-; Total Number of Transitions ; 0            ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 16 nodes     ;
+; Simulation Coverage         ;      87.50 % ;
+; Total Number of Transitions ; 98           ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
-; Device                      ; EP2C5T144C6  ;
 +-----------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                                                             ;
-+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                                                           ; Default Value ;
-+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Timing                                                                            ; Timing        ;
-; Start time                                                                                 ; 0 ns                                                                              ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                                                               ;               ;
-; Vector input source                                                                        ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/WaveformPistaB.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                                                                ; On            ;
-; Check outputs                                                                              ; Off                                                                               ; Off           ;
-; Report simulation coverage                                                                 ; On                                                                                ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                                                                ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                                                                ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                                                                ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                                                               ; Off           ;
-; Detect glitches                                                                            ; Off                                                                               ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                                                               ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                                                               ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                               ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                                                               ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                        ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                               ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                               ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                              ; Auto          ;
-+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                     ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                  ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                        ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                         ;               ;
+; Vector input source                                                                        ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                          ; On            ;
+; Check outputs                                                                              ; Off                                                                         ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                          ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                          ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                          ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                         ; Off           ;
+; Detect glitches                                                                            ; Off                                                                         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                         ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                        ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+---------------+
 
 
 +----------------------+
@@ -95,140 +94,58 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;       0.00 % ;
-; Total nodes checked                                 ; 66           ;
-; Total output ports checked                          ; 50           ;
-; Total output ports with complete 1/0-value coverage ; 0            ;
-; Total output ports with no 1/0-value coverage       ; 50           ;
-; Total output ports with no 1-value coverage         ; 50           ;
-; Total output ports with no 0-value coverage         ; 50           ;
+; Total coverage as a percentage                      ;      87.50 % ;
+; Total nodes checked                                 ; 16           ;
+; Total output ports checked                          ; 16           ;
+; Total output ports with complete 1/0-value coverage ; 14           ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 2            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+-------------------------------------------------+
-; Complete 1/0-Value Coverage                     ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |LivesCounter|Hexa[2] ; |LivesCounter|Hexa[2] ; pin_out          ;
+; |LivesCounter|Hexa[1] ; |LivesCounter|Hexa[1] ; pin_out          ;
+; |LivesCounter|Hexa[0] ; |LivesCounter|Hexa[0] ; pin_out          ;
+; |LivesCounter|inst1   ; |LivesCounter|inst1   ; regout           ;
+; |LivesCounter|inst1~0 ; |LivesCounter|inst1~0 ; out0             ;
+; |LivesCounter|inst1~1 ; |LivesCounter|inst1~1 ; out0             ;
+; |LivesCounter|inst1~2 ; |LivesCounter|inst1~2 ; out0             ;
+; |LivesCounter|inst    ; |LivesCounter|inst    ; regout           ;
+; |LivesCounter|CLK     ; |LivesCounter|CLK     ; out              ;
+; |LivesCounter|inst2   ; |LivesCounter|inst2   ; regout           ;
+; |LivesCounter|inst2~0 ; |LivesCounter|inst2~0 ; out0             ;
+; |LivesCounter|inst2~1 ; |LivesCounter|inst2~1 ; out0             ;
+; |LivesCounter|inst2~2 ; |LivesCounter|inst2~2 ; out0             ;
+; |LivesCounter|inst3   ; |LivesCounter|inst3   ; out0             ;
++-----------------------+-----------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+----------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                         ;
-+-------------------------------+-------------------------------+------------------+
-; Node Name                     ; Output Port Name              ; Output Port Type ;
-+-------------------------------+-------------------------------+------------------+
-; |TesteMatriz|inst34           ; |TesteMatriz|inst34           ; regout           ;
-; |TesteMatriz|inst28           ; |TesteMatriz|inst28           ; regout           ;
-; |TesteMatriz|inst3[7]         ; |TesteMatriz|inst3[7]         ; regout           ;
-; |TesteMatriz|inst2[7]         ; |TesteMatriz|inst2[7]         ; regout           ;
-; |TesteMatriz|inst31           ; |TesteMatriz|inst31           ; regout           ;
-; |TesteMatriz|inst[7]          ; |TesteMatriz|inst[7]          ; regout           ;
-; |TesteMatriz|inst27           ; |TesteMatriz|inst27           ; regout           ;
-; |TesteMatriz|inst40[7]        ; |TesteMatriz|inst40[7]        ; regout           ;
-; |TesteMatriz|inst40[6]        ; |TesteMatriz|inst40[6]        ; regout           ;
-; |TesteMatriz|inst40[5]        ; |TesteMatriz|inst40[5]        ; regout           ;
-; |TesteMatriz|inst40[4]        ; |TesteMatriz|inst40[4]        ; regout           ;
-; |TesteMatriz|inst40[3]        ; |TesteMatriz|inst40[3]        ; regout           ;
-; |TesteMatriz|inst40[2]        ; |TesteMatriz|inst40[2]        ; regout           ;
-; |TesteMatriz|inst40[1]        ; |TesteMatriz|inst40[1]        ; regout           ;
-; |TesteMatriz|inst40[0]        ; |TesteMatriz|inst40[0]        ; regout           ;
-; |TesteMatriz|inst29           ; |TesteMatriz|inst29           ; regout           ;
-; |TesteMatriz|inst37~0         ; |TesteMatriz|inst37~0         ; combout          ;
-; |TesteMatriz|inst37~1         ; |TesteMatriz|inst37~1         ; combout          ;
-; |TesteMatriz|inst38           ; |TesteMatriz|inst38           ; combout          ;
-; |TesteMatriz|inst5[7]         ; |TesteMatriz|inst5[7]         ; regout           ;
-; |TesteMatriz|inst18[7]~0      ; |TesteMatriz|inst18[7]~0      ; combout          ;
-; |TesteMatriz|inst18[7]~1      ; |TesteMatriz|inst18[7]~1      ; combout          ;
-; |TesteMatriz|inst6[7]         ; |TesteMatriz|inst6[7]         ; regout           ;
-; |TesteMatriz|inst18[7]~2      ; |TesteMatriz|inst18[7]~2      ; combout          ;
-; |TesteMatriz|inst18[7]~3      ; |TesteMatriz|inst18[7]~3      ; combout          ;
-; |TesteMatriz|GPIO_117         ; |TesteMatriz|GPIO_117~output  ; padio            ;
-; |TesteMatriz|GPIO_12          ; |TesteMatriz|GPIO_12~output   ; padio            ;
-; |TesteMatriz|GPIO_116         ; |TesteMatriz|GPIO_116~output  ; padio            ;
-; |TesteMatriz|GPIO_112         ; |TesteMatriz|GPIO_112~output  ; padio            ;
-; |TesteMatriz|GPIO_15          ; |TesteMatriz|GPIO_15~output   ; padio            ;
-; |TesteMatriz|GPIO_111         ; |TesteMatriz|GPIO_111~output  ; padio            ;
-; |TesteMatriz|GPIO_13          ; |TesteMatriz|GPIO_13~output   ; padio            ;
-; |TesteMatriz|GPIO_114         ; |TesteMatriz|GPIO_114~output  ; padio            ;
-; |TesteMatriz|GPIO_110         ; |TesteMatriz|GPIO_110~output  ; padio            ;
-; |TesteMatriz|GPIO_115         ; |TesteMatriz|GPIO_115~output  ; padio            ;
-; |TesteMatriz|GPIO_17          ; |TesteMatriz|GPIO_17~output   ; padio            ;
-; |TesteMatriz|GPIO_113         ; |TesteMatriz|GPIO_113~output  ; padio            ;
-; |TesteMatriz|GPIO_10          ; |TesteMatriz|GPIO_10~output   ; padio            ;
-; |TesteMatriz|GPIO_16          ; |TesteMatriz|GPIO_16~output   ; padio            ;
-; |TesteMatriz|GPIO_11          ; |TesteMatriz|GPIO_11~output   ; padio            ;
-; |TesteMatriz|GPIO_14          ; |TesteMatriz|GPIO_14~output   ; padio            ;
-; |TesteMatriz|CLOCK_50         ; |TesteMatriz|CLOCK_50~corein  ; combout          ;
-; |TesteMatriz|CLOCK_50~clkctrl ; |TesteMatriz|CLOCK_50~clkctrl ; outclk           ;
-; |TesteMatriz|inst6[7]~feeder  ; |TesteMatriz|inst6[7]~feeder  ; combout          ;
-; |TesteMatriz|inst3[7]~feeder  ; |TesteMatriz|inst3[7]~feeder  ; combout          ;
-; |TesteMatriz|inst2[7]~feeder  ; |TesteMatriz|inst2[7]~feeder  ; combout          ;
-; |TesteMatriz|inst28~feeder    ; |TesteMatriz|inst28~feeder    ; combout          ;
-; |TesteMatriz|inst[7]~feeder   ; |TesteMatriz|inst[7]~feeder   ; combout          ;
-; |TesteMatriz|inst40[3]~feeder ; |TesteMatriz|inst40[3]~feeder ; combout          ;
-; |TesteMatriz|inst40[0]~feeder ; |TesteMatriz|inst40[0]~feeder ; combout          ;
-+-------------------------------+-------------------------------+------------------+
++------------------------------------------------------------------+
+; Missing 1-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |LivesCounter|Hexa[3] ; |LivesCounter|Hexa[3] ; pin_out          ;
++-----------------------+-----------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+----------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                         ;
-+-------------------------------+-------------------------------+------------------+
-; Node Name                     ; Output Port Name              ; Output Port Type ;
-+-------------------------------+-------------------------------+------------------+
-; |TesteMatriz|inst34           ; |TesteMatriz|inst34           ; regout           ;
-; |TesteMatriz|inst28           ; |TesteMatriz|inst28           ; regout           ;
-; |TesteMatriz|inst3[7]         ; |TesteMatriz|inst3[7]         ; regout           ;
-; |TesteMatriz|inst2[7]         ; |TesteMatriz|inst2[7]         ; regout           ;
-; |TesteMatriz|inst31           ; |TesteMatriz|inst31           ; regout           ;
-; |TesteMatriz|inst[7]          ; |TesteMatriz|inst[7]          ; regout           ;
-; |TesteMatriz|inst27           ; |TesteMatriz|inst27           ; regout           ;
-; |TesteMatriz|inst40[7]        ; |TesteMatriz|inst40[7]        ; regout           ;
-; |TesteMatriz|inst40[6]        ; |TesteMatriz|inst40[6]        ; regout           ;
-; |TesteMatriz|inst40[5]        ; |TesteMatriz|inst40[5]        ; regout           ;
-; |TesteMatriz|inst40[4]        ; |TesteMatriz|inst40[4]        ; regout           ;
-; |TesteMatriz|inst40[3]        ; |TesteMatriz|inst40[3]        ; regout           ;
-; |TesteMatriz|inst40[2]        ; |TesteMatriz|inst40[2]        ; regout           ;
-; |TesteMatriz|inst40[1]        ; |TesteMatriz|inst40[1]        ; regout           ;
-; |TesteMatriz|inst40[0]        ; |TesteMatriz|inst40[0]        ; regout           ;
-; |TesteMatriz|inst29           ; |TesteMatriz|inst29           ; regout           ;
-; |TesteMatriz|inst37~0         ; |TesteMatriz|inst37~0         ; combout          ;
-; |TesteMatriz|inst37~1         ; |TesteMatriz|inst37~1         ; combout          ;
-; |TesteMatriz|inst38           ; |TesteMatriz|inst38           ; combout          ;
-; |TesteMatriz|inst5[7]         ; |TesteMatriz|inst5[7]         ; regout           ;
-; |TesteMatriz|inst18[7]~0      ; |TesteMatriz|inst18[7]~0      ; combout          ;
-; |TesteMatriz|inst18[7]~1      ; |TesteMatriz|inst18[7]~1      ; combout          ;
-; |TesteMatriz|inst6[7]         ; |TesteMatriz|inst6[7]         ; regout           ;
-; |TesteMatriz|inst18[7]~2      ; |TesteMatriz|inst18[7]~2      ; combout          ;
-; |TesteMatriz|inst18[7]~3      ; |TesteMatriz|inst18[7]~3      ; combout          ;
-; |TesteMatriz|GPIO_117         ; |TesteMatriz|GPIO_117~output  ; padio            ;
-; |TesteMatriz|GPIO_12          ; |TesteMatriz|GPIO_12~output   ; padio            ;
-; |TesteMatriz|GPIO_116         ; |TesteMatriz|GPIO_116~output  ; padio            ;
-; |TesteMatriz|GPIO_112         ; |TesteMatriz|GPIO_112~output  ; padio            ;
-; |TesteMatriz|GPIO_15          ; |TesteMatriz|GPIO_15~output   ; padio            ;
-; |TesteMatriz|GPIO_111         ; |TesteMatriz|GPIO_111~output  ; padio            ;
-; |TesteMatriz|GPIO_13          ; |TesteMatriz|GPIO_13~output   ; padio            ;
-; |TesteMatriz|GPIO_114         ; |TesteMatriz|GPIO_114~output  ; padio            ;
-; |TesteMatriz|GPIO_110         ; |TesteMatriz|GPIO_110~output  ; padio            ;
-; |TesteMatriz|GPIO_115         ; |TesteMatriz|GPIO_115~output  ; padio            ;
-; |TesteMatriz|GPIO_17          ; |TesteMatriz|GPIO_17~output   ; padio            ;
-; |TesteMatriz|GPIO_113         ; |TesteMatriz|GPIO_113~output  ; padio            ;
-; |TesteMatriz|GPIO_10          ; |TesteMatriz|GPIO_10~output   ; padio            ;
-; |TesteMatriz|GPIO_16          ; |TesteMatriz|GPIO_16~output   ; padio            ;
-; |TesteMatriz|GPIO_11          ; |TesteMatriz|GPIO_11~output   ; padio            ;
-; |TesteMatriz|GPIO_14          ; |TesteMatriz|GPIO_14~output   ; padio            ;
-; |TesteMatriz|CLOCK_50         ; |TesteMatriz|CLOCK_50~corein  ; combout          ;
-; |TesteMatriz|CLOCK_50~clkctrl ; |TesteMatriz|CLOCK_50~clkctrl ; outclk           ;
-; |TesteMatriz|inst6[7]~feeder  ; |TesteMatriz|inst6[7]~feeder  ; combout          ;
-; |TesteMatriz|inst3[7]~feeder  ; |TesteMatriz|inst3[7]~feeder  ; combout          ;
-; |TesteMatriz|inst2[7]~feeder  ; |TesteMatriz|inst2[7]~feeder  ; combout          ;
-; |TesteMatriz|inst28~feeder    ; |TesteMatriz|inst28~feeder    ; combout          ;
-; |TesteMatriz|inst[7]~feeder   ; |TesteMatriz|inst[7]~feeder   ; combout          ;
-; |TesteMatriz|inst40[3]~feeder ; |TesteMatriz|inst40[3]~feeder ; combout          ;
-; |TesteMatriz|inst40[0]~feeder ; |TesteMatriz|inst40[0]~feeder ; combout          ;
-+-------------------------------+-------------------------------+------------------+
++------------------------------------------------------------------+
+; Missing 0-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |LivesCounter|Hexa[3] ; |LivesCounter|Hexa[3] ; pin_out          ;
+; |LivesCounter|Inicio  ; |LivesCounter|Inicio  ; out              ;
++-----------------------+-----------------------+------------------+
 
 
 +---------------------+
@@ -244,54 +161,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jul 03 12:55:03 2017
+    Info: Processing started: Wed Jul 05 02:29:02 2017
 Info: Command: quartus_sim --simulation_results_format=VWF RacingGame -c RacingGame
-Info (324025): Using vector source file "C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/WaveformPistaB.vwf"
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Out[7]" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Out[6]" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Out[5]" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Out[4]" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Out[3]" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Out[2]" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Out[1]" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Out[0]" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "ClockAnel" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "ClockPista" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Linha1" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Linha2" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Linha3" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Linha4" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Linha5" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Linha6" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Linha7" in design.
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Linha8" in design.
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_117"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_12"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_116"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_112"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_15"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_111"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_13"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_114"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_110"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_115"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_17"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_113"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_10"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_16"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_11"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|GPIO_14"
-Warning (328012): Can't find signal in vector source file for input pin "|TesteMatriz|CLOCK_50"
+Info (324025): Using vector source file "C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is       0.00 %
-Info (328052): Number of transitions in simulation is 0
+Info (328053): Simulation coverage is      87.50 %
+Info (328052): Number of transitions in simulation is 98
 Info (324045): Vector file RacingGame.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II 64-Bit Simulator was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 362 megabytes
-    Info: Processing ended: Mon Jul 03 12:55:03 2017
-    Info: Elapsed time: 00:00:00
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 331 megabytes
+    Info: Processing ended: Wed Jul 05 02:29:03 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

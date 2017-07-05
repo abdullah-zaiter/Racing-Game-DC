@@ -1,122 +1,437 @@
-|TESTE_MAROTO
-GPIO_1[17] <> inst20
-GPIO_1[16] <> inst21
-GPIO_1[15] <> inst22
-GPIO_1[14] <> inst23
-GPIO_1[13] <> inst24
-GPIO_1[12] <> inst25
-GPIO_1[11] <> inst26
-GPIO_1[10] <> inst35
-GPIO_1[9] <> <VCC>
-GPIO_1[8] <> <VCC>
-GPIO_1[7] <> inst18[0]
-GPIO_1[6] <> inst18[1]
-GPIO_1[5] <> inst18[2]
-GPIO_1[4] <> inst18[3]
-GPIO_1[3] <> inst18[4]
-GPIO_1[2] <> inst18[5]
-GPIO_1[1] <> inst18[6]
-GPIO_1[0] <> inst18[7]
-SW[0] => inst27.ACLR
-SW[0] => inst34.ACLR
-SW[0] => inst33.ACLR
-SW[0] => inst32.ACLR
-SW[0] => inst31.ACLR
-SW[0] => inst30.ACLR
-SW[0] => inst29.ACLR
-SW[0] => inst28.ACLR
-SW[0] => inst4[7].ACLR
-SW[0] => inst4[6].ACLR
-SW[0] => inst4[5].ACLR
-SW[0] => inst4[4].ACLR
-SW[0] => inst4[3].ACLR
-SW[0] => inst4[2].ACLR
-SW[0] => inst4[1].ACLR
-SW[0] => inst4[0].ACLR
-SW[0] => inst281.PRESET
-SW[0] => inst273.PRESET
-SW[0] => inst265.PRESET
-SW[0] => inst257.PRESET
-SW[0] => inst313.PRESET
-SW[0] => inst305.PRESET
-SW[0] => inst297.PRESET
-SW[0] => inst289.PRESET
-SW[0] => inst275.PRESET
-SW[0] => inst307.PRESET
-SW[0] => inst276.PRESET
-SW[0] => inst308.PRESET
-SW[0] => inst277.PRESET
-SW[0] => inst309.PRESET
-SW[0] => inst278.PRESET
-SW[0] => inst310.PRESET
-SW[0] => inst288.PRESET
-SW[0] => inst280.PRESET
-SW[0] => inst272.PRESET
-SW[0] => inst264.PRESET
-SW[0] => inst320.PRESET
-SW[0] => inst312.PRESET
-SW[0] => inst304.PRESET
-SW[0] => inst296.PRESET
-SW[0] => inst1[7].ACLR
-SW[0] => inst1[6].ACLR
-SW[0] => inst1[5].ACLR
-SW[0] => inst1[4].ACLR
-SW[0] => inst1[3].ACLR
-SW[0] => inst1[2].ACLR
-SW[0] => inst1[1].ACLR
-SW[0] => inst1[0].ACLR
-SW[0] => inst[7].ACLR
-SW[0] => inst[6].ACLR
-SW[0] => inst[5].ACLR
-SW[0] => inst[4].ACLR
-SW[0] => inst[3].ACLR
-SW[0] => inst[2].ACLR
-SW[0] => inst[1].ACLR
-SW[0] => inst[0].ACLR
-SW[0] => inst2[7].ACLR
-SW[0] => inst2[6].ACLR
-SW[0] => inst2[5].ACLR
-SW[0] => inst2[4].ACLR
-SW[0] => inst2[3].ACLR
-SW[0] => inst2[2].ACLR
-SW[0] => inst2[1].ACLR
-SW[0] => inst2[0].ACLR
-SW[0] => inst7[7].ACLR
-SW[0] => inst7[6].ACLR
-SW[0] => inst7[5].ACLR
-SW[0] => inst7[4].ACLR
-SW[0] => inst7[3].ACLR
-SW[0] => inst7[2].ACLR
-SW[0] => inst7[1].ACLR
-SW[0] => inst7[0].ACLR
-SW[0] => inst3[7].ACLR
-SW[0] => inst3[6].ACLR
-SW[0] => inst3[5].ACLR
-SW[0] => inst3[4].ACLR
-SW[0] => inst3[3].ACLR
-SW[0] => inst3[2].ACLR
-SW[0] => inst3[1].ACLR
-SW[0] => inst3[0].ACLR
-SW[0] => inst6[7].ACLR
-SW[0] => inst6[6].ACLR
-SW[0] => inst6[5].ACLR
-SW[0] => inst6[4].ACLR
-SW[0] => inst6[3].ACLR
-SW[0] => inst6[2].ACLR
-SW[0] => inst6[1].ACLR
-SW[0] => inst6[0].ACLR
-SW[0] => inst5[7].ACLR
-SW[0] => inst5[6].ACLR
-SW[0] => inst5[5].ACLR
-SW[0] => inst5[4].ACLR
-SW[0] => inst5[3].ACLR
-SW[0] => inst5[2].ACLR
-SW[0] => inst5[1].ACLR
-SW[0] => inst5[0].ACLR
-CLOCK_50 => fdiv100khz:inst36.clkin
+|test
+GPIO_1[17] <> ControleMatriz:inst.GPI[17]
+GPIO_1[16] <> ControleMatriz:inst.GPI[16]
+GPIO_1[15] <> ControleMatriz:inst.GPI[15]
+GPIO_1[14] <> ControleMatriz:inst.GPI[14]
+GPIO_1[13] <> ControleMatriz:inst.GPI[13]
+GPIO_1[12] <> ControleMatriz:inst.GPI[12]
+GPIO_1[11] <> ControleMatriz:inst.GPI[11]
+GPIO_1[10] <> ControleMatriz:inst.GPI[10]
+GPIO_1[9] <> ControleMatriz:inst.GPI[9]
+GPIO_1[8] <> ControleMatriz:inst.GPI[8]
+GPIO_1[7] <> ControleMatriz:inst.GPI[7]
+GPIO_1[6] <> ControleMatriz:inst.GPI[6]
+GPIO_1[5] <> ControleMatriz:inst.GPI[5]
+GPIO_1[4] <> ControleMatriz:inst.GPI[4]
+GPIO_1[3] <> ControleMatriz:inst.GPI[3]
+GPIO_1[2] <> ControleMatriz:inst.GPI[2]
+GPIO_1[1] <> ControleMatriz:inst.GPI[1]
+GPIO_1[0] <> ControleMatriz:inst.GPI[0]
+KEY[0] => inst12.IN0
+CLOCK_50 => ControleMatriz:inst.CLK_50
+CLOCK_50 => VelsDivider:inst26.50MHz
+SW[0] => inst6.IN0
+SW[1] => mov_carrinho:inst8.POT1
+SW[2] => mov_carrinho:inst8.POT2
+SW[3] => mov_carrinho:inst8.Inicio
+SW[3] => LivesCounter:inst11.Inicio
+SW[4] => VelsDivider:inst26.S[0]
+SW[5] => VelsDivider:inst26.S[1]
+SW[6] => VelsDivider:inst26.S[2]
+HEX0[0] <= decoder7:inst9213.Out[0]
+HEX0[1] <= decoder7:inst9213.Out[1]
+HEX0[2] <= decoder7:inst9213.Out[2]
+HEX0[3] <= decoder7:inst9213.Out[3]
+HEX0[4] <= decoder7:inst9213.Out[4]
+HEX0[5] <= decoder7:inst9213.Out[5]
+HEX0[6] <= decoder7:inst9213.Out[6]
+HEX1[0] <= decoder7:inst823.Out[0]
+HEX1[1] <= decoder7:inst823.Out[1]
+HEX1[2] <= decoder7:inst823.Out[2]
+HEX1[3] <= decoder7:inst823.Out[3]
+HEX1[4] <= decoder7:inst823.Out[4]
+HEX1[5] <= decoder7:inst823.Out[5]
+HEX1[6] <= decoder7:inst823.Out[6]
+HEX2[0] <= decoder7:inst7.Out[0]
+HEX2[1] <= decoder7:inst7.Out[1]
+HEX2[2] <= decoder7:inst7.Out[2]
+HEX2[3] <= decoder7:inst7.Out[3]
+HEX2[4] <= decoder7:inst7.Out[4]
+HEX2[5] <= decoder7:inst7.Out[5]
+HEX2[6] <= decoder7:inst7.Out[6]
+LEDR[0] <= Shock.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TESTE_MAROTO|fdiv100khz:inst36
+|test|ControleMatriz:inst
+Shock <= VerificadorComCarro:inst52.Shock
+Car[0] => VerificadorComCarro:inst52.Car[0]
+Car[1] => VerificadorComCarro:inst52.Car[1]
+Car[2] => VerificadorComCarro:inst52.Car[2]
+Car[3] => VerificadorComCarro:inst52.Car[3]
+Car[4] => VerificadorComCarro:inst52.Car[4]
+Car[5] => VerificadorComCarro:inst52.Car[5]
+Car[6] => VerificadorComCarro:inst52.Car[6]
+Car[7] => VerificadorComCarro:inst52.Car[7]
+CLK_PISTA => Reg8:inst51.CLK
+CLK_PISTA => Reg8:inst49.CLK
+CLK_PISTA => Reg8:inst47.CLK
+CLK_PISTA => Reg8:inst46.CLK
+CLK_PISTA => Reg8:inst45.CLK
+CLK_PISTA => Reg8:inst43.CLK
+CLK_PISTA => Reg8:inst42.CLK
+CLK_PISTA => Reg8:inst.CLK
+LOAD => Reg8:inst51.LOAD
+LOAD => Reg8:inst49.LOAD
+LOAD => Reg8:inst47.LOAD
+LOAD => Reg8:inst46.LOAD
+LOAD => Reg8:inst45.LOAD
+LOAD => Reg8:inst43.LOAD
+LOAD => Reg8:inst42.LOAD
+LOAD => Reg8:inst.LOAD
+InPista[7] => Reg8:inst.D[0]
+InPista[6] => Reg8:inst.D[1]
+InPista[5] => Reg8:inst.D[2]
+InPista[4] => Reg8:inst.D[3]
+InPista[3] => Reg8:inst.D[4]
+InPista[2] => Reg8:inst.D[5]
+InPista[1] => Reg8:inst.D[6]
+InPista[0] => Reg8:inst.D[7]
+GPI[17] <> inst20
+GPI[16] <> inst21
+GPI[15] <> inst22
+GPI[14] <> inst23
+GPI[13] <> inst24
+GPI[12] <> inst25
+GPI[11] <> inst26
+GPI[10] <> inst35
+GPI[9] <> <VCC>
+GPI[8] <> <VCC>
+GPI[7] <> inst18[0]
+GPI[6] <> inst18[1]
+GPI[5] <> inst18[2]
+GPI[4] <> inst18[3]
+GPI[3] <> inst18[4]
+GPI[2] <> inst18[5]
+GPI[1] <> inst18[6]
+GPI[0] <> inst18[7]
+CLK_50 => fdiv100khz:inst36.clkin
+
+
+|test|ControleMatriz:inst|VerificadorComCarro:inst52
+D[0] => Shock.IN0
+D[0] => Q.IN0
+D[1] => Shock.IN0
+D[1] => Q.IN0
+D[2] => Shock.IN0
+D[2] => Q.IN0
+D[3] => Shock.IN0
+D[3] => Q.IN0
+D[4] => Shock.IN0
+D[4] => Q.IN0
+D[5] => Shock.IN0
+D[5] => Q.IN0
+D[6] => Shock.IN0
+D[6] => Q.IN0
+D[7] => Shock.IN0
+D[7] => Q.IN0
+Car[0] => Shock.IN1
+Car[0] => Q.IN1
+Car[1] => Shock.IN1
+Car[1] => Q.IN1
+Car[2] => Shock.IN1
+Car[2] => Q.IN1
+Car[3] => Shock.IN1
+Car[3] => Q.IN1
+Car[4] => Shock.IN1
+Car[4] => Q.IN1
+Car[5] => Shock.IN1
+Car[5] => Q.IN1
+Car[6] => Shock.IN1
+Car[6] => Q.IN1
+Car[7] => Shock.IN1
+Car[7] => Q.IN1
+Q[0] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Shock <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|ControleMatriz:inst|Reg8:inst51
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+LOAD => Q[0]~reg0.PRESET
+LOAD => Q[1]~reg0.ACLR
+LOAD => Q[2]~reg0.ACLR
+LOAD => Q[3]~reg0.ACLR
+LOAD => Q[4]~reg0.ACLR
+LOAD => Q[5]~reg0.ACLR
+LOAD => Q[6]~reg0.ACLR
+LOAD => Q[7]~reg0.PRESET
+
+
+|test|ControleMatriz:inst|Reg8:inst49
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+LOAD => Q[0]~reg0.PRESET
+LOAD => Q[1]~reg0.ACLR
+LOAD => Q[2]~reg0.ACLR
+LOAD => Q[3]~reg0.ACLR
+LOAD => Q[4]~reg0.ACLR
+LOAD => Q[5]~reg0.ACLR
+LOAD => Q[6]~reg0.ACLR
+LOAD => Q[7]~reg0.PRESET
+
+
+|test|ControleMatriz:inst|Reg8:inst47
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+LOAD => Q[0]~reg0.PRESET
+LOAD => Q[1]~reg0.ACLR
+LOAD => Q[2]~reg0.ACLR
+LOAD => Q[3]~reg0.ACLR
+LOAD => Q[4]~reg0.ACLR
+LOAD => Q[5]~reg0.ACLR
+LOAD => Q[6]~reg0.ACLR
+LOAD => Q[7]~reg0.PRESET
+
+
+|test|ControleMatriz:inst|Reg8:inst46
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+LOAD => Q[0]~reg0.PRESET
+LOAD => Q[1]~reg0.ACLR
+LOAD => Q[2]~reg0.ACLR
+LOAD => Q[3]~reg0.ACLR
+LOAD => Q[4]~reg0.ACLR
+LOAD => Q[5]~reg0.ACLR
+LOAD => Q[6]~reg0.ACLR
+LOAD => Q[7]~reg0.PRESET
+
+
+|test|ControleMatriz:inst|Reg8:inst45
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+LOAD => Q[0]~reg0.PRESET
+LOAD => Q[1]~reg0.ACLR
+LOAD => Q[2]~reg0.ACLR
+LOAD => Q[3]~reg0.ACLR
+LOAD => Q[4]~reg0.ACLR
+LOAD => Q[5]~reg0.ACLR
+LOAD => Q[6]~reg0.ACLR
+LOAD => Q[7]~reg0.PRESET
+
+
+|test|ControleMatriz:inst|Reg8:inst43
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+LOAD => Q[0]~reg0.PRESET
+LOAD => Q[1]~reg0.ACLR
+LOAD => Q[2]~reg0.ACLR
+LOAD => Q[3]~reg0.ACLR
+LOAD => Q[4]~reg0.ACLR
+LOAD => Q[5]~reg0.ACLR
+LOAD => Q[6]~reg0.ACLR
+LOAD => Q[7]~reg0.PRESET
+
+
+|test|ControleMatriz:inst|Reg8:inst42
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+LOAD => Q[0]~reg0.PRESET
+LOAD => Q[1]~reg0.ACLR
+LOAD => Q[2]~reg0.ACLR
+LOAD => Q[3]~reg0.ACLR
+LOAD => Q[4]~reg0.ACLR
+LOAD => Q[5]~reg0.ACLR
+LOAD => Q[6]~reg0.ACLR
+LOAD => Q[7]~reg0.PRESET
+
+
+|test|ControleMatriz:inst|Reg8:inst
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+LOAD => Q[0]~reg0.PRESET
+LOAD => Q[1]~reg0.ACLR
+LOAD => Q[2]~reg0.ACLR
+LOAD => Q[3]~reg0.ACLR
+LOAD => Q[4]~reg0.ACLR
+LOAD => Q[5]~reg0.ACLR
+LOAD => Q[6]~reg0.ACLR
+LOAD => Q[7]~reg0.PRESET
+
+
+|test|ControleMatriz:inst|fdiv100khz:inst36
 clkin => clkout~reg0.CLK
 clkin => cont[0].CLK
 clkin => cont[1].CLK
@@ -153,7 +468,33 @@ clkin => cont[31].CLK
 clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TESTE_MAROTO|fdiv100kto1:inst43
+|test|VelsDivider:inst26
+DividedClock <= Mux81:inst3.out
+50MHz => DeMux18:inst2.in
+S[0] => DeMux18:inst2.s0
+S[0] => Mux81:inst3.sel[0]
+S[1] => DeMux18:inst2.s1
+S[1] => Mux81:inst3.sel[1]
+S[2] => DeMux18:inst2.s2
+S[2] => Mux81:inst3.sel[2]
+
+
+|test|VelsDivider:inst26|Mux81:inst3
+d0 => Mux0.IN0
+d1 => Mux0.IN1
+d2 => Mux0.IN2
+d3 => Mux0.IN3
+d4 => Mux0.IN4
+d5 => Mux0.IN5
+d6 => Mux0.IN6
+d7 => Mux0.IN7
+sel[0] => Mux0.IN10
+sel[1] => Mux0.IN9
+sel[2] => Mux0.IN8
+out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|VelsDivider:inst26|fdiv_000:inst
 clkin => clkout~reg0.CLK
 clkin => cont[0].CLK
 clkin => cont[1].CLK
@@ -188,5 +529,544 @@ clkin => cont[29].CLK
 clkin => cont[30].CLK
 clkin => cont[31].CLK
 clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|VelsDivider:inst26|DeMux18:inst2
+in => d0.IN0
+in => d4.IN0
+s0 => d1.IN1
+s0 => d3.IN1
+s0 => d5.IN1
+s0 => d7.IN1
+s0 => d0.IN1
+s0 => d2.IN1
+s0 => d4.IN1
+s0 => d6.IN1
+s1 => d2.IN1
+s1 => d6.IN1
+s1 => d0.IN1
+s1 => d4.IN1
+s2 => d4.IN1
+s2 => d0.IN1
+d0 <= d0.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= d1.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= d2.DB_MAX_OUTPUT_PORT_TYPE
+d3 <= d3.DB_MAX_OUTPUT_PORT_TYPE
+d4 <= d4.DB_MAX_OUTPUT_PORT_TYPE
+d5 <= d5.DB_MAX_OUTPUT_PORT_TYPE
+d6 <= d6.DB_MAX_OUTPUT_PORT_TYPE
+d7 <= d7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|VelsDivider:inst26|fdiv_025:inst7
+clkin => clkout~reg0.CLK
+clkin => cont[0].CLK
+clkin => cont[1].CLK
+clkin => cont[2].CLK
+clkin => cont[3].CLK
+clkin => cont[4].CLK
+clkin => cont[5].CLK
+clkin => cont[6].CLK
+clkin => cont[7].CLK
+clkin => cont[8].CLK
+clkin => cont[9].CLK
+clkin => cont[10].CLK
+clkin => cont[11].CLK
+clkin => cont[12].CLK
+clkin => cont[13].CLK
+clkin => cont[14].CLK
+clkin => cont[15].CLK
+clkin => cont[16].CLK
+clkin => cont[17].CLK
+clkin => cont[18].CLK
+clkin => cont[19].CLK
+clkin => cont[20].CLK
+clkin => cont[21].CLK
+clkin => cont[22].CLK
+clkin => cont[23].CLK
+clkin => cont[24].CLK
+clkin => cont[25].CLK
+clkin => cont[26].CLK
+clkin => cont[27].CLK
+clkin => cont[28].CLK
+clkin => cont[29].CLK
+clkin => cont[30].CLK
+clkin => cont[31].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|VelsDivider:inst26|fdiv_05:inst8
+clkin => clkout~reg0.CLK
+clkin => cont[0].CLK
+clkin => cont[1].CLK
+clkin => cont[2].CLK
+clkin => cont[3].CLK
+clkin => cont[4].CLK
+clkin => cont[5].CLK
+clkin => cont[6].CLK
+clkin => cont[7].CLK
+clkin => cont[8].CLK
+clkin => cont[9].CLK
+clkin => cont[10].CLK
+clkin => cont[11].CLK
+clkin => cont[12].CLK
+clkin => cont[13].CLK
+clkin => cont[14].CLK
+clkin => cont[15].CLK
+clkin => cont[16].CLK
+clkin => cont[17].CLK
+clkin => cont[18].CLK
+clkin => cont[19].CLK
+clkin => cont[20].CLK
+clkin => cont[21].CLK
+clkin => cont[22].CLK
+clkin => cont[23].CLK
+clkin => cont[24].CLK
+clkin => cont[25].CLK
+clkin => cont[26].CLK
+clkin => cont[27].CLK
+clkin => cont[28].CLK
+clkin => cont[29].CLK
+clkin => cont[30].CLK
+clkin => cont[31].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|VelsDivider:inst26|fdiv_1:inst9
+clkin => clkout~reg0.CLK
+clkin => cont[0].CLK
+clkin => cont[1].CLK
+clkin => cont[2].CLK
+clkin => cont[3].CLK
+clkin => cont[4].CLK
+clkin => cont[5].CLK
+clkin => cont[6].CLK
+clkin => cont[7].CLK
+clkin => cont[8].CLK
+clkin => cont[9].CLK
+clkin => cont[10].CLK
+clkin => cont[11].CLK
+clkin => cont[12].CLK
+clkin => cont[13].CLK
+clkin => cont[14].CLK
+clkin => cont[15].CLK
+clkin => cont[16].CLK
+clkin => cont[17].CLK
+clkin => cont[18].CLK
+clkin => cont[19].CLK
+clkin => cont[20].CLK
+clkin => cont[21].CLK
+clkin => cont[22].CLK
+clkin => cont[23].CLK
+clkin => cont[24].CLK
+clkin => cont[25].CLK
+clkin => cont[26].CLK
+clkin => cont[27].CLK
+clkin => cont[28].CLK
+clkin => cont[29].CLK
+clkin => cont[30].CLK
+clkin => cont[31].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|VelsDivider:inst26|fdiv_2:inst10
+clkin => clkout~reg0.CLK
+clkin => cont[0].CLK
+clkin => cont[1].CLK
+clkin => cont[2].CLK
+clkin => cont[3].CLK
+clkin => cont[4].CLK
+clkin => cont[5].CLK
+clkin => cont[6].CLK
+clkin => cont[7].CLK
+clkin => cont[8].CLK
+clkin => cont[9].CLK
+clkin => cont[10].CLK
+clkin => cont[11].CLK
+clkin => cont[12].CLK
+clkin => cont[13].CLK
+clkin => cont[14].CLK
+clkin => cont[15].CLK
+clkin => cont[16].CLK
+clkin => cont[17].CLK
+clkin => cont[18].CLK
+clkin => cont[19].CLK
+clkin => cont[20].CLK
+clkin => cont[21].CLK
+clkin => cont[22].CLK
+clkin => cont[23].CLK
+clkin => cont[24].CLK
+clkin => cont[25].CLK
+clkin => cont[26].CLK
+clkin => cont[27].CLK
+clkin => cont[28].CLK
+clkin => cont[29].CLK
+clkin => cont[30].CLK
+clkin => cont[31].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|VelsDivider:inst26|fdiv_4:inst11
+clkin => clkout~reg0.CLK
+clkin => cont[0].CLK
+clkin => cont[1].CLK
+clkin => cont[2].CLK
+clkin => cont[3].CLK
+clkin => cont[4].CLK
+clkin => cont[5].CLK
+clkin => cont[6].CLK
+clkin => cont[7].CLK
+clkin => cont[8].CLK
+clkin => cont[9].CLK
+clkin => cont[10].CLK
+clkin => cont[11].CLK
+clkin => cont[12].CLK
+clkin => cont[13].CLK
+clkin => cont[14].CLK
+clkin => cont[15].CLK
+clkin => cont[16].CLK
+clkin => cont[17].CLK
+clkin => cont[18].CLK
+clkin => cont[19].CLK
+clkin => cont[20].CLK
+clkin => cont[21].CLK
+clkin => cont[22].CLK
+clkin => cont[23].CLK
+clkin => cont[24].CLK
+clkin => cont[25].CLK
+clkin => cont[26].CLK
+clkin => cont[27].CLK
+clkin => cont[28].CLK
+clkin => cont[29].CLK
+clkin => cont[30].CLK
+clkin => cont[31].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|VelsDivider:inst26|fdiv_8:inst12
+clkin => clkout~reg0.CLK
+clkin => cont[0].CLK
+clkin => cont[1].CLK
+clkin => cont[2].CLK
+clkin => cont[3].CLK
+clkin => cont[4].CLK
+clkin => cont[5].CLK
+clkin => cont[6].CLK
+clkin => cont[7].CLK
+clkin => cont[8].CLK
+clkin => cont[9].CLK
+clkin => cont[10].CLK
+clkin => cont[11].CLK
+clkin => cont[12].CLK
+clkin => cont[13].CLK
+clkin => cont[14].CLK
+clkin => cont[15].CLK
+clkin => cont[16].CLK
+clkin => cont[17].CLK
+clkin => cont[18].CLK
+clkin => cont[19].CLK
+clkin => cont[20].CLK
+clkin => cont[21].CLK
+clkin => cont[22].CLK
+clkin => cont[23].CLK
+clkin => cont[24].CLK
+clkin => cont[25].CLK
+clkin => cont[26].CLK
+clkin => cont[27].CLK
+clkin => cont[28].CLK
+clkin => cont[29].CLK
+clkin => cont[30].CLK
+clkin => cont[31].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|VelsDivider:inst26|fdiv_32:inst14
+clkin => clkout~reg0.CLK
+clkin => cont[0].CLK
+clkin => cont[1].CLK
+clkin => cont[2].CLK
+clkin => cont[3].CLK
+clkin => cont[4].CLK
+clkin => cont[5].CLK
+clkin => cont[6].CLK
+clkin => cont[7].CLK
+clkin => cont[8].CLK
+clkin => cont[9].CLK
+clkin => cont[10].CLK
+clkin => cont[11].CLK
+clkin => cont[12].CLK
+clkin => cont[13].CLK
+clkin => cont[14].CLK
+clkin => cont[15].CLK
+clkin => cont[16].CLK
+clkin => cont[17].CLK
+clkin => cont[18].CLK
+clkin => cont[19].CLK
+clkin => cont[20].CLK
+clkin => cont[21].CLK
+clkin => cont[22].CLK
+clkin => cont[23].CLK
+clkin => cont[24].CLK
+clkin => cont[25].CLK
+clkin => cont[26].CLK
+clkin => cont[27].CLK
+clkin => cont[28].CLK
+clkin => cont[29].CLK
+clkin => cont[30].CLK
+clkin => cont[31].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|mov_carrinho:inst8
+Car[0] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Car[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Car[2] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Car[3] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Car[4] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Car[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Car[6] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Car[7] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Inicio => inst8.ACLR
+Inicio => inst10.ACLR
+Inicio => inst9.ACLR
+Inicio => inst11.ACLR
+Inicio => inst12.ACLR
+Inicio => inst13.PRESET
+Inicio => inst14.ACLR
+Inicio => inst15.ACLR
+CLK => inst8.CLK
+CLK => inst10.CLK
+CLK => inst9.CLK
+CLK => inst11.CLK
+CLK => inst12.CLK
+CLK => inst13.CLK
+CLK => inst14.CLK
+CLK => inst15.CLK
+POT1 => inst21.IN0
+POT2 => mux4-1:inst.ESQ
+POT2 => mux4-1:inst4.ESQ
+POT2 => mux4-1:inst1.ESQ
+POT2 => mux4-1:inst5.ESQ
+POT2 => mux4-1:inst2.ESQ
+POT2 => mux4-1:inst3.ESQ
+POT2 => mux4-1:inst6.ESQ
+POT2 => mux4-1:inst7.ESQ
+
+
+|test|mov_carrinho:inst8|mux4-1:inst
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst4
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst1
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst5
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst2
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst3
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst6
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|mov_carrinho:inst8|mux4-1:inst7
+OUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+DIR => inst.IN0
+DIR => mdm.IN0
+DIR => inst5.IN0
+ESQ => inst.IN1
+ESQ => inst6.IN0
+ESQ => asmams.IN0
+ENT_ESQ => inst6.IN2
+ENT_DIR => inst5.IN2
+
+
+|test|PistaVerilog:inst1
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RESET => Q[0]~reg0.PRESET
+RESET => Q[1]~reg0.ACLR
+RESET => Q[2]~reg0.ACLR
+RESET => Q[3]~reg0.ACLR
+RESET => Q[4]~reg0.ACLR
+RESET => Q[5]~reg0.ACLR
+RESET => Q[6]~reg0.ACLR
+RESET => Q[7]~reg0.PRESET
+RESET => cont[0].ACLR
+RESET => cont[1].ACLR
+RESET => cont[2].ACLR
+RESET => cont[3].ACLR
+RESET => cont[4].ACLR
+RESET => cont[5].ACLR
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+CLK => cont[0].CLK
+CLK => cont[1].CLK
+CLK => cont[2].CLK
+CLK => cont[3].CLK
+CLK => cont[4].CLK
+CLK => cont[5].CLK
+
+
+|test|decoder7:inst9213
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|Contador:inst433
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+clk => count[4]~reg0.CLK
+clk => count[5]~reg0.CLK
+clk => count[6]~reg0.CLK
+clk => count[7]~reg0.CLK
+rst_n => count[0]~reg0.ACLR
+rst_n => count[1]~reg0.ACLR
+rst_n => count[2]~reg0.ACLR
+rst_n => count[3]~reg0.ACLR
+rst_n => count[4]~reg0.ACLR
+rst_n => count[5]~reg0.ACLR
+rst_n => count[6]~reg0.ACLR
+rst_n => count[7]~reg0.ACLR
+
+
+|test|decoder7:inst823
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|decoder7:inst7
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|LivesCounter:inst11
+Hexa[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Hexa[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Hexa[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Hexa[3] <= <GND>
+Inicio => inst1.PRESET
+Inicio => inst.PRESET
+Inicio => inst2.PRESET
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
 
 

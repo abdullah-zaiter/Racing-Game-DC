@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RacingGame
-Mon Jul 03 23:47:05 2017
+Wed Jul 05 06:12:41 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,16 +44,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 03 23:47:05 2017           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 05 06:12:41 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; RacingGame                                      ;
-; Top-level Entity Name              ; TESTE_MAROTO                                    ;
+; Top-level Entity Name              ; test                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 140                                             ;
-;     Total combinational functions  ; 115                                             ;
-;     Dedicated logic registers      ; 94                                              ;
-; Total registers                    ; 94                                              ;
-; Total pins                         ; 20                                              ;
+; Total logic elements               ; 702                                             ;
+;     Total combinational functions  ; 647                                             ;
+;     Dedicated logic registers      ; 384                                             ;
+; Total registers                    ; 384                                             ;
+; Total pins                         ; 49                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; TESTE_MAROTO       ; RacingGame         ;
+; Top-level entity name                                                      ; test               ; RacingGame         ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,172 +157,149 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
-; TESTE_MAROTO.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/TESTE_MAROTO.bdf ;         ;
-; fdiv100khz.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv100khz.v     ;         ;
-; fdiv100kto1hz.v                  ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv100kto1hz.v  ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
-
-
-+------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                            ;
-+---------------------------------------------+--------------------------+
-; Resource                                    ; Usage                    ;
-+---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 140                      ;
-;                                             ;                          ;
-; Total combinational functions               ; 115                      ;
-; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 31                       ;
-;     -- 3 input functions                    ; 18                       ;
-;     -- <=2 input functions                  ; 66                       ;
-;                                             ;                          ;
-; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 53                       ;
-;     -- arithmetic mode                      ; 62                       ;
-;                                             ;                          ;
-; Total registers                             ; 94                       ;
-;     -- Dedicated logic registers            ; 94                       ;
-;     -- I/O registers                        ; 0                        ;
-;                                             ;                          ;
-; I/O pins                                    ; 20                       ;
-; Embedded Multiplier 9-bit elements          ; 0                        ;
-; Maximum fan-out node                        ; fdiv100khz:inst36|clkout ;
-; Maximum fan-out                             ; 42                       ;
-; Total fan-out                               ; 532                      ;
-; Average fan-out                             ; 2.32                     ;
-+---------------------------------------------+--------------------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
-; |TESTE_MAROTO              ; 115 (15)          ; 94 (28)      ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |TESTE_MAROTO                    ; work         ;
-;    |fdiv100khz:inst36|     ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TESTE_MAROTO|fdiv100khz:inst36  ; work         ;
-;    |fdiv100kto1:inst43|    ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TESTE_MAROTO|fdiv100kto1:inst43 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; Mux81.v                          ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/Mux81.v               ;         ;
+; decoder7.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/decoder7.v            ;         ;
+; mux4-1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/mux4-1.bdf            ;         ;
+; mov_carrinho.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/mov_carrinho.bdf      ;         ;
+; VerificadorComCarro.v            ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/VerificadorComCarro.v ;         ;
+; Reg8.v                           ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/Reg8.v                ;         ;
+; ControleMatriz.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/ControleMatriz.bdf    ;         ;
+; LivesCounter.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/LivesCounter.bdf      ;         ;
+; fdiv100khz.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv100khz.v          ;         ;
+; test.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/test.bdf              ;         ;
+; PistaVerilog.v                   ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/PistaVerilog.v        ;         ;
+; DeMux18.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/DeMux18.v             ;         ;
+; VelsDivider.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/VelsDivider.bdf       ;         ;
+; fdiv_05.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv_05.v             ;         ;
+; fdiv_025.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv_025.v            ;         ;
+; fdiv_1.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv_1.v              ;         ;
+; fdiv_2.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv_2.v              ;         ;
+; fdiv_000.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv_000.v            ;         ;
+; fdiv_4.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv_4.v              ;         ;
+; fdiv_8.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv_8.v              ;         ;
+; fdiv_32.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/fdiv_32.v             ;         ;
+; Contador.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Abdullah/Documents/GitHub/RacingGameDC/ProjetoFinalCD/Contador.v            ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 702   ;
+;                                             ;       ;
+; Total combinational functions               ; 647   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 193   ;
+;     -- 3 input functions                    ; 71    ;
+;     -- <=2 input functions                  ; 383   ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 362   ;
+;     -- arithmetic mode                      ; 285   ;
+;                                             ;       ;
+; Total registers                             ; 384   ;
+;     -- Dedicated logic registers            ; 384   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 49    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; inst5 ;
+; Maximum fan-out                             ; 76    ;
+; Total fan-out                               ; 2624  ;
+; Average fan-out                             ; 2.43  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Library Name ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
+; |test                              ; 647 (2)           ; 384 (0)      ; 0           ; 0            ; 0       ; 0         ; 49   ; 0            ; |test                                                ; work         ;
+;    |Contador:inst433|              ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|Contador:inst433                               ; work         ;
+;    |ControleMatriz:inst|           ; 95 (40)           ; 89 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst                            ; work         ;
+;       |Reg8:inst42|                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|Reg8:inst42                ; work         ;
+;       |Reg8:inst43|                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|Reg8:inst43                ; work         ;
+;       |Reg8:inst45|                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|Reg8:inst45                ; work         ;
+;       |Reg8:inst46|                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|Reg8:inst46                ; work         ;
+;       |Reg8:inst47|                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|Reg8:inst47                ; work         ;
+;       |Reg8:inst49|                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|Reg8:inst49                ; work         ;
+;       |Reg8:inst51|                ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|Reg8:inst51                ; work         ;
+;       |Reg8:inst|                  ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|Reg8:inst                  ; work         ;
+;       |VerificadorComCarro:inst52| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|VerificadorComCarro:inst52 ; work         ;
+;       |fdiv100khz:inst36|          ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|ControleMatriz:inst|fdiv100khz:inst36          ; work         ;
+;    |LivesCounter:inst11|           ; 2 (2)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|LivesCounter:inst11                            ; work         ;
+;    |PistaVerilog:inst1|            ; 42 (42)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|PistaVerilog:inst1                             ; work         ;
+;    |VelsDivider:inst26|            ; 468 (0)           ; 264 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26                             ; work         ;
+;       |DeMux18:inst2|              ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|DeMux18:inst2               ; work         ;
+;       |Mux81:inst3|                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|Mux81:inst3                 ; work         ;
+;       |fdiv_000:inst|              ; 57 (57)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|fdiv_000:inst               ; work         ;
+;       |fdiv_025:inst7|             ; 57 (57)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|fdiv_025:inst7              ; work         ;
+;       |fdiv_05:inst8|              ; 57 (57)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|fdiv_05:inst8               ; work         ;
+;       |fdiv_1:inst9|               ; 57 (57)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|fdiv_1:inst9                ; work         ;
+;       |fdiv_2:inst10|              ; 57 (57)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|fdiv_2:inst10               ; work         ;
+;       |fdiv_32:inst14|             ; 56 (56)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|fdiv_32:inst14              ; work         ;
+;       |fdiv_4:inst11|              ; 56 (56)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|fdiv_4:inst11               ; work         ;
+;       |fdiv_8:inst12|              ; 56 (56)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|VelsDivider:inst26|fdiv_8:inst12               ; work         ;
+;    |decoder7:inst7|                ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|decoder7:inst7                                 ; work         ;
+;    |decoder7:inst823|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|decoder7:inst823                               ; work         ;
+;    |decoder7:inst9213|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|decoder7:inst9213                              ; work         ;
+;    |mov_carrinho:inst8|            ; 8 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8                             ; work         ;
+;       |mux4-1:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst1                ; work         ;
+;       |mux4-1:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst2                ; work         ;
+;       |mux4-1:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst3                ; work         ;
+;       |mux4-1:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst4                ; work         ;
+;       |mux4-1:inst5|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst5                ; work         ;
+;       |mux4-1:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst6                ; work         ;
+;       |mux4-1:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst7                ; work         ;
+;       |mux4-1:inst|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst                 ; work         ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                               ;
-+-----------------------------------------+----------------------------------------+
-; Register name                           ; Reason for Removal                     ;
-+-----------------------------------------+----------------------------------------+
-; inst4[7]                                ; Merged with inst4[0]                   ;
-; inst4[6]                                ; Merged with inst4[1]                   ;
-; inst4[3..5]                             ; Merged with inst4[2]                   ;
-; inst264                                 ; Merged with inst257                    ;
-; inst265                                 ; Merged with inst257                    ;
-; inst272                                 ; Merged with inst257                    ;
-; inst273                                 ; Merged with inst257                    ;
-; inst280                                 ; Merged with inst257                    ;
-; inst281                                 ; Merged with inst257                    ;
-; inst288                                 ; Merged with inst257                    ;
-; inst289                                 ; Merged with inst257                    ;
-; inst296                                 ; Merged with inst257                    ;
-; inst297                                 ; Merged with inst257                    ;
-; inst304                                 ; Merged with inst257                    ;
-; inst305                                 ; Merged with inst257                    ;
-; inst312                                 ; Merged with inst257                    ;
-; inst313                                 ; Merged with inst257                    ;
-; inst320                                 ; Merged with inst257                    ;
-; inst263                                 ; Merged with inst258                    ;
-; inst266                                 ; Merged with inst258                    ;
-; inst271                                 ; Merged with inst258                    ;
-; inst274                                 ; Merged with inst258                    ;
-; inst279                                 ; Merged with inst258                    ;
-; inst282                                 ; Merged with inst258                    ;
-; inst287                                 ; Merged with inst258                    ;
-; inst290                                 ; Merged with inst258                    ;
-; inst295                                 ; Merged with inst258                    ;
-; inst298                                 ; Merged with inst258                    ;
-; inst303                                 ; Merged with inst258                    ;
-; inst306                                 ; Merged with inst258                    ;
-; inst311                                 ; Merged with inst258                    ;
-; inst314                                 ; Merged with inst258                    ;
-; inst319                                 ; Merged with inst258                    ;
-; inst260                                 ; Merged with inst259                    ;
-; inst261                                 ; Merged with inst259                    ;
-; inst262                                 ; Merged with inst259                    ;
-; inst291                                 ; Merged with inst259                    ;
-; inst292                                 ; Merged with inst259                    ;
-; inst293                                 ; Merged with inst259                    ;
-; inst294                                 ; Merged with inst259                    ;
-; inst268                                 ; Merged with inst267                    ;
-; inst269                                 ; Merged with inst267                    ;
-; inst270                                 ; Merged with inst267                    ;
-; inst299                                 ; Merged with inst267                    ;
-; inst300                                 ; Merged with inst267                    ;
-; inst301                                 ; Merged with inst267                    ;
-; inst302                                 ; Merged with inst267                    ;
-; inst276                                 ; Merged with inst275                    ;
-; inst277                                 ; Merged with inst275                    ;
-; inst278                                 ; Merged with inst275                    ;
-; inst307                                 ; Merged with inst275                    ;
-; inst308                                 ; Merged with inst275                    ;
-; inst309                                 ; Merged with inst275                    ;
-; inst310                                 ; Merged with inst275                    ;
-; inst284                                 ; Merged with inst283                    ;
-; inst285                                 ; Merged with inst283                    ;
-; inst286                                 ; Merged with inst283                    ;
-; inst315                                 ; Merged with inst283                    ;
-; inst316                                 ; Merged with inst283                    ;
-; inst317                                 ; Merged with inst283                    ;
-; inst318                                 ; Merged with inst283                    ;
-; inst1[7]                                ; Merged with inst1[0]                   ;
-; inst1[6]                                ; Merged with inst1[1]                   ;
-; inst1[3..5]                             ; Merged with inst1[2]                   ;
-; inst[7]                                 ; Merged with inst[0]                    ;
-; inst[6]                                 ; Merged with inst[1]                    ;
-; inst[3..5]                              ; Merged with inst[2]                    ;
-; inst2[7]                                ; Merged with inst2[0]                   ;
-; inst2[6]                                ; Merged with inst2[1]                   ;
-; inst2[3..5]                             ; Merged with inst2[2]                   ;
-; inst7[7]                                ; Merged with inst7[0]                   ;
-; inst7[6]                                ; Merged with inst7[1]                   ;
-; inst7[3..5]                             ; Merged with inst7[2]                   ;
-; inst3[7]                                ; Merged with inst3[0]                   ;
-; inst3[6]                                ; Merged with inst3[1]                   ;
-; inst3[3..5]                             ; Merged with inst3[2]                   ;
-; inst6[7]                                ; Merged with inst6[0]                   ;
-; inst6[6]                                ; Merged with inst6[1]                   ;
-; inst6[3..5]                             ; Merged with inst6[2]                   ;
-; inst5[7]                                ; Merged with inst5[0]                   ;
-; inst5[6]                                ; Merged with inst5[1]                   ;
-; inst5[3..5]                             ; Merged with inst5[2]                   ;
-; inst257                                 ; Stuck at VCC due to stuck port data_in ;
-; inst258                                 ; Stuck at GND due to stuck port data_in ;
-; inst4[1]                                ; Stuck at GND due to stuck port data_in ;
-; inst[1]                                 ; Stuck at GND due to stuck port data_in ;
-; inst1[1]                                ; Stuck at GND due to stuck port data_in ;
-; inst2[1]                                ; Stuck at GND due to stuck port data_in ;
-; inst3[1]                                ; Stuck at GND due to stuck port data_in ;
-; inst7[1]                                ; Stuck at GND due to stuck port data_in ;
-; inst6[1]                                ; Stuck at GND due to stuck port data_in ;
-; inst5[1]                                ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 108 ;                                        ;
-+-----------------------------------------+----------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                        ;
++----------------------------------------+--------------------------------------------------+
+; Register name                          ; Reason for Removal                               ;
++----------------------------------------+--------------------------------------------------+
+; PistaVerilog:inst1|Q[7]                ; Merged with PistaVerilog:inst1|Q[0]              ;
+; ControleMatriz:inst|Reg8:inst|Q[7]     ; Merged with ControleMatriz:inst|Reg8:inst|Q[0]   ;
+; ControleMatriz:inst|Reg8:inst42|Q[7]   ; Merged with ControleMatriz:inst|Reg8:inst42|Q[0] ;
+; ControleMatriz:inst|Reg8:inst43|Q[7]   ; Merged with ControleMatriz:inst|Reg8:inst43|Q[0] ;
+; ControleMatriz:inst|Reg8:inst45|Q[7]   ; Merged with ControleMatriz:inst|Reg8:inst45|Q[0] ;
+; ControleMatriz:inst|Reg8:inst46|Q[7]   ; Merged with ControleMatriz:inst|Reg8:inst46|Q[0] ;
+; ControleMatriz:inst|Reg8:inst47|Q[7]   ; Merged with ControleMatriz:inst|Reg8:inst47|Q[0] ;
+; ControleMatriz:inst|Reg8:inst49|Q[7]   ; Merged with ControleMatriz:inst|Reg8:inst49|Q[0] ;
+; PistaVerilog:inst1|Q[0]                ; Stuck at VCC due to stuck port data_in           ;
+; ControleMatriz:inst|Reg8:inst|Q[0]     ; Stuck at VCC due to stuck port data_in           ;
+; ControleMatriz:inst|Reg8:inst42|Q[0]   ; Stuck at VCC due to stuck port data_in           ;
+; ControleMatriz:inst|Reg8:inst43|Q[0]   ; Stuck at VCC due to stuck port data_in           ;
+; ControleMatriz:inst|Reg8:inst45|Q[0]   ; Stuck at VCC due to stuck port data_in           ;
+; ControleMatriz:inst|Reg8:inst46|Q[0]   ; Stuck at VCC due to stuck port data_in           ;
+; ControleMatriz:inst|Reg8:inst47|Q[0]   ; Stuck at VCC due to stuck port data_in           ;
+; ControleMatriz:inst|Reg8:inst49|Q[0]   ; Stuck at VCC due to stuck port data_in           ;
+; ControleMatriz:inst|Reg8:inst51|Q[0,7] ; Stuck at VCC due to stuck port data_in           ;
+; Total Number of Removed Registers = 18 ;                                                  ;
++----------------------------------------+--------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                        ;
-+---------------+---------------------------+----------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register ;
-+---------------+---------------------------+----------------------------------------+
-; inst258       ; Stuck at GND              ; inst4[1]                               ;
-;               ; due to stuck port data_in ;                                        ;
-; inst[1]       ; Stuck at GND              ; inst1[1]                               ;
-;               ; due to stuck port data_in ;                                        ;
-; inst3[1]      ; Stuck at GND              ; inst7[1]                               ;
-;               ; due to stuck port data_in ;                                        ;
-+---------------+---------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                       ;
++-------------------------+---------------------------+-----------------------------------------------------------------------------+
+; Register name           ; Reason for Removal        ; Registers Removed due to This Register                                      ;
++-------------------------+---------------------------+-----------------------------------------------------------------------------+
+; PistaVerilog:inst1|Q[0] ; Stuck at VCC              ; ControleMatriz:inst|Reg8:inst|Q[0], ControleMatriz:inst|Reg8:inst42|Q[0],   ;
+;                         ; due to stuck port data_in ; ControleMatriz:inst|Reg8:inst43|Q[0], ControleMatriz:inst|Reg8:inst45|Q[0], ;
+;                         ;                           ; ControleMatriz:inst|Reg8:inst46|Q[0], ControleMatriz:inst|Reg8:inst47|Q[0], ;
+;                         ;                           ; ControleMatriz:inst|Reg8:inst49|Q[0], ControleMatriz:inst|Reg8:inst51|Q[7]  ;
++-------------------------+---------------------------+-----------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -330,10 +307,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 94    ;
+; Total registers                              ; 384   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 25    ;
+; Number of registers using Asynchronous Clear ; 79    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -345,8 +322,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; inst275                                ; 1       ;
-; Total number of inverted registers = 1 ;         ;
+; LivesCounter:inst11|inst1              ; 9       ;
+; LivesCounter:inst11|inst2              ; 8       ;
+; LivesCounter:inst11|inst               ; 10      ;
+; mov_carrinho:inst8|inst13              ; 4       ;
+; Total number of inverted registers = 4 ;         ;
 +----------------------------------------+---------+
 
 
@@ -355,7 +335,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -365,45 +345,628 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jul 03 23:47:02 2017
+    Info: Processing started: Wed Jul 05 06:12:37 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RacingGame -c RacingGame
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file teste_maroto.bdf
-    Info (12023): Found entity 1: TESTE_MAROTO
-Info (12021): Found 1 design units, including 1 entities, in source file somerandomstuff.bdf
-    Info (12023): Found entity 1: SomeRandomStuff
+Info (12021): Found 1 design units, including 1 entities, in source file mux81.v
+    Info (12023): Found entity 1: Mux81
+Info (12021): Found 1 design units, including 1 entities, in source file decoder7.v
+    Info (12023): Found entity 1: decoder7
+Info (12021): Found 1 design units, including 1 entities, in source file mux4-1.bdf
+    Info (12023): Found entity 1: mux4-1
+Info (12021): Found 1 design units, including 1 entities, in source file mov_carrinho.bdf
+    Info (12023): Found entity 1: mov_carrinho
+Info (12021): Found 1 design units, including 1 entities, in source file verificadorcomcarro.v
+    Info (12023): Found entity 1: VerificadorComCarro
+Info (12021): Found 1 design units, including 1 entities, in source file reg8.v
+    Info (12023): Found entity 1: Reg8
+Info (12021): Found 1 design units, including 1 entities, in source file controlematriz.bdf
+    Info (12023): Found entity 1: ControleMatriz
 Info (12021): Found 1 design units, including 1 entities, in source file lifes.bdf
     Info (12023): Found entity 1: lifes
 Info (12021): Found 1 design units, including 1 entities, in source file clock.bdf
     Info (12023): Found entity 1: clock
 Info (12021): Found 1 design units, including 1 entities, in source file fdiv.v
     Info (12023): Found entity 1: fdiv
-Info (12021): Found 1 design units, including 1 entities, in source file pistabdf.bdf
-    Info (12023): Found entity 1: Pistabdf
 Info (12021): Found 1 design units, including 1 entities, in source file carregisters.bdf
     Info (12023): Found entity 1: CarRegisters
 Info (12021): Found 1 design units, including 1 entities, in source file livescounter.bdf
     Info (12023): Found entity 1: LivesCounter
-Info (12021): Found 1 design units, including 1 entities, in source file pistab.bdf
-    Info (12023): Found entity 1: PistaB
 Info (12021): Found 1 design units, including 1 entities, in source file testematriz.bdf
     Info (12023): Found entity 1: TesteMatriz
 Info (12021): Found 1 design units, including 1 entities, in source file fdiv100khz.v
     Info (12023): Found entity 1: fdiv100khz
 Info (12021): Found 1 design units, including 1 entities, in source file fdiv100kto1hz.v
     Info (12023): Found entity 1: fdiv100kto1
-Info (12021): Found 1 design units, including 1 entities, in source file pistac_test.bdf
-    Info (12023): Found entity 1: PistaC_Test
-Warning (12019): Can't analyze file -- file output_files/ControleMatriz.bdf is missing
-Info (12127): Elaborating entity "TESTE_MAROTO" for the top level hierarchy
-Info (12128): Elaborating entity "fdiv100khz" for hierarchy "fdiv100khz:inst36"
-Info (12128): Elaborating entity "fdiv100kto1" for hierarchy "fdiv100kto1:inst43"
+Info (12021): Found 1 design units, including 1 entities, in source file racinggame.bdf
+    Info (12023): Found entity 1: RacingGame
+Info (12021): Found 1 design units, including 1 entities, in source file pistareg.bdf
+    Info (12023): Found entity 1: PistaReg
+Info (12021): Found 1 design units, including 1 entities, in source file test.bdf
+    Info (12023): Found entity 1: test
+Info (12021): Found 1 design units, including 1 entities, in source file pistaverilog.v
+    Info (12023): Found entity 1: PistaVerilog
+Info (12021): Found 1 design units, including 1 entities, in source file demux18.v
+    Info (12023): Found entity 1: DeMux18
+Info (12021): Found 1 design units, including 1 entities, in source file velsdivider.bdf
+    Info (12023): Found entity 1: VelsDivider
+Warning (12019): Can't analyze file -- file fdiv_test.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_05.v
+    Info (12023): Found entity 1: fdiv_05
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_025.v
+    Info (12023): Found entity 1: fdiv_025
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_1.v
+    Info (12023): Found entity 1: fdiv_1
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_2.v
+    Info (12023): Found entity 1: fdiv_2
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_000.v
+    Info (12023): Found entity 1: fdiv_000
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_0125.v
+    Info (12023): Found entity 1: fdiv_0125
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_4.v
+    Info (12023): Found entity 1: fdiv_4
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_8.v
+    Info (12023): Found entity 1: fdiv_8
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_16.v
+    Info (12023): Found entity 1: fdiv_16
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv_32.v
+    Info (12023): Found entity 1: fdiv_32
+Info (12021): Found 1 design units, including 1 entities, in source file contador.v
+    Info (12023): Found entity 1: Contador
+Info (12127): Elaborating entity "test" for the top level hierarchy
+Info (12128): Elaborating entity "ControleMatriz" for hierarchy "ControleMatriz:inst"
+Warning (275011): Block or symbol "Reg8" of instance "inst43" overlaps another block or symbol
+Info (12128): Elaborating entity "VerificadorComCarro" for hierarchy "ControleMatriz:inst|VerificadorComCarro:inst52"
+Info (12128): Elaborating entity "Reg8" for hierarchy "ControleMatriz:inst|Reg8:inst51"
+Info (12128): Elaborating entity "fdiv100khz" for hierarchy "ControleMatriz:inst|fdiv100khz:inst36"
+Info (12128): Elaborating entity "VelsDivider" for hierarchy "VelsDivider:inst26"
+Info (12128): Elaborating entity "Mux81" for hierarchy "VelsDivider:inst26|Mux81:inst3"
+Warning (10235): Verilog HDL Always Construct warning at Mux81.v(8): variable "d0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Mux81.v(9): variable "d1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Mux81.v(10): variable "d2" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Mux81.v(11): variable "d3" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Mux81.v(12): variable "d4" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Mux81.v(13): variable "d5" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Mux81.v(14): variable "d6" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Mux81.v(15): variable "d7" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Info (12128): Elaborating entity "fdiv_000" for hierarchy "VelsDivider:inst26|fdiv_000:inst"
+Info (12128): Elaborating entity "DeMux18" for hierarchy "VelsDivider:inst26|DeMux18:inst2"
+Info (12128): Elaborating entity "fdiv_025" for hierarchy "VelsDivider:inst26|fdiv_025:inst7"
+Info (12128): Elaborating entity "fdiv_05" for hierarchy "VelsDivider:inst26|fdiv_05:inst8"
+Info (12128): Elaborating entity "fdiv_1" for hierarchy "VelsDivider:inst26|fdiv_1:inst9"
+Info (12128): Elaborating entity "fdiv_2" for hierarchy "VelsDivider:inst26|fdiv_2:inst10"
+Info (12128): Elaborating entity "fdiv_4" for hierarchy "VelsDivider:inst26|fdiv_4:inst11"
+Info (12128): Elaborating entity "fdiv_8" for hierarchy "VelsDivider:inst26|fdiv_8:inst12"
+Info (12128): Elaborating entity "fdiv_32" for hierarchy "VelsDivider:inst26|fdiv_32:inst14"
+Info (12128): Elaborating entity "mov_carrinho" for hierarchy "mov_carrinho:inst8"
+Info (12128): Elaborating entity "mux4-1" for hierarchy "mov_carrinho:inst8|mux4-1:inst"
+Info (12128): Elaborating entity "PistaVerilog" for hierarchy "PistaVerilog:inst1"
+Info (10041): Inferred latch for "pista[0][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[0][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[0][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[0][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[0][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[0][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[0][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[0][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[1][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[1][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[1][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[1][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[1][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[1][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[1][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[1][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[2][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[2][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[2][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[2][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[2][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[2][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[2][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[2][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[3][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[3][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[3][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[3][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[3][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[3][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[3][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[3][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[4][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[4][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[4][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[4][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[4][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[4][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[4][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[4][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[5][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[5][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[5][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[5][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[5][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[5][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[5][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[5][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[6][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[6][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[6][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[6][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[6][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[6][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[6][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[6][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[7][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[7][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[7][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[7][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[7][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[7][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[7][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[7][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[8][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[8][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[8][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[8][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[8][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[8][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[8][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[8][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[9][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[9][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[9][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[9][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[9][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[9][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[9][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[9][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[10][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[10][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[10][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[10][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[10][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[10][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[10][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[10][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[11][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[11][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[11][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[11][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[11][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[11][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[11][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[11][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[12][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[12][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[12][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[12][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[12][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[12][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[12][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[12][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[13][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[13][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[13][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[13][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[13][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[13][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[13][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[13][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[14][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[14][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[14][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[14][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[14][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[14][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[14][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[14][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[15][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[15][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[15][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[15][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[15][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[15][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[15][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[15][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[16][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[16][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[16][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[16][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[16][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[16][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[16][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[16][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[17][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[17][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[17][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[17][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[17][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[17][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[17][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[17][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[18][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[18][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[18][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[18][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[18][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[18][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[18][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[18][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[19][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[19][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[19][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[19][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[19][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[19][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[19][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[19][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[20][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[20][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[20][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[20][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[20][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[20][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[20][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[20][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[21][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[21][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[21][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[21][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[21][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[21][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[21][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[21][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[22][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[22][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[22][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[22][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[22][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[22][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[22][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[22][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[23][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[23][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[23][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[23][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[23][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[23][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[23][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[23][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[24][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[24][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[24][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[24][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[24][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[24][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[24][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[24][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[25][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[25][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[25][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[25][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[25][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[25][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[25][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[25][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[26][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[26][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[26][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[26][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[26][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[26][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[26][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[26][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[27][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[27][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[27][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[27][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[27][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[27][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[27][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[27][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[28][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[28][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[28][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[28][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[28][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[28][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[28][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[28][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[29][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[29][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[29][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[29][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[29][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[29][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[29][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[29][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[30][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[30][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[30][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[30][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[30][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[30][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[30][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[30][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[31][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[31][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[31][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[31][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[31][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[31][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[31][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[31][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[32][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[32][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[32][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[32][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[32][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[32][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[32][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[32][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[33][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[33][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[33][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[33][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[33][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[33][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[33][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[33][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[34][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[34][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[34][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[34][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[34][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[34][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[34][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[34][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[35][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[35][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[35][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[35][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[35][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[35][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[35][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[35][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[36][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[36][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[36][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[36][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[36][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[36][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[36][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[36][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[37][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[37][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[37][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[37][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[37][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[37][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[37][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[37][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[38][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[38][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[38][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[38][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[38][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[38][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[38][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[38][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[39][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[39][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[39][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[39][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[39][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[39][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[39][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[39][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[40][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[40][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[40][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[40][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[40][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[40][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[40][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[40][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[41][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[41][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[41][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[41][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[41][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[41][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[41][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[41][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[42][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[42][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[42][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[42][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[42][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[42][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[42][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[42][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[43][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[43][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[43][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[43][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[43][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[43][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[43][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[43][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[44][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[44][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[44][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[44][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[44][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[44][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[44][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[44][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[45][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[45][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[45][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[45][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[45][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[45][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[45][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[45][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[46][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[46][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[46][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[46][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[46][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[46][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[46][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[46][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[47][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[47][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[47][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[47][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[47][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[47][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[47][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[47][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[48][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[48][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[48][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[48][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[48][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[48][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[48][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[48][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[49][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[49][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[49][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[49][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[49][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[49][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[49][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[49][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[50][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[50][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[50][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[50][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[50][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[50][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[50][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[50][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[51][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[51][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[51][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[51][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[51][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[51][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[51][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[51][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[52][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[52][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[52][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[52][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[52][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[52][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[52][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[52][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[53][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[53][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[53][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[53][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[53][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[53][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[53][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[53][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[54][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[54][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[54][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[54][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[54][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[54][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[54][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[54][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[55][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[55][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[55][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[55][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[55][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[55][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[55][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[55][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[56][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[56][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[56][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[56][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[56][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[56][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[56][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[56][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[57][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[57][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[57][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[57][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[57][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[57][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[57][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[57][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[58][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[58][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[58][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[58][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[58][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[58][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[58][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[58][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[59][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[59][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[59][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[59][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[59][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[59][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[59][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[59][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[60][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[60][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[60][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[60][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[60][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[60][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[60][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[60][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[61][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[61][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[61][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[61][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[61][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[61][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[61][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[61][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[62][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[62][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[62][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[62][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[62][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[62][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[62][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[62][7]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[63][0]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[63][1]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[63][2]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[63][3]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[63][4]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[63][5]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[63][6]" at PistaVerilog.v(149)
+Info (10041): Inferred latch for "pista[63][7]" at PistaVerilog.v(149)
+Info (12128): Elaborating entity "decoder7" for hierarchy "decoder7:inst9213"
+Info (12128): Elaborating entity "Contador" for hierarchy "Contador:inst433"
+Warning (10230): Verilog HDL assignment warning at Contador.v(13): truncated value with size 32 to match size of target (8)
+Info (12128): Elaborating entity "LivesCounter" for hierarchy "LivesCounter:inst11"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer VelsDivider:inst26|Mux81:inst3|Mux0
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[0]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[1]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[2]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[3]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[4]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[5]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[6]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[7]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[10]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[11]" and its non-tri-state driver.
@@ -414,8 +977,6 @@ Warning (13034): The following nodes have both tri-state and non-tri-state drive
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[16]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[17]" and its non-tri-state driver.
 Warning (13032): The following tri-state nodes are fed by constants
-    Warning (13033): The pin "GPIO_1[1]" is fed by GND
-    Warning (13033): The pin "GPIO_1[6]" is fed by GND
     Warning (13033): The pin "GPIO_1[8]" is fed by VCC
     Warning (13033): The pin "GPIO_1[9]" is fed by VCC
 Info (13000): Registers with preset signals will power-up high
@@ -437,17 +998,19 @@ Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "GPIO_1~synth"
     Warning (13010): Node "GPIO_1~synth"
     Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
+    Warning (13010): Node "GPIO_1~synth"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 160 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 0 output pins
+Info (21057): Implemented 751 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 22 output pins
     Info (21060): Implemented 18 bidirectional pins
-    Info (21061): Implemented 140 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 487 megabytes
-    Info: Processing ended: Mon Jul 03 23:47:05 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 702 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 488 megabytes
+    Info: Processing ended: Wed Jul 05 06:12:41 2017
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 
