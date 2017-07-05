@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RacingGame
-Wed Jul 05 14:31:52 2017
+Wed Jul 05 17:08:48 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jul 05 14:31:52 2017           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 05 17:08:48 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; RacingGame                                      ;
 ; Top-level Entity Name              ; test                                            ;
@@ -253,15 +253,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |decoder7:inst7|                ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|decoder7:inst7                                 ; work         ;
 ;    |decoder7:inst823|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|decoder7:inst823                               ; work         ;
 ;    |decoder7:inst9213|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|decoder7:inst9213                              ; work         ;
-;    |mov_carrinho:inst8|            ; 9 (1)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8                             ; work         ;
-;       |mux4-1:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst1                ; work         ;
-;       |mux4-1:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst2                ; work         ;
-;       |mux4-1:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst3                ; work         ;
-;       |mux4-1:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst4                ; work         ;
-;       |mux4-1:inst5|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst5                ; work         ;
-;       |mux4-1:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst6                ; work         ;
-;       |mux4-1:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst7                ; work         ;
-;       |mux4-1:inst|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst8|mux4-1:inst                 ; work         ;
+;    |mov_carrinho:inst4|            ; 9 (1)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst4                             ; work         ;
+;       |mux4-1:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst4|mux4-1:inst1                ; work         ;
+;       |mux4-1:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst4|mux4-1:inst2                ; work         ;
+;       |mux4-1:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst4|mux4-1:inst3                ; work         ;
+;       |mux4-1:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst4|mux4-1:inst4                ; work         ;
+;       |mux4-1:inst5|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst4|mux4-1:inst5                ; work         ;
+;       |mux4-1:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst4|mux4-1:inst6                ; work         ;
+;       |mux4-1:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst4|mux4-1:inst7                ; work         ;
+;       |mux4-1:inst|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test|mov_carrinho:inst4|mux4-1:inst                 ; work         ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -327,7 +327,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LivesCounter:inst11|inst1              ; 9       ;
 ; LivesCounter:inst11|inst2              ; 8       ;
 ; LivesCounter:inst11|inst               ; 10      ;
-; mov_carrinho:inst8|inst12              ; 4       ;
+; mov_carrinho:inst4|inst12              ; 4       ;
 ; Total number of inverted registers = 4 ;         ;
 +----------------------------------------+---------+
 
@@ -347,7 +347,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jul 05 14:31:49 2017
+    Info: Processing started: Wed Jul 05 17:08:44 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RacingGame -c RacingGame
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mux81.v
@@ -418,6 +418,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file contado
 Info (12021): Found 1 design units, including 1 entities, in source file codfdeprio.v
     Info (12023): Found entity 1: CodfDePrio
 Info (12127): Elaborating entity "test" for the top level hierarchy
+Warning (275011): Block or symbol "Contador" of instance "inst433" overlaps another block or symbol
 Info (12128): Elaborating entity "ControleMatriz" for hierarchy "ControleMatriz:inst"
 Warning (275011): Block or symbol "Reg8" of instance "inst43" overlaps another block or symbol
 Info (12128): Elaborating entity "VerificadorComCarro" for hierarchy "ControleMatriz:inst|VerificadorComCarro:inst52"
@@ -443,8 +444,8 @@ Info (12128): Elaborating entity "fdiv_4" for hierarchy "VelsDivider:inst26|fdiv
 Info (12128): Elaborating entity "fdiv_8" for hierarchy "VelsDivider:inst26|fdiv_8:inst12"
 Info (12128): Elaborating entity "fdiv_32" for hierarchy "VelsDivider:inst26|fdiv_32:inst14"
 Info (12128): Elaborating entity "CodfDePrio" for hierarchy "CodfDePrio:inst2"
-Info (12128): Elaborating entity "mov_carrinho" for hierarchy "mov_carrinho:inst8"
-Info (12128): Elaborating entity "mux4-1" for hierarchy "mov_carrinho:inst8|mux4-1:inst6"
+Info (12128): Elaborating entity "mov_carrinho" for hierarchy "mov_carrinho:inst4"
+Info (12128): Elaborating entity "mux4-1" for hierarchy "mov_carrinho:inst4|mux4-1:inst6"
 Info (12128): Elaborating entity "PistaVerilog" for hierarchy "PistaVerilog:inst1"
 Info (10041): Inferred latch for "pista[0][0]" at PistaVerilog.v(149)
 Info (10041): Inferred latch for "pista[0][1]" at PistaVerilog.v(149)
@@ -1012,9 +1013,9 @@ Info (21057): Implemented 774 device resources after synthesis - the final resou
     Info (21059): Implemented 31 output pins
     Info (21060): Implemented 18 bidirectional pins
     Info (21061): Implemented 712 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 53 warnings
-    Info: Peak virtual memory: 488 megabytes
-    Info: Processing ended: Wed Jul 05 14:31:53 2017
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 54 warnings
+    Info: Peak virtual memory: 487 megabytes
+    Info: Processing ended: Wed Jul 05 17:08:48 2017
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 

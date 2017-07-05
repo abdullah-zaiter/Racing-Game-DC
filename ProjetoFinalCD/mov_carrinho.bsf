@@ -33,15 +33,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "POTA" (rect 0 0 33 14)(font "Arial" (font_size 8)))
-		(text "POTA" (rect 21 43 54 57)(font "Arial" (font_size 8)))
+		(text "POTB" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "POTB" (rect 21 43 52 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "POTB" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "POTB" (rect 21 59 52 73)(font "Arial" (font_size 8)))
+		(text "POTA" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "POTA" (rect 21 59 54 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
@@ -54,9 +54,23 @@ applicable agreement for further details.
 	(port
 		(pt 136 32)
 		(output)
+		(text "DIR" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "DIR" (rect 97 27 115 41)(font "Arial" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(port
+		(pt 136 48)
+		(output)
+		(text "ESQ" (rect 0 0 24 14)(font "Arial" (font_size 8)))
+		(text "ESQ" (rect 91 43 115 57)(font "Arial" (font_size 8)))
+		(line (pt 136 48)(pt 120 48))
+	)
+	(port
+		(pt 136 64)
+		(output)
 		(text "Car[7..0]" (rect 0 0 48 14)(font "Arial" (font_size 8)))
-		(text "Car[7..0]" (rect 67 27 115 41)(font "Arial" (font_size 8)))
-		(line (pt 136 32)(pt 120 32)(line_width 3))
+		(text "Car[7..0]" (rect 67 59 115 73)(font "Arial" (font_size 8)))
+		(line (pt 136 64)(pt 120 64)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 120 112))
