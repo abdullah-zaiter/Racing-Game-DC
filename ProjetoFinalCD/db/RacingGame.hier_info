@@ -20,16 +20,27 @@ GPIO_1[0] <> ControleMatriz:inst.GPI[0]
 KEY[0] => inst12.IN0
 CLOCK_50 => ControleMatriz:inst.CLK_50
 CLOCK_50 => VelsDivider:inst26.50MHz
-SW[0] => inst6.IN0
-SW[1] => mov_carrinho:inst8.inicio
-SW[1] => LivesCounter:inst11.Inicio
-SW[2] => VelsDivider:inst26.S[0]
-SW[3] => VelsDivider:inst26.S[1]
-SW[4] => VelsDivider:inst26.S[2]
 GPIO_0[0] => mov_carrinho:inst8.POTA
 GPIO_0[0] => LEDG[0].DATAIN
 GPIO_0[1] => mov_carrinho:inst8.POTB
 GPIO_0[1] => LEDG[1].DATAIN
+GPIO_0[2] => CodfDePrio:inst2.in[0]
+GPIO_0[2] => LEDR[7].DATAIN
+GPIO_0[3] => CodfDePrio:inst2.in[1]
+GPIO_0[3] => LEDR[6].DATAIN
+GPIO_0[4] => CodfDePrio:inst2.in[2]
+GPIO_0[4] => LEDR[5].DATAIN
+GPIO_0[5] => CodfDePrio:inst2.in[3]
+GPIO_0[5] => LEDR[4].DATAIN
+GPIO_0[6] => CodfDePrio:inst2.in[4]
+GPIO_0[6] => LEDR[3].DATAIN
+GPIO_0[7] => CodfDePrio:inst2.in[5]
+GPIO_0[7] => LEDR[2].DATAIN
+GPIO_0[8] => CodfDePrio:inst2.in[6]
+GPIO_0[8] => LEDR[1].DATAIN
+SW[0] => inst6.IN0
+SW[1] => mov_carrinho:inst8.inicio
+SW[1] => LivesCounter:inst11.Inicio
 HEX0[0] <= decoder7:inst9213.Out[0]
 HEX0[1] <= decoder7:inst9213.Out[1]
 HEX0[2] <= decoder7:inst9213.Out[2]
@@ -53,6 +64,13 @@ HEX2[5] <= decoder7:inst7.Out[5]
 HEX2[6] <= decoder7:inst7.Out[6]
 LEDG[0] <= GPIO_0[0].DB_MAX_OUTPUT_PORT_TYPE
 LEDG[1] <= GPIO_0[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= GPIO_0[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= GPIO_0[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= GPIO_0[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= GPIO_0[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= GPIO_0[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= GPIO_0[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= GPIO_0[8].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[0] <= Shock.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -819,6 +837,19 @@ clkin => cont[29].CLK
 clkin => cont[30].CLK
 clkin => cont[31].CLK
 clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|CodfDePrio:inst2
+one[0] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
+one[1] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
+one[2] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => Add5.IN6
+in[1] => Add4.IN6
+in[2] => Add3.IN6
+in[3] => Add2.IN6
+in[4] => Add1.IN4
+in[5] => Add0.IN2
+in[6] => Add0.IN1
 
 
 |test|mov_carrinho:inst8

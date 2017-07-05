@@ -3,52 +3,52 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -4.605
-TNS   : -705.391
+Slack : -7.121
+TNS   : -1410.548
 
-Type  : Slow Model Setup 'SW[0]'
-Slack : -1.770
-TNS   : -34.802
+Type  : Slow Model Setup 'GPIO_0[2]'
+Slack : -5.150
+TNS   : -1055.342
 
 Type  : Slow Model Setup 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
-Slack : -0.806
-TNS   : -1.438
+Slack : -0.653
+TNS   : -0.725
 
 Type  : Slow Model Setup 'ControleMatriz:inst|Reg8:inst51|Q[1]'
-Slack : -0.034
-TNS   : -0.034
+Slack : -0.027
+TNS   : -0.027
 
 Type  : Slow Model Hold 'CLOCK_50'
-Slack : -2.546
-TNS   : -2.546
+Slack : -2.557
+TNS   : -2.557
+
+Type  : Slow Model Hold 'GPIO_0[2]'
+Slack : -2.208
+TNS   : -344.116
 
 Type  : Slow Model Hold 'ControleMatriz:inst|Reg8:inst51|Q[1]'
 Slack : 0.391
 TNS   : 0.000
 
-Type  : Slow Model Hold 'SW[0]'
-Slack : 0.391
-TNS   : 0.000
-
 Type  : Slow Model Hold 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
-Slack : 0.537
+Slack : 0.541
 TNS   : 0.000
 
-Type  : Slow Model Recovery 'SW[0]'
-Slack : -2.546
-TNS   : -124.547
+Type  : Slow Model Recovery 'GPIO_0[2]'
+Slack : -5.539
+TNS   : -287.269
 
-Type  : Slow Model Removal 'SW[0]'
-Slack : -2.650
-TNS   : -125.285
+Type  : Slow Model Removal 'GPIO_0[2]'
+Slack : -9.270
+TNS   : -588.707
+
+Type  : Slow Model Minimum Pulse Width 'GPIO_0[2]'
+Slack : -2.163
+TNS   : -1491.304
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
 TNS   : -298.380
-
-Type  : Slow Model Minimum Pulse Width 'SW[0]'
-Slack : -1.380
-TNS   : -77.380
 
 Type  : Slow Model Minimum Pulse Width 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
 Slack : -0.500
@@ -59,52 +59,52 @@ Slack : -0.500
 TNS   : -3.000
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -1.850
-TNS   : -179.030
+Slack : -3.311
+TNS   : -564.947
 
-Type  : Fast Model Setup 'SW[0]'
-Slack : -0.429
-TNS   : -3.938
+Type  : Fast Model Setup 'GPIO_0[2]'
+Slack : -2.366
+TNS   : -376.623
 
 Type  : Fast Model Setup 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
-Slack : 0.193
+Slack : 0.262
 TNS   : 0.000
 
 Type  : Fast Model Setup 'ControleMatriz:inst|Reg8:inst51|Q[1]'
-Slack : 0.520
+Slack : 0.523
 TNS   : 0.000
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.587
-TNS   : -1.587
+Slack : -1.597
+TNS   : -1.597
+
+Type  : Fast Model Hold 'GPIO_0[2]'
+Slack : -0.985
+TNS   : -151.297
 
 Type  : Fast Model Hold 'ControleMatriz:inst|Reg8:inst51|Q[1]'
 Slack : 0.215
 TNS   : 0.000
 
-Type  : Fast Model Hold 'SW[0]'
-Slack : 0.215
-TNS   : 0.000
-
 Type  : Fast Model Hold 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
-Slack : 0.248
+Slack : 0.251
 TNS   : 0.000
 
-Type  : Fast Model Recovery 'SW[0]'
-Slack : -0.679
-TNS   : -9.557
+Type  : Fast Model Recovery 'GPIO_0[2]'
+Slack : -2.229
+TNS   : -93.966
 
-Type  : Fast Model Removal 'SW[0]'
-Slack : -1.611
-TNS   : -83.145
+Type  : Fast Model Removal 'GPIO_0[2]'
+Slack : -4.696
+TNS   : -299.006
 
 Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
 TNS   : -298.380
 
-Type  : Fast Model Minimum Pulse Width 'SW[0]'
-Slack : -1.380
-TNS   : -77.380
+Type  : Fast Model Minimum Pulse Width 'GPIO_0[2]'
+Slack : -1.222
+TNS   : -915.780
 
 Type  : Fast Model Minimum Pulse Width 'ControleMatriz:inst|fdiv100khz:inst36|clkout'
 Slack : -0.500

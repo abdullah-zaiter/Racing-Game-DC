@@ -1,0 +1,11 @@
+module CodfDePrio (
+    input wire [7:0] in,
+    output reg [2:0] out
+  );
+  integer i;
+  always @* begin
+    out = 1; 
+    for (i=0; i<=7; i=i+1)
+        if (in[i]) out = i;
+  end
+endmodule
